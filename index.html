@@ -5,7 +5,6 @@ layout: default
 <style>
   .sr-intro-text { font-size: 12px; color: #333333; margin: 8px 0; line-height: 1.4; text-align: center; }
   
-  /* ब्लिंक करने वाला LIVE UPDATE */
   .sr-live-icon {
     display: inline-block;
     background: #cc0000;
@@ -38,13 +37,11 @@ layout: default
 
   .sr-tools-link { display: block; color: #0000cc; font-size: 15px; font-weight: bold; text-decoration: underline; margin-bottom: 10px; text-align: center; }
 
-  /* 6 रंगीन कार्ड्स */
   .colorful-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 5px; margin-bottom: 12px; }
   .color-card { padding: 8px 4px; color: #ffffff !important; font-weight: bold; font-size: 11px; line-height: 1.25; text-align: center; border-radius: 2px; display: flex; align-items: center; justify-content: center; min-height: 44px; text-decoration: none; }
   .box-c1 { background: #e02b20; } .box-c2 { background: #ff5722; } .box-c3 { background: #d0006f; }
   .box-c4 { background: #7b8b00; } .box-c5 { background: #0088cc; } .box-c6 { background: #8b0000; }
 
-  /* हमेशा 2-कॉलम रहने वाले बॉक्सेस */
   .table-row {
     display: flex !important;
     flex-direction: row !important;
@@ -106,9 +103,8 @@ layout: default
 
 <a class="sr-tools-link" href="https://photoresizer.store" target="_blank">Rojgar Vacancy Tools (Photo and Signature Resizer)</a>
 
-<!-- 6 रंगीन कार्ड्स -->
 <div class="colorful-grid">
-  <a class="color-card box-c1" href="/#results">UPSSSC Lekhpal Mains Result 2026</a>
+  <a class="color-card box-c1" href="#results">UPSSSC Lekhpal Mains Result 2026</a>
   <a class="color-card box-c2" href="https://scholarship.up.gov.in" target="_blank">UP Scholarship 2026 Apply Online</a>
   <a class="color-card box-c3" href="https://indiapostgdsonline.gov.in" target="_blank">India Post GDS Apply Online</a>
   <a class="color-card box-c4" href="https://ibps.in" target="_blank">IBPS RRB 15th Apply Online</a>
@@ -122,22 +118,21 @@ layout: default
     <div class="table-head">Result</div>
     <ul class="table-list">
       {% for post in site.categories.result limit:15 %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
       {% endfor %}
-      <li><a href="#">UPSSSC Lekhpal Mains Result 2026 – Out</a></li>
       <li><a href="#">Bihar BSEB DElEd 3rd Merit List 2026</a></li>
       <li><a href="#">NTA UGC NET June Result / Score Card 2026</a></li>
       <li><a href="#">UPPSC ATP Pre Result 2026 – Out</a></li>
       <li><a href="#">Railway RRB Group D Answer Key 2026 – Out</a></li>
     </ul>
-    <div class="btn-view-more-row"><a class="btn-view-more-blue" href="/#results">View More</a></div>
+    <div class="btn-view-more-row"><a class="btn-view-more-blue" href="#results">View More</a></div>
   </div>
 
   <div class="table-box" id="latest-jobs">
     <div class="table-head">Latest Jobs</div>
     <ul class="table-list">
       {% for post in site.categories.jobs limit:15 %}
-        <li><a href="{{ post.url }}">{{ post.title }}{% if post.last_date %} | Last Date : {{ post.last_date }}{% endif %}</a></li>
+        <li><a href="{{ post.url | relative_url }}">{{ post.title }}{% if post.last_date %} | Last Date : {{ post.last_date }}{% endif %}</a></li>
       {% endfor %}
       <li><a href="#">UP Dairy Development DEO Recruitment 2026</a></li>
       <li><a href="#">UPSC EPFO Assistant APFC Online Form 2026</a></li>
@@ -145,7 +140,7 @@ layout: default
       <li><a href="#">SSC CPO SI CAPF Online Form 2026</a></li>
       <li><a href="#">Bank of India BOI SO Online Form 2026</a></li>
     </ul>
-    <div class="btn-view-more-row"><a class="btn-view-more-blue" href="/#latest-jobs">View More</a></div>
+    <div class="btn-view-more-row"><a class="btn-view-more-blue" href="#latest-jobs">View More</a></div>
   </div>
 </div>
 
@@ -155,28 +150,28 @@ layout: default
     <div class="table-head">Admit Card</div>
     <ul class="table-list">
       {% for post in site.categories.admitcard limit:15 %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
       {% endfor %}
       <li><a href="#">SSC GD Constable Admit Card 2026</a></li>
       <li><a href="#">UP Police Constable Exam City / Admit Card</a></li>
       <li><a href="#">CTET Exam Admit Card 2026</a></li>
       <li><a href="#">NTA JEE Main Phase 2 Admit Card 2026</a></li>
     </ul>
-    <div class="btn-view-more-row"><a class="btn-view-more-blue" href="/#admit-card">View More</a></div>
+    <div class="btn-view-more-row"><a class="btn-view-more-blue" href="#admit-card">View More</a></div>
   </div>
 
   <div class="table-box" id="answer-key">
     <div class="table-head">Answer Key</div>
     <ul class="table-list">
       {% for post in site.categories.answerkey limit:15 %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
       {% endfor %}
       <li><a href="#">UPSSSC PET Answer Key 2026</a></li>
       <li><a href="#">SSC CGL Tier 1 Answer Key 2026</a></li>
       <li><a href="#">UGC NET Official Answer Key 2026</a></li>
       <li><a href="#">Railway RPF SI Answer Key 2026</a></li>
     </ul>
-    <div class="btn-view-more-row"><a class="btn-view-more-blue" href="/#answer-key">View More</a></div>
+    <div class="btn-view-more-row"><a class="btn-view-more-blue" href="#answer-key">View More</a></div>
   </div>
 </div>
 
@@ -186,27 +181,27 @@ layout: default
     <div class="table-head">Syllabus</div>
     <ul class="table-list">
       {% for post in site.categories.syllabus limit:15 %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
       {% endfor %}
       <li><a href="#">UPSSSC Junior Assistant Syllabus 2026</a></li>
       <li><a href="#">SSC MTS Exam Pattern &amp; Syllabus</a></li>
       <li><a href="#">UP Police SI Detailed Syllabus 2026</a></li>
       <li><a href="#">UP TGT PGT Subject Wise Syllabus</a></li>
     </ul>
-    <div class="btn-view-more-row"><a class="btn-view-more-blue" href="/#syllabus">View More</a></div>
+    <div class="btn-view-more-row"><a class="btn-view-more-blue" href="#syllabus">View More</a></div>
   </div>
 
   <div class="table-box" id="admission">
     <div class="table-head">Admission</div>
     <ul class="table-list">
       {% for post in site.categories.admission limit:15 %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
       {% endfor %}
       <li><a href="#">UP DElEd (BTC) Online Admission 2026</a></li>
       <li><a href="#">NTA CUET UG Online Form 2026</a></li>
       <li><a href="#">UP BEd 2 Year Combined Entrance Form</a></li>
       <li><a href="#">IIT JAM 2026 Admission Online Form</a></li>
     </ul>
-    <div class="btn-view-more-row"><a class="btn-view-more-blue" href="/#admission">View More</a></div>
+    <div class="btn-view-more-row"><a class="btn-view-more-blue" href="#admission">View More</a></div>
   </div>
 </div>
