@@ -1,0 +1,6 @@
+title: "Rojgar Vacancy"
+description: "rojgarvecancy.in"
+baseurl: "/Rojgar-vacancy-"
+url: "https://rojgarvacancy.github.io"
+markdown: kramdown
+permalink: /:categories/:title/
