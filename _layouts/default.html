@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }} - {{ site.title }}</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, Helvetica, sans-serif; background-color: #ffffff; color: #000000; line-height: 1.35; }
+    a { text-decoration: none; }
+    .sr-header-red { background: #cc0000; color: #ffffff; text-align: center; padding: 16px 8px; }
+    .sr-header-red h1 { font-size: 28px; font-weight: 900; letter-spacing: 1px; margin: 0; text-transform: uppercase; }
+    .sr-header-red p { font-size: 14px; margin-top: 4px; font-weight: bold; }
+    .sr-navy-menu { background: #000066; color: #ffffff; padding: 10px 8px; display: flex; justify-content: center; gap: 12px; font-weight: bold; font-size: 13px; overflow-x: auto; white-space: nowrap; }
+    .sr-navy-menu a { color: #ffffff; }
+    .sr-container { max-width: 1000px; margin: 0 auto; padding: 8px 6px; }
+    .sr-footer { background: #000066; color: #ffffff; text-align: center; padding: 16px 8px; font-size: 12px; margin-top: 25px; }
+    .sr-footer a { color: #ffcc00; font-weight: bold; }
+    .post-content-wrap { padding: 10px 4px; text-align: left; }
+    .post-content-wrap h1 { font-size: 22px; color: #ab1e24; border-bottom: 2px solid #ab1e24; padding-bottom: 6px; margin-bottom: 12px; }
+    .post-content-wrap table { width: 100% !important; border-collapse: collapse; margin-top: 15px; }
+    .post-content-wrap th, .post-content-wrap td { border: 1px solid #ccc; padding: 8px; text-align: left; font-size: 13px; }
+    .post-content-wrap th { background-color: #f2f2f2; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <header class="sr-header-red">
+    <h1>ROJGAR VACANCY</h1>
+    <p>rojgarvecancy.in</p>
+  </header>
+
+  <nav class="sr-navy-menu">
+    <a href="/">Home</a>
+    <a href="/#latest-jobs">Latest Jobs</a>
+    <a href="/#results">Results</a>
+    <a href="/#admit-card">Admit Card</a>
+    <a href="/#answer-key">Answer Key</a>
+    <a href="/#syllabus">Syllabus</a>
+    <a href="/#admission">Admission</a>
+    <a href="https://photoresizer.store" style="color:#ffea00;" target="_blank">Photo Resizer</a>
+  </nav>
+
+  <div class="sr-container">
+    {% if page.layout == "default" and page.title and page.url != "/" %}
+      <div class="post-content-wrap">
+        <h1>{{ page.title }}</h1>
+        {{ content }}
+      </div>
+    {% else %}
+      {{ content }}
+    {% endif %}
+  </div>
+
+  <footer class="sr-footer">
+    <p>2026 Rojgar Vacancy (rojgarvecancy.in) - All Rights Reserved.</p>
+    <p style="margin-top:6px;">Free Online Tool: <a href="https://photoresizer.store" target="_blank">Photo and Signature Resizer (photoresizer.store)</a></p>
+  </footer>
+
+</body>
+</html>
