@@ -10,7 +10,7 @@
     font-family: Arial, Helvetica, sans-serif;
     background-color: #ffffff;
     color: #000000;
-    line-height: 1.4;
+    line-height: 1.35;
   }
   a { text-decoration: none; }
 
@@ -21,13 +21,14 @@
     padding: 16px 8px;
   }
   .sr-header-red h1 {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 900;
+    letter-spacing: 1px;
     margin: 0;
     text-transform: uppercase;
   }
   .sr-header-red p {
-    font-size: 13px;
+    font-size: 14px;
     margin-top: 4px;
     font-weight: bold;
   }
@@ -49,40 +50,51 @@
   .sr-container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 10px 8px;
+    padding: 8px 6px;
+    text-align: center;
   }
 
-  /* HOME DASHBOARD */
   .sr-intro-text {
     font-size: 12px;
     color: #333333;
     margin: 8px 0;
-    text-align: center;
+    line-height: 1.4;
   }
+  .sr-live-icon {
+    display: inline-block;
+    border: 1.5px solid #cc0000;
+    color: #cc0000;
+    padding: 1px 7px;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 12px;
+    margin: 6px 0;
+  }
+
   .btn-whatsapp-channel {
     display: inline-block;
     background: #00a82d;
     color: #ffffff !important;
     font-weight: bold;
     font-size: 14px;
-    padding: 8px 20px;
+    padding: 8px 24px;
     border-radius: 6px;
     margin: 6px 0 10px 0;
   }
+
   .sr-tools-link {
     display: block;
     color: #0000cc;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
     text-decoration: underline;
-    margin-bottom: 12px;
-    text-align: center;
+    margin-bottom: 10px;
   }
 
   .colorful-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 6px;
+    gap: 5px;
     margin-bottom: 12px;
   }
   .color-card {
@@ -90,12 +102,13 @@
     color: #ffffff !important;
     font-weight: bold;
     font-size: 12px;
+    line-height: 1.25;
     text-align: center;
-    border-radius: 3px;
+    border-radius: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 44px;
+    min-height: 46px;
   }
   .box-c1 { background: #e02b20; }
   .box-c2 { background: #ff5722; }
@@ -105,25 +118,30 @@
   .box-c6 { background: #8b0000; }
 
   .table-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 10px;
-    width: 100%;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 6px !important;
+    margin-top: 10px !important;
+    width: 100% !important;
   }
+
   .table-box {
-    flex: 1 1 calc(50% - 8px);
-    border: 1.5px solid #d35400;
-    background: #ffffff;
-    min-width: 280px;
+    flex: 1 1 50% !important;
+    width: 50% !important;
+    max-width: 50% !important;
+    min-width: 0 !important;
+    border: 1.5px solid #d35400 !important;
+    background: #ffffff !important;
   }
+
   .table-head {
     background: #ab1e24;
     color: #ffffff;
     text-align: center;
     font-weight: bold;
     font-size: 14px;
-    padding: 6px;
+    padding: 5px 2px;
   }
   .table-list {
     list-style: none;
@@ -131,9 +149,10 @@
     margin: 0;
   }
   .table-list li {
-    padding: 7px 8px 7px 18px;
+    padding: 7px 6px 7px 18px;
     border-bottom: 1px dotted #e0e0e0;
     font-size: 12px;
+    line-height: 1.35;
     position: relative;
     text-align: left;
   }
@@ -145,7 +164,7 @@
     top: 12px;
     width: 4px;
     height: 4px;
-    background-color: #000;
+    background-color: #000000;
     border-radius: 50%;
   }
   .table-list li a {
@@ -153,6 +172,7 @@
     font-weight: bold;
     text-decoration: underline;
   }
+  .table-list li a:hover { color: #b30000; }
   .btn-view-more-row {
     text-align: center;
     padding: 8px 2px;
@@ -167,14 +187,23 @@
     display: inline-block;
   }
 
-  /* POST VIEW */
-  #main-article-wrapper {
-    width: 100%;
-    margin-top: 10px;
+  @media screen and (max-width: 600px) {
+    .table-row {
+      flex-direction: column !important;
+    }
+    .table-box {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
   }
-  .post-body {
-    font-size: 14px;
-    line-height: 1.6;
+
+  #main-article-wrapper {
+    text-align: left;
+    background: #ffffff;
+    padding: 10px 4px;
+  }
+  .post-title, .date-header, .post-footer, #blog-pager {
+    display: none !important;
   }
 
   .sr-footer {
@@ -205,45 +234,218 @@
 
   <div class='sr-container'>
 
-    <!-- POST ARTICLE WRAPPER -->
-    <div id='main-article-wrapper'>
-      <b:section id='main' showaddelement='no'>
-        <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='1'>
-          <b:widget-settings>
-            <b:widget-setting name='showDateHeader'>true</b:widget-setting>
-            <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
-            <b:widget-setting name='showShareButtons'>true</b:widget-setting>
-            <b:widget-setting name='authorLabel'>By</b:widget-setting>
-            <b:widget-setting name='showCommentLink'>true</b:widget-setting>
-            <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
-            <b:widget-setting name='showAuthor'>false</b:widget-setting>
-            <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
-            <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
-            <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
-            <b:widget-setting name='reactionsLabel'/>
-            <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
-            <b:widget-setting name='style.layout'>1x1</b:widget-setting>
-            <b:widget-setting name='showLabels'>true</b:widget-setting>
-            <b:widget-setting name='showLocation'>true</b:widget-setting>
-            <b:widget-setting name='showTimestamp'>true</b:widget-setting>
-            <b:widget-setting name='postsPerAd'>3</b:widget-setting>
-            <b:widget-setting name='showBacklinks'>false</b:widget-setting>
-            <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
-            <b:widget-setting name='showInlineAds'>true</b:widget-setting>
-            <b:widget-setting name='showReactions'>false</b:widget-setting>
-          </b:widget-settings>
-          <b:includable id='main' var='top'>
-            <b:loop values='data:posts' var='post'>
-              <div class='post'>
-                <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id'>
-                  <data:post.body/>
-                </div>
+    <!-- HOMEPAGE SECTION (Blogger Conditional Tags ke sath) -->
+    <b:if cond='data:blog.pageType != &quot;item&quot; and data:blog.pageType != &quot;static_page&quot;'>
+      <div id='home-dashboard-area'>
+        <div class='sr-intro-text'>
+          <strong>Rojgar Vacancy</strong> Official Website - Online Forms, Admit Cards, Results and Job Updates.
+        </div>
+
+        <div>
+          <span class='sr-live-icon'>LIVE</span>
+        </div>
+
+        <div>
+          <a class='btn-whatsapp-channel' href='https://chat.whatsapp.com' target='_blank'>
+            Join WhatsApp Channel
+          </a>
+        </div>
+
+        <a class='sr-tools-link' href='https://photoresizer.store' target='_blank'>
+          Rojgar Vacancy Tools (Photo and Signature Resizer)
+        </a>
+
+        <div class='colorful-grid'>
+          <a class='color-card box-c1' href='https://upsssc.gov.in' target='_blank'>UPSSSC Junior Engineer 2026 Apply Online</a>
+          <a class='color-card box-c2' href='https://scholarship.up.gov.in' target='_blank'>UP Scholarship 2026 Apply Online</a>
+          <a class='color-card box-c3' href='https://indiapostgdsonline.gov.in' target='_blank'>India Post GDS Apply Online</a>
+          <a class='color-card box-c4' href='https://ibps.in' target='_blank'>IBPS RRB 15th Apply Online</a>
+          <a class='color-card box-c5' href='https://ssc.gov.in' target='_blank'>SSC Junior Engineer JE 2026</a>
+          <a class='color-card box-c6' href='https://photoresizer.store' target='_blank'>Photo &amp; Signature Resizer Tool</a>
+        </div>
+
+        <!-- ROW 1: Result | Latest Jobs -->
+        <div class='table-row'>
+          
+          <div class='table-box' id='results'>
+            <div class='table-head'>Result</div>
+            <ul class='table-list'>
+              <li><a href='https://rojgarvecancy.blogspot.com/2026/09/upsssc-lekhpal-mains-result-2026-out.html' target='_blank'>UPSSSC Lekhpal Mains Result 2026 &#8211; Out</a></li>
+              <li><a href='#' target='_blank'>Bihar BSEB DElEd 3rd Merit List 2026</a></li>
+              <li><a href='#' target='_blank'>EMRS Teaching/ Non Teaching Tier-II Result 2026 &#8211; Updated</a></li>
+              <li><a href='#' target='_blank'>NTA UGC NET June Result / Score Card 2026</a></li>
+              <li><a href='#' target='_blank'>UPPSC ATP Pre Result 2026 &#8211; Out</a></li>
+              <li><a href='#' target='_blank'>UP TGT 2022 College Allotment Result</a></li>
+              <li><a href='#' target='_blank'>UPSSSC Junior Assistant, Clerk Grade II 2023 Final Result</a></li>
+              <li><a href='#' target='_blank'>AFCAT 02/2026 Result &#8211; Out</a></li>
+              <li><a href='#' target='_blank'>UPSC CAPF AC Name Wise Result 2026 &#8211; Out</a></li>
+              <li><a href='#' target='_blank'>Railway RRB Group D Answer Key 2026 &#8211; Out</a></li>
+              <li><a href='#' target='_blank'>UPTET 2026 Certificate</a></li>
+              <li><a href='#' target='_blank'>UPSSSC Nakshanavish and Manchitrak 2023 Mains Result</a></li>
+              <li><a href='#' target='_blank'>BCECE Admission 2026 Mop-up Allotment Result</a></li>
+              <li><a href='#' target='_blank'>RPSC Deputy Jailor PET Result 2026</a></li>
+              <li><a href='#' target='_blank'>UPPSC Computer Assistant Typing Test Result 2026</a></li>
+              <li><a href='#' target='_blank'>UPPSC LT Grade Assistant Teacher Mains Result 2026</a></li>
+              <li><a href='#' target='_blank'>UPSC CMS Result 2026 &#8211; Out</a></li>
+              <li><a href='#' target='_blank'>CGPSC SSE PCS Mains Result 2026</a></li>
+            </ul>
+            <div class='btn-view-more-row'>
+              <a class='btn-view-more-blue' href='/search/label/Result'>View More</a>
+            </div>
+          </div>
+
+          <div class='table-box' id='latest-jobs'>
+            <div class='table-head'>Latest Jobs</div>
+            <ul class='table-list'>
+              <li><a href='#' target='_blank'>UP Dairy Development DEO Data Entry Operator Recruitment 2026 | Last Date : 18/09/2026</a></li>
+              <li><a href='#' target='_blank'>UPSC EPFO Assistant Provident Fund Commissioner APFC Online Form 2026 | Last Date : 14/09/2026</a></li>
+              <li><a href='#' target='_blank'>UPSSSC Senior Instructor Online Form 2026 | Last Date : 05/10/2026</a></li>
+              <li><a href='#' target='_blank'>ISRO ICRB Assistant and Other Post Admit Card 2026</a></li>
+              <li><a href='#' target='_blank'>SSC CPO SI CAPF Online Form 2026 | Last Date : 30/09/2026</a></li>
+              <li><a href='#' target='_blank'>Bank of India BOI Specialist Officers SO Online Form 2026 | Last Date : 25/09/2026</a></li>
+              <li><a href='#' target='_blank'>MPESB MP Police Constable GD Online Form 2026 | Last Date : 06/10/2026</a></li>
+              <li><a href='#' target='_blank'>UKPSC Pre Combined State Civil Upper Subordinate Service Online Form 2026 | Last Date : 29/09/2026</a></li>
+              <li><a href='#' target='_blank'>UPSSSC Livestock Extension Officer Online Form 2026 | Last Date : 29/09/2026</a></li>
+              <li><a href='#' target='_blank'>MPESB MP Police Sub Inspector SI, Subedar Online Form 2026 | Last Date : 23/09/2026</a></li>
+              <li><a href='#' target='_blank'>UPESSC UP Assistant Professor Online Form 2026 | Last Date : 07/10/2026</a></li>
+              <li><a href='#' target='_blank'>Railway RRB Paramedical Online Form 2026 CEN 05/2026 | Last Date : 14/10/2026</a></li>
+              <li><a href='#' target='_blank'>UPSSSC Nakshanavish and Manchitrak Document Upload 2026 Advt. No. 11-Exam/2023</a></li>
+              <li><a href='#' target='_blank'>UKSSSC Group C Various Post Online Form 2026 | Last Date : 07/10/2026</a></li>
+              <li><a href='#' target='_blank'>GIMS Staff Nurse Online Form 2026 | Last Date : 30/09/2026 (Date Extended)</a></li>
+              <li><a href='#' target='_blank'>SSC 10+2 CHSL Online Form 2026 | Last Date : 07/10/2026</a></li>
+              <li><a href='#' target='_blank'>Bihar Police BPSSC Company Commander Online Form 2026 Advt. No.-11/2026 | Last Date : 10/10/2026</a></li>
+              <li><a href='#' target='_blank'>CTET September 2026 Correction / Edit Form</a></li>
+            </ul>
+            <div class='btn-view-more-row'>
+              <a class='btn-view-more-blue' href='/search/label/Latest%20Jobs'>View More</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ROW 2: Admission | Answer Key -->
+        <div class='table-row'>
+          
+          <div class='table-box' id='admission'>
+            <div class='table-head'>Admission</div>
+            <ul class='table-list'>
+              <li><a href='#' target='_blank'>Admission Link 1</a></li>
+              <li><a href='#' target='_blank'>Admission Link 2</a></li>
+              <li><a href='#' target='_blank'>Admission Link 3</a></li>
+              <li><a href='#' target='_blank'>Admission Link 4</a></li>
+              <li><a href='#' target='_blank'>Admission Link 5</a></li>
+              <li><a href='#' target='_blank'>Admission Link 6</a></li>
+              <li><a href='#' target='_blank'>Admission Link 7</a></li>
+              <li><a href='#' target='_blank'>Admission Link 8</a></li>
+            </ul>
+            <div class='btn-view-more-row'>
+              <a class='btn-view-more-blue' href='/search/label/Admission'>View More</a>
+            </div>
+          </div>
+
+          <div class='table-box' id='answer-key'>
+            <div class='table-head'>Answer Key</div>
+            <ul class='table-list'>
+              <li><a href='#' target='_blank'>Answer Key Link 1</a></li>
+              <li><a href='#' target='_blank'>Answer Key Link 2</a></li>
+              <li><a href='#' target='_blank'>Answer Key Link 3</a></li>
+              <li><a href='#' target='_blank'>Answer Key Link 4</a></li>
+              <li><a href='#' target='_blank'>Answer Key Link 5</a></li>
+              <li><a href='#' target='_blank'>Answer Key Link 6</a></li>
+              <li><a href='#' target='_blank'>Answer Key Link 7</a></li>
+              <li><a href='#' target='_blank'>Answer Key Link 8</a></li>
+            </ul>
+            <div class='btn-view-more-row'>
+              <a class='btn-view-more-blue' href='/search/label/Answer%20Key'>View More</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ROW 3: Admit Card | Syllabus -->
+        <div class='table-row'>
+          
+          <div class='table-box' id='admit-card'>
+            <div class='table-head'>Admit Card</div>
+            <ul class='table-list'>
+              <li><a href='#' target='_blank'>Admit Card Link 1</a></li>
+              <li><a href='#' target='_blank'>Admit Card Link 2</a></li>
+              <li><a href='#' target='_blank'>Admit Card Link 3</a></li>
+              <li><a href='#' target='_blank'>Admit Card Link 4</a></li>
+              <li><a href='#' target='_blank'>Admit Card Link 5</a></li>
+              <li><a href='#' target='_blank'>Admit Card Link 6</a></li>
+              <li><a href='#' target='_blank'>Admit Card Link 7</a></li>
+              <li><a href='#' target='_blank'>Admit Card Link 8</a></li>
+            </ul>
+            <div class='btn-view-more-row'>
+              <a class='btn-view-more-blue' href='/search/label/Admit%20Card'>View More</a>
+            </div>
+          </div>
+
+          <div class='table-box' id='syllabus'>
+            <div class='table-head'>Syllabus</div>
+            <ul class='table-list'>
+              <li><a href='#' target='_blank'>Syllabus Link 1</a></li>
+              <li><a href='#' target='_blank'>Syllabus Link 2</a></li>
+              <li><a href='#' target='_blank'>Syllabus Link 3</a></li>
+              <li><a href='#' target='_blank'>Syllabus Link 4</a></li>
+              <li><a href='#' target='_blank'>Syllabus Link 5</a></li>
+              <li><a href='#' target='_blank'>Syllabus Link 6</a></li>
+              <li><a href='#' target='_blank'>Syllabus Link 7</a></li>
+              <li><a href='#' target='_blank'>Syllabus Link 8</a></li>
+            </ul>
+            <div class='btn-view-more-row'>
+              <a class='btn-view-more-blue' href='/search/label/Syllabus'>View More</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </b:if>
+
+    <!-- POST ARTICLE SECTION (Sirf post open hone par dikhega) -->
+    <b:if cond='data:blog.pageType == &quot;item&quot; or data:blog.pageType == &quot;static_page&quot;'>
+      <div id='main-article-wrapper'>
+        <b:section id='main' showaddelement='no'>
+          <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='1'>
+            <b:widget-settings>
+              <b:widget-setting name='showDateHeader'>true</b:widget-setting>
+              <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
+              <b:widget-setting name='showShareButtons'>true</b:widget-setting>
+              <b:widget-setting name='authorLabel'>By</b:widget-setting>
+              <b:widget-setting name='showCommentLink'>true</b:widget-setting>
+              <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
+              <b:widget-setting name='showAuthor'>false</b:widget-setting>
+              <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
+              <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+              <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+              <b:widget-setting name='reactionsLabel'/>
+              <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
+              <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+              <b:widget-setting name='showLabels'>true</b:widget-setting>
+              <b:widget-setting name='showLocation'>true</b:widget-setting>
+              <b:widget-setting name='showTimestamp'>true</b:widget-setting>
+              <b:widget-setting name='postsPerAd'>3</b:widget-setting>
+              <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+              <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+              <b:widget-setting name='showInlineAds'>true</b:widget-setting>
+              <b:widget-setting name='showReactions'>false</b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main' var='top'>
+              <div class='blog-posts hfeed'>
+                <b:loop values='data:posts' var='post'>
+                  <div class='post hentry'>
+                    <div class='post-body entry-content'>
+                      <data:post.body/>
+                    </div>
+                  </div>
+                </b:loop>
               </div>
-            </b:loop>
-          </b:includable>
-          <b:includable id='backlinkDeleteIcon' var='backlink'/>
-          <b:includable id='backlinks' var='post'/>
-          <b:includable id='comment-form' var='post'>
+            </b:includable>
+            <b:includable id='backlinkDeleteIcon' var='backlink'/>
+            <b:includable id='backlinks' var='post'/>
+            <b:includable id='comment-form' var='post'>
   <div class='comment-form'>
     <a name='comment-form'/>
     <b:if cond='data:mobile'>
@@ -266,7 +468,7 @@
     </script>
   </div>
 </b:includable>
-          <b:includable id='commentDeleteIcon' var='comment'>
+            <b:includable id='commentDeleteIcon' var='comment'>
   <span expr:class='&quot;item-control &quot; + data:comment.adminClass'>
     <b:if cond='data:showCmtPopup'>
       <div class='goog-toggle-button'>
@@ -279,19 +481,19 @@
     </b:if>
   </span>
 </b:includable>
-          <b:includable id='comment_count_picker' var='post'>
+            <b:includable id='comment_count_picker' var='post'>
   <a class='comment-link' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'>
     <data:post.commentLabelFull/>:
   </a>
 </b:includable>
-          <b:includable id='comment_picker' var='post'>
+            <b:includable id='comment_picker' var='post'>
   <b:if cond='data:post.showThreadedComments'>
     <b:include data='post' name='threaded_comments'/>
   <b:else/>
     <b:include data='post' name='comments'/>
   </b:if>
 </b:includable>
-          <b:includable id='comments' var='post'>
+            <b:includable id='comments' var='post'>
   <div class='comments' id='comments'>
     <a name='comments'/>
     <b:if cond='data:post.allowComments'>
@@ -397,7 +599,7 @@
 
   </div>
 </b:includable>
-          <b:includable id='feedLinks'>
+            <b:includable id='feedLinks'>
   <b:if cond='data:blog.pageType != &quot;item&quot;'> <!-- Blog feed links -->
     <b:if cond='data:feedLinks'>
       <div class='blog-feeds'>
@@ -413,7 +615,7 @@
     </div>
   </b:if>
 </b:includable>
-          <b:includable id='feedLinksBody' var='links'>
+            <b:includable id='feedLinksBody' var='links'>
   <div class='feed-links'>
   <data:feedLinksMsg/>
   <b:loop values='data:links' var='f'>
@@ -421,10 +623,10 @@
   </b:loop>
   </div>
 </b:includable>
-          <b:includable id='iframe_comments' var='post'>
+            <b:includable id='iframe_comments' var='post'>
   <!-- G+ comments, no longer available. The includable is retained for backwards-compatibility. -->
 </b:includable>
-          <b:includable id='mobile-index-post' var='post'>
+            <b:includable id='mobile-index-post' var='post'>
   <div class='mobile-date-outer date-outer'>
     <b:if cond='data:post.dateHeader'>
       <div class='date-header'>
@@ -463,7 +665,7 @@
     </div>
   </div>
 </b:includable>
-          <b:includable id='mobile-main' var='top'>
+            <b:includable id='mobile-main' var='top'>
     <!-- posts -->
     <div class='blog-posts hfeed'>
 
@@ -482,7 +684,7 @@
 
    <b:include name='mobile-nextprev'/>
 </b:includable>
-          <b:includable id='mobile-nextprev'>
+            <b:includable id='mobile-nextprev'>
   <div class='blog-pager' id='blog-pager'>
     <b:if cond='data:newerPageUrl'>
       <div class='mobile-link-button' id='blog-pager-newer-link'>
@@ -507,7 +709,7 @@
   </div>
   <div class='clear'/>
 </b:includable>
-          <b:includable id='mobile-post' var='post'>
+            <b:includable id='mobile-post' var='post'>
   <div class='date-outer'>
     <b:if cond='data:post.dateHeader'>
       <h2 class='date-header'><span><data:post.dateHeader/></span></h2>
@@ -594,7 +796,7 @@
     </div>
   </div>
 </b:includable>
-          <b:includable id='nextprev'>
+            <b:includable id='nextprev'>
   <div class='blog-pager' id='blog-pager'>
     <b:if cond='data:newerPageUrl'>
       <span id='blog-pager-newer-link'>
@@ -619,7 +821,7 @@
   </div>
   <div class='clear'/>
 </b:includable>
-          <b:includable id='post' var='post'>
+            <b:includable id='post' var='post'>
   <div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
     <b:if cond='data:post.firstImageUrl'>
       <meta expr:content='data:post.firstImageUrl' itemprop='image_url'/>
@@ -744,7 +946,7 @@
     </div>
   </div>
 </b:includable>
-          <b:includable id='postQuickEdit' var='post'>
+            <b:includable id='postQuickEdit' var='post'>
   <b:if cond='data:post.editUrl'>
     <span expr:class='&quot;item-control &quot; + data:post.adminClass'>
       <a expr:href='data:post.editUrl' expr:title='data:top.editPostMsg'>
@@ -753,10 +955,10 @@
     </span>
   </b:if>
 </b:includable>
-          <b:includable id='shareButtons' var='post'>
+            <b:includable id='shareButtons' var='post'>
   <b:if cond='data:top.showEmailButton'><a class='goog-inline-block share-button sb-email' expr:href='data:post.sharePostUrl + &quot;&amp;target=email&quot;' expr:title='data:top.emailThisMsg' target='_blank'><span class='share-button-link-text'><data:top.emailThisMsg/></span></a></b:if><b:if cond='data:top.showBlogThisButton'><a class='goog-inline-block share-button sb-blog' expr:href='data:post.sharePostUrl + &quot;&amp;target=blog&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=270,width=475\&quot;); return false;&quot;' expr:title='data:top.blogThisMsg' target='_blank'><span class='share-button-link-text'><data:top.blogThisMsg/></span></a></b:if><b:if cond='data:top.showTwitterButton'><a class='goog-inline-block share-button sb-twitter' expr:href='data:post.sharePostUrl + &quot;&amp;target=twitter&quot;' expr:title='data:top.shareToTwitterMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToTwitterMsg/></span></a></b:if><b:if cond='data:top.showFacebookButton'><a class='goog-inline-block share-button sb-facebook' expr:href='data:post.sharePostUrl + &quot;&amp;target=facebook&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' expr:title='data:top.shareToFacebookMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToFacebookMsg/></span></a></b:if><b:if cond='data:top.showPinterestButton'><a class='goog-inline-block share-button sb-pinterest' expr:href='data:post.sharePostUrl + &quot;&amp;target=pinterest&quot;' expr:title='data:top.shareToPinterestMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToPinterestMsg/></span></a></b:if>
 </b:includable>
-          <b:includable id='status-message'>
+            <b:includable id='status-message'>
   <b:if cond='data:navMessage'>
   <div class='status-msg-wrap'>
     <div class='status-msg-body'>
@@ -771,7 +973,7 @@
   <div style='clear: both;'/>
   </b:if>
 </b:includable>
-          <b:includable id='threaded-comment-form' var='post'>
+            <b:includable id='threaded-comment-form' var='post'>
   <div class='comment-form'>
     <a name='comment-form'/>
     <b:if cond='data:mobile'>
@@ -791,7 +993,7 @@
     </script>
   </div>
 </b:includable>
-          <b:includable id='threaded_comment_js' var='post'>
+            <b:includable id='threaded_comment_js' var='post'>
   <script async='async' expr:src='data:post.commentSrc' type='text/javascript'/>
 
   <script type='text/javascript'>
@@ -977,7 +1179,7 @@
 // ]]>
   </script>
 </b:includable>
-          <b:includable id='threaded_comments' var='post'>
+            <b:includable id='threaded_comments' var='post'>
   <div class='comments' id='comments'>
     <a name='comments'/>
     <h4><data:post.commentLabelFull/>:</h4>
@@ -1010,173 +1212,10 @@
     </div>
   </div>
 </b:includable>
-        </b:widget>
-      </b:section>
-    </div>
-
-    <!-- HOME DASHBOARD AREA -->
-    <div id='home-dashboard-area'>
-      <div class='sr-intro-text'>
-        <strong>Rojgar Vacancy</strong> Official Website - Online Forms, Admit Cards, Results and Job Updates.
+          </b:widget>
+        </b:section>
       </div>
-
-      <div style='text-align:center;'>
-        <a class='btn-whatsapp-channel' href='https://chat.whatsapp.com' target='_blank'>
-          Join WhatsApp Channel
-        </a>
-      </div>
-
-      <a class='sr-tools-link' href='https://photoresizer.store' target='_blank'>
-        Rojgar Vacancy Tools (Photo and Signature Resizer)
-      </a>
-
-      <div class='colorful-grid'>
-        <a class='color-card box-c1' href='https://rojgarvecancy.blogspot.com/2026/09/upsssc-lekhpal-mains-result-2026-out.html'>UPSSSC Lekhpal Mains Result 2026 &#8211; Out</a>
-        <a class='color-card box-c2' href='https://scholarship.up.gov.in' target='_blank'>UP Scholarship 2026 Apply Online</a>
-        <a class='color-card box-c3' href='https://indiapostgdsonline.gov.in' target='_blank'>India Post GDS Apply Online</a>
-        <a class='color-card box-c4' href='https://ibps.in' target='_blank'>IBPS RRB 15th Apply Online</a>
-        <a class='color-card box-c5' href='https://ssc.gov.in' target='_blank'>SSC Junior Engineer JE 2026</a>
-        <a class='color-card box-c6' href='https://photoresizer.store' target='_blank'>Photo &amp; Signature Resizer Tool</a>
-      </div>
-
-      <!-- ROW 1: Result | Latest Jobs -->
-      <div class='table-row'>
-        
-        <div class='table-box' id='results'>
-          <div class='table-head'>Result</div>
-          <ul class='table-list'>
-            <li><a href='https://rojgarvecancy.blogspot.com/2026/09/upsssc-lekhpal-mains-result-2026-out.html'>UPSSSC Lekhpal Mains Result 2026 &#8211; Out</a></li>
-            <li><a href='#' target='_blank'>Bihar BSEB DElEd 3rd Merit List 2026</a></li>
-            <li><a href='#' target='_blank'>EMRS Teaching/ Non Teaching Tier-II Result 2026 &#8211; Updated</a></li>
-            <li><a href='#' target='_blank'>NTA UGC NET June Result / Score Card 2026</a></li>
-            <li><a href='#' target='_blank'>UPPSC ATP Pre Result 2026 &#8211; Out</a></li>
-            <li><a href='#' target='_blank'>UP TGT 2022 College Allotment Result</a></li>
-            <li><a href='#' target='_blank'>UPSSSC Junior Assistant, Clerk Grade II 2023 Final Result</a></li>
-            <li><a href='#' target='_blank'>AFCAT 02/2026 Result &#8211; Out</a></li>
-            <li><a href='#' target='_blank'>UPSC CAPF AC Name Wise Result 2026 &#8211; Out</a></li>
-            <li><a href='#' target='_blank'>Railway RRB Group D Answer Key 2026 &#8211; Out</a></li>
-            <li><a href='#' target='_blank'>UPTET 2026 Certificate</a></li>
-            <li><a href='#' target='_blank'>UPSSSC Nakshanavish and Manchitrak 2023 Mains Result</a></li>
-            <li><a href='#' target='_blank'>BCECE Admission 2026 Mop-up Allotment Result</a></li>
-            <li><a href='#' target='_blank'>RPSC Deputy Jailor PET Result 2026</a></li>
-            <li><a href='#' target='_blank'>UPPSC Computer Assistant Typing Test Result 2026</a></li>
-            <li><a href='#' target='_blank'>UPPSC LT Grade Assistant Teacher Mains Result 2026</a></li>
-            <li><a href='#' target='_blank'>UPSC CMS Result 2026 &#8211; Out</a></li>
-            <li><a href='#' target='_blank'>CGPSC SSE PCS Mains Result 2026</a></li>
-          </ul>
-          <div class='btn-view-more-row'>
-            <a class='btn-view-more-blue' href='/search/label/Result'>View More</a>
-          </div>
-        </div>
-
-        <div class='table-box' id='latest-jobs'>
-          <div class='table-head'>Latest Jobs</div>
-          <ul class='table-list'>
-            <li><a href='#' target='_blank'>UP Dairy Development DEO Data Entry Operator Recruitment 2026 | Last Date : 18/09/2026</a></li>
-            <li><a href='#' target='_blank'>UPSC EPFO Assistant Provident Fund Commissioner APFC Online Form 2026 | Last Date : 14/09/2026</a></li>
-            <li><a href='#' target='_blank'>UPSSSC Senior Instructor Online Form 2026 | Last Date : 05/10/2026</a></li>
-            <li><a href='#' target='_blank'>ISRO ICRB Assistant and Other Post Admit Card 2026</a></li>
-            <li><a href='#' target='_blank'>SSC CPO SI CAPF Online Form 2026 | Last Date : 30/09/2026</a></li>
-            <li><a href='#' target='_blank'>Bank of India BOI Specialist Officers SO Online Form 2026 | Last Date : 25/09/2026</a></li>
-            <li><a href='#' target='_blank'>MPESB MP Police Constable GD Online Form 2026 | Last Date : 06/10/2026</a></li>
-            <li><a href='#' target='_blank'>UKPSC Pre Combined State Civil Upper Subordinate Service Online Form 2026 | Last Date : 29/09/2026</a></li>
-            <li><a href='#' target='_blank'>UPSSSC Livestock Extension Officer Online Form 2026 | Last Date : 29/09/2026</a></li>
-            <li><a href='#' target='_blank'>MPESB MP Police Sub Inspector SI, Subedar Online Form 2026 | Last Date : 23/09/2026</a></li>
-            <li><a href='#' target='_blank'>UPESSC UP Assistant Professor Online Form 2026 | Last Date : 07/10/2026</a></li>
-            <li><a href='#' target='_blank'>Railway RRB Paramedical Online Form 2026 CEN 05/2026 | Last Date : 14/10/2026</a></li>
-            <li><a href='#' target='_blank'>UPSSSC Nakshanavish and Manchitrak Document Upload 2026 Advt. No. 11-Exam/2023</a></li>
-            <li><a href='#' target='_blank'>UKSSSC Group C Various Post Online Form 2026 | Last Date : 07/10/2026</a></li>
-            <li><a href='#' target='_blank'>GIMS Staff Nurse Online Form 2026 | Last Date : 30/09/2026 (Date Extended)</a></li>
-            <li><a href='#' target='_blank'>SSC 10+2 CHSL Online Form 2026 | Last Date : 07/10/2026</a></li>
-            <li><a href='#' target='_blank'>Bihar Police BPSSC Company Commander Online Form 2026 Advt. No.-11/2026 | Last Date : 10/10/2026</a></li>
-            <li><a href='#' target='_blank'>CTET September 2026 Correction / Edit Form</a></li>
-          </ul>
-          <div class='btn-view-more-row'>
-            <a class='btn-view-more-blue' href='/search/label/Latest%20Jobs'>View More</a>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- ROW 2: Admission | Answer Key -->
-      <div class='table-row'>
-        
-        <div class='table-box' id='admission'>
-          <div class='table-head'>Admission</div>
-          <ul class='table-list'>
-            <li><a href='#' target='_blank'>Admission Link 1</a></li>
-            <li><a href='#' target='_blank'>Admission Link 2</a></li>
-            <li><a href='#' target='_blank'>Admission Link 3</a></li>
-            <li><a href='#' target='_blank'>Admission Link 4</a></li>
-            <li><a href='#' target='_blank'>Admission Link 5</a></li>
-            <li><a href='#' target='_blank'>Admission Link 6</a></li>
-            <li><a href='#' target='_blank'>Admission Link 7</a></li>
-            <li><a href='#' target='_blank'>Admission Link 8</a></li>
-          </ul>
-          <div class='btn-view-more-row'>
-            <a class='btn-view-more-blue' href='/search/label/Admission'>View More</a>
-          </div>
-        </div>
-
-        <div class='table-box' id='answer-key'>
-          <div class='table-head'>Answer Key</div>
-          <ul class='table-list'>
-            <li><a href='#' target='_blank'>Answer Key Link 1</a></li>
-            <li><a href='#' target='_blank'>Answer Key Link 2</a></li>
-            <li><a href='#' target='_blank'>Answer Key Link 3</a></li>
-            <li><a href='#' target='_blank'>Answer Key Link 4</a></li>
-            <li><a href='#' target='_blank'>Answer Key Link 5</a></li>
-            <li><a href='#' target='_blank'>Answer Key Link 6</a></li>
-            <li><a href='#' target='_blank'>Answer Key Link 7</a></li>
-            <li><a href='#' target='_blank'>Answer Key Link 8</a></li>
-          </ul>
-          <div class='btn-view-more-row'>
-            <a class='btn-view-more-blue' href='/search/label/Answer%20Key'>View More</a>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- ROW 3: Admit Card | Syllabus -->
-      <div class='table-row'>
-        
-        <div class='table-box' id='admit-card'>
-          <div class='table-head'>Admit Card</div>
-          <ul class='table-list'>
-            <li><a href='#' target='_blank'>Admit Card Link 1</a></li>
-            <li><a href='#' target='_blank'>Admit Card Link 2</a></li>
-            <li><a href='#' target='_blank'>Admit Card Link 3</a></li>
-            <li><a href='#' target='_blank'>Admit Card Link 4</a></li>
-            <li><a href='#' target='_blank'>Admit Card Link 5</a></li>
-            <li><a href='#' target='_blank'>Admit Card Link 6</a></li>
-            <li><a href='#' target='_blank'>Admit Card Link 7</a></li>
-            <li><a href='#' target='_blank'>Admit Card Link 8</a></li>
-          </ul>
-          <div class='btn-view-more-row'>
-            <a class='btn-view-more-blue' href='/search/label/Admit%20Card'>View More</a>
-          </div>
-        </div>
-
-        <div class='table-box' id='syllabus'>
-          <div class='table-head'>Syllabus</div>
-          <ul class='table-list'>
-            <li><a href='#' target='_blank'>Syllabus Link 1</a></li>
-            <li><a href='#' target='_blank'>Syllabus Link 2</a></li>
-            <li><a href='#' target='_blank'>Syllabus Link 3</a></li>
-            <li><a href='#' target='_blank'>Syllabus Link 4</a></li>
-            <li><a href='#' target='_blank'>Syllabus Link 5</a></li>
-            <li><a href='#' target='_blank'>Syllabus Link 6</a></li>
-            <li><a href='#' target='_blank'>Syllabus Link 7</a></li>
-            <li><a href='#' target='_blank'>Syllabus Link 8</a></li>
-          </ul>
-          <div class='btn-view-more-row'>
-            <a class='btn-view-more-blue' href='/search/label/Syllabus'>View More</a>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
+    </b:if>
 
   </div>
 
@@ -1184,25 +1223,6 @@
     <p>2026 Rojgar Vacancy (rojgarvecancy.in) - All Rights Reserved.</p>
     <p style='margin-top:6px;'>Free Online Tool: <a href='https://photoresizer.store' target='_blank'>Photo and Signature Resizer (photoresizer.store)</a></p>
   </footer>
-
-  <script type='text/javascript'>
-    //<![CDATA[
-    (function() {
-      var path = window.location.pathname;
-      var isPost = path.length > 2 && (path.indexOf('.html') !== -1 || path.indexOf('/p/') !== -1);
-      var homeArea = document.getElementById('home-dashboard-area');
-      var articleArea = document.getElementById('main-article-wrapper');
-
-      if (isPost) {
-        if (homeArea) homeArea.style.display = 'none';
-        if (articleArea) articleArea.style.display = 'block';
-      } else {
-        if (homeArea) homeArea.style.display = 'block';
-        if (articleArea) articleArea.style.display = 'none';
-      }
-    })();
-    //]]>
-  </script>
 
 </body>
 </html>
