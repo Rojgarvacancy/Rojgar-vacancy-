@@ -1,0 +1,115 @@
+---
+layout: default
+---
+
+<style>
+  .sr-intro-text { font-size: 12px; color: #333333; margin: 8px 0; line-height: 1.4; text-align: center; }
+  .sr-live-icon { display: inline-block; border: 1.5px solid #cc0000; color: #cc0000; padding: 1px 7px; font-size: 11px; font-weight: bold; border-radius: 12px; margin: 6px 0; }
+  .btn-whatsapp-channel { display: inline-block; background: #00a82d; color: #ffffff !important; font-weight: bold; font-size: 14px; padding: 8px 24px; border-radius: 6px; margin: 6px 0 10px 0; }
+  .sr-tools-link { display: block; color: #0000cc; font-size: 16px; font-weight: bold; text-decoration: underline; margin-bottom: 10px; text-align: center; }
+
+  .colorful-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 5px; margin-bottom: 12px; }
+  .color-card { padding: 8px 4px; color: #ffffff !important; font-weight: bold; font-size: 12px; line-height: 1.25; text-align: center; border-radius: 2px; display: flex; align-items: center; justify-content: center; min-height: 46px; }
+  .box-c1 { background: #e02b20; } .box-c2 { background: #ff5722; } .box-c3 { background: #d0006f; }
+  .box-c4 { background: #7b8b00; } .box-c5 { background: #0088cc; } .box-c6 { background: #8b0000; }
+
+  .table-row { display: flex !important; flex-direction: row !important; flex-wrap: nowrap !important; gap: 6px !important; margin-top: 10px !important; width: 100% !important; }
+  .table-box { flex: 1 1 50% !important; width: 50% !important; max-width: 50% !important; min-width: 0 !important; border: 1.5px solid #d35400 !important; background: #ffffff !important; }
+  .table-head { background: #ab1e24; color: #ffffff; text-align: center; font-weight: bold; font-size: 14px; padding: 5px 2px; }
+  .table-list { list-style: none; padding: 0; margin: 0; }
+  .table-list li { padding: 7px 6px 7px 18px; border-bottom: 1px dotted #e0e0e0; font-size: 12px; line-height: 1.35; position: relative; text-align: left; }
+  .table-list li:last-child { border-bottom: none; }
+  .table-list li::before { content: ""; position: absolute; left: 7px; top: 12px; width: 4px; height: 4px; background-color: #000000; border-radius: 50%; }
+  .table-list li a { color: #0000cc; font-weight: bold; text-decoration: underline; }
+
+  @media screen and (max-width: 600px) {
+    .table-row { flex-direction: column !important; }
+    .table-box { width: 100% !important; max-width: 100% !important; }
+  }
+</style>
+
+<div class="sr-intro-text">
+  <strong>Rojgar Vacancy</strong> Official Website - Online Forms, Admit Cards, Results and Job Updates.
+</div>
+
+<div style="text-align:center;">
+  <span class="sr-live-icon">LIVE</span>
+</div>
+
+<div style="text-align:center;">
+  <a class="btn-whatsapp-channel" href="https://chat.whatsapp.com" target="_blank">Join WhatsApp Channel</a>
+</div>
+
+<a class="sr-tools-link" href="https://photoresizer.store" target="_blank">Rojgar Vacancy Tools (Photo and Signature Resizer)</a>
+
+<div class="colorful-grid">
+  <a class="color-card box-c1" href="/#results">UPSSSC Lekhpal Mains Result 2026</a>
+  <a class="color-card box-c2" href="https://scholarship.up.gov.in" target="_blank">UP Scholarship 2026 Apply Online</a>
+  <a class="color-card box-c3" href="https://indiapostgdsonline.gov.in" target="_blank">India Post GDS Apply Online</a>
+  <a class="color-card box-c4" href="https://ibps.in" target="_blank">IBPS RRB 15th Apply Online</a>
+  <a class="color-card box-c5" href="https://ssc.gov.in" target="_blank">SSC Junior Engineer JE 2026</a>
+  <a class="color-card box-c6" href="https://photoresizer.store" target="_blank">Photo &amp; Signature Resizer Tool</a>
+</div>
+
+<!-- ROW 1: Result | Latest Jobs -->
+<div class="table-row">
+  <div class="table-box" id="results">
+    <div class="table-head">Result</div>
+    <ul class="table-list">
+      {% for post in site.categories.result limit:15 %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="table-box" id="latest-jobs">
+    <div class="table-head">Latest Jobs</div>
+    <ul class="table-list">
+      {% for post in site.categories.jobs limit:15 %}
+        <li><a href="{{ post.url }}">{{ post.title }}{% if post.last_date %} | Last Date : {{ post.last_date }}{% endif %}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<!-- ROW 2: Admit Card | Answer Key -->
+<div class="table-row">
+  <div class="table-box" id="admit-card">
+    <div class="table-head">Admit Card</div>
+    <ul class="table-list">
+      {% for post in site.categories.admitcard limit:15 %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="table-box" id="answer-key">
+    <div class="table-head">Answer Key</div>
+    <ul class="table-list">
+      {% for post in site.categories.answerkey limit:15 %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<!-- ROW 3: Syllabus | Admission -->
+<div class="table-row">
+  <div class="table-box" id="syllabus">
+    <div class="table-head">Syllabus</div>
+    <ul class="table-list">
+      {% for post in site.categories.syllabus limit:15 %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="table-box" id="admission">
+    <div class="table-head">Admission</div>
+    <ul class="table-list">
+      {% for post in site.categories.admission limit:15 %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
