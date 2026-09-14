@@ -1,0 +1,15 @@
+---
+layout: default
+title: "Exam Syllabus & Pattern - Rojgar Vacancy"
+---
+
+<div class="category-list-box">
+  <div class="category-list-header">All Exam Syllabus & Exam Pattern</div>
+  <ul class="category-list-items">
+    {% for post in site.categories['Syllabus'] %}
+      <li><a href="{{ post.url | relative_url }}">👉 {{ post.title }}</a></li>
+    {% else %}
+      <li style="padding: 15px; color: #666;">No syllabus updates found yet.</li>
+    {% endfor %}
+  </ul>
+</div>
