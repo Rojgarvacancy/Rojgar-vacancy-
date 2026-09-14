@@ -1,0 +1,19 @@
+---
+layout: default
+title: "Latest Results - Rojgar Vacancy"
+---
+
+<div class="category-list-box">
+  <div class="category-list-header">All Latest Exam Results</div>
+  <ul class="category-list-items">
+    {% for post in site.categories['Result'] %}
+      <li><a href="{{ post.url | relative_url }}">👉 {{ post.title }}</a></li>
+    {% else %}
+      {% for post in site.categories['result'] %}
+        <li><a href="{{ post.url | relative_url }}">👉 {{ post.title }}</a></li>
+      {% else %}
+        <li style="padding: 15px; color: #666;">No results found yet.</li>
+      {% endfor %}
+    {% endfor %}
+  </ul>
+</div>
