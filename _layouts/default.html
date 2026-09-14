@@ -34,15 +34,15 @@
   </header>
 
   <nav class="sr-navy-menu">
-    <a href="./">Home</a>
-    <a href="./#latest-jobs">Latest Jobs</a>
-    <a href="./#results">Results</a>
-    <a href="./#admit-card">Admit Card</a>
-    <a href="./#answer-key">Answer Key</a>
-    <a href="./#syllabus">Syllabus</a>
-    <a href="./#admission">Admission</a>
-    <a href="about.html">About Us</a>
-    <a href="contact.html">Contact Us</a>
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/#latest-jobs' | relative_url }}">Latest Jobs</a>
+    <a href="{{ '/#results' | relative_url }}">Results</a>
+    <a href="{{ '/#admit-card' | relative_url }}">Admit Card</a>
+    <a href="{{ '/#answer-key' | relative_url }}">Answer Key</a>
+    <a href="{{ '/#syllabus' | relative_url }}">Syllabus</a>
+    <a href="{{ '/#admission' | relative_url }}">Admission</a>
+    <a href="{{ '/about/' | relative_url }}">About Us</a>
+    <a href="{{ '/contact/' | relative_url }}">Contact Us</a>
     <a href="https://photoresizer.store" style="color:#ffea00;" target="_blank">Photo Resizer</a>
   </nav>
 
@@ -59,9 +59,9 @@
 
   <footer class="sr-footer">
     <div class="footer-links">
-      <a href="./">Home</a> | 
-      <a href="about.html">About Us</a> | 
-      <a href="contact.html">Contact Us</a>
+      <a href="{{ '/' | relative_url }}">Home</a> | 
+      <a href="{{ '/about/' | relative_url }}">About Us</a> | 
+      <a href="{{ '/contact/' | relative_url }}">Contact Us</a>
     </div>
     <p>2026 Rojgar Vacancy (rojgarvecancy.in) - All Rights Reserved.</p>
     <p style="margin-top:6px;">Free Online Tool: <a href="https://photoresizer.store" target="_blank">Photo and Signature Resizer (photoresizer.store)</a></p>
