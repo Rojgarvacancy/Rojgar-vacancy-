@@ -8,44 +8,177 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: Arial, Helvetica, sans-serif; background-color: #ffffff; color: #000000; line-height: 1.35; }
     a { text-decoration: none; }
-    .sr-header-red { background: #cc0000; color: #ffffff; text-align: center; padding: 16px 8px; }
-    .sr-header-red h1 { font-size: 28px; font-weight: 900; letter-spacing: 1px; margin: 0; text-transform: uppercase; }
-    .sr-header-red p { font-size: 14px; margin-top: 4px; font-weight: bold; }
-    .sr-navy-menu { background: #000066; color: #ffffff; padding: 10px 8px; display: flex; justify-content: center; gap: 12px; font-weight: bold; font-size: 13px; overflow-x: auto; white-space: nowrap; }
-    .sr-navy-menu a { color: #ffffff; }
-    .sr-navy-menu a:hover { color: #ffea00; }
-    .sr-container { max-width: 1000px; margin: 0 auto; padding: 8px 6px; }
-    .sr-footer { background: #000066; color: #ffffff; text-align: center; padding: 16px 8px; font-size: 12px; margin-top: 25px; }
-    .sr-footer a { color: #ffcc00; font-weight: bold; }
-    .footer-links { margin-bottom: 10px; }
-    .footer-links a { color: #ffffff; margin: 0 8px; text-decoration: underline; }
+
+    /* Top Navy Strip: Hamburger + Search Bar */
+    .sr-navy-bar {
+      background: #000066;
+      padding: 8px 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    }
+    .sr-menu-btn {
+      background: none;
+      border: none;
+      color: #ffffff;
+      font-size: 24px;
+      line-height: 1;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2px 6px;
+    }
+    .sr-search-form {
+      flex: 1;
+      display: flex;
+      margin: 0;
+    }
+    .sr-search-input {
+      width: 100%;
+      padding: 7px 12px;
+      border: none;
+      border-radius: 4px 0 0 4px;
+      font-size: 13px;
+      outline: none;
+    }
+    .sr-search-btn {
+      background: #ffcc00;
+      color: #000066;
+      border: none;
+      padding: 0 14px;
+      font-weight: bold;
+      font-size: 13px;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+    }
+
+    /* Left Side Drawer Menu */
+    .sr-sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 2000;
+      top: 0;
+      left: 0;
+      background-color: #00004d;
+      overflow-x: hidden;
+      transition: 0.3s ease;
+      box-shadow: 3px 0 12px rgba(0,0,0,0.5);
+    }
+    .sr-sidenav-header {
+      padding: 16px;
+      background: #cc0000;
+      color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+      font-size: 16px;
+      letter-spacing: 0.5px;
+    }
+    .sr-close-btn {
+      color: #ffffff;
+      font-size: 26px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      line-height: 1;
+    }
+    .sr-sidenav-links {
+      padding: 10px 0;
+    }
+    .sr-sidenav-links a {
+      padding: 12px 20px;
+      font-size: 14px;
+      color: #ffffff;
+      display: block;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      font-weight: 500;
+    }
+    .sr-sidenav-links a:hover {
+      background-color: #000080;
+      color: #ffcc00;
+    }
+    .sr-overlay {
+      position: fixed;
+      display: none;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(0,0,0,0.55);
+      z-index: 1500;
+    }
+
+    /* Main Content Container */
+    .sr-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 10px 8px;
+    }
+
+    /* Page / Post Wrapping */
     .post-content-wrap { padding: 10px 4px; text-align: left; }
     .post-content-wrap h1 { font-size: 22px; color: #ab1e24; border-bottom: 2px solid #ab1e24; padding-bottom: 6px; margin-bottom: 12px; }
     .post-content-wrap table { width: 100% !important; border-collapse: collapse; margin-top: 15px; }
     .post-content-wrap th, .post-content-wrap td { border: 1px solid #ccc; padding: 8px; text-align: left; font-size: 13px; }
     .post-content-wrap th { background-color: #1565c0; color: #ffffff; font-weight: bold; }
+
+    /* Footer */
+    .sr-footer {
+      background: #000066;
+      color: #ffffff;
+      text-align: center;
+      padding: 18px 8px;
+      font-size: 12px;
+      margin-top: 25px;
+    }
+    .sr-footer a { color: #ffcc00; font-weight: bold; }
+    .footer-links { margin-bottom: 10px; }
+    .footer-links a { color: #ffffff; margin: 0 8px; text-decoration: underline; font-size: 13px; }
   </style>
 </head>
 <body>
 
-  <header class="sr-header-red">
-    <h1>ROJGAR VACANCY</h1>
-    <p>rojgarvecancy.in</p>
-  </header>
+  <!-- Background overlay for sidebar -->
+  <div class="sr-overlay" id="srOverlay" onclick="toggleMenu()"></div>
 
-  <nav class="sr-navy-menu">
-    <a href="{{ '/' | relative_url }}">Home</a>
-    <a href="{{ '/#latest-jobs' | relative_url }}">Latest Jobs</a>
-    <a href="{{ '/#results' | relative_url }}">Results</a>
-    <a href="{{ '/#admit-card' | relative_url }}">Admit Card</a>
-    <a href="{{ '/#answer-key' | relative_url }}">Answer Key</a>
-    <a href="{{ '/#syllabus' | relative_url }}">Syllabus</a>
-    <a href="{{ '/#admission' | relative_url }}">Admission</a>
-    <a href="{{ '/about/' | relative_url }}">About Us</a>
-    <a href="{{ '/contact/' | relative_url }}">Contact Us</a>
-    <a href="https://photoresizer.store" style="color:#ffea00;" target="_blank">Photo Resizer</a>
-  </nav>
+  <!-- Left Side Slide Drawer -->
+  <div id="srSidenav" class="sr-sidenav">
+    <div class="sr-sidenav-header">
+      <span>Rojgar Vacancy</span>
+      <button class="sr-close-btn" onclick="toggleMenu()" aria-label="Close Menu">&times;</button>
+    </div>
+    <div class="sr-sidenav-links">
+      <a href="{{ '/' | relative_url }}" onclick="toggleMenu()">🏠 Home</a>
+      <a href="{{ '/#latest-jobs' | relative_url }}" onclick="toggleMenu()">💼 Latest Jobs</a>
+      <a href="{{ '/#results' | relative_url }}" onclick="toggleMenu()">📊 Results</a>
+      <a href="{{ '/#admit-card' | relative_url }}" onclick="toggleMenu()">🎫 Admit Card</a>
+      <a href="{{ '/#answer-key' | relative_url }}" onclick="toggleMenu()">🔑 Answer Key</a>
+      <a href="{{ '/#syllabus' | relative_url }}" onclick="toggleMenu()">📚 Syllabus</a>
+      <a href="{{ '/#admission' | relative_url }}" onclick="toggleMenu()">🎓 Admission</a>
+      <a href="https://photoresizer.store" target="_blank" style="color: #ffea00;">✂️ Photo Resizer Tool</a>
+      <a href="{{ '/about/' | relative_url }}">ℹ️ About Us</a>
+      <a href="{{ '/contact/' | relative_url }}">📞 Contact Us</a>
+    </div>
+  </div>
 
+  <!-- Sticky Blue Bar: Hamburger + Search -->
+  <div class="sr-navy-bar">
+    <button class="sr-menu-btn" onclick="toggleMenu()" aria-label="Open Menu">☰</button>
+    <form class="sr-search-form" action="https://www.google.com/search" method="get" target="_blank">
+      <input type="hidden" name="q" id="searchPrefix" value="site:rojgarvacancy.github.io/Rojgar-vacancy- ">
+      <input class="sr-search-input" type="text" id="searchInput" placeholder="Search jobs, results, admit card..." required>
+      <button class="sr-search-btn" type="submit">Search</button>
+    </form>
+  </div>
+
+  <!-- Page Body Content -->
   <div class="sr-container">
     {% if page.layout == "default" and page.title and page.url != "/" %}
       <div class="post-content-wrap">
@@ -57,6 +190,7 @@
     {% endif %}
   </div>
 
+  <!-- Bottom Blue Footer -->
   <footer class="sr-footer">
     <div class="footer-links">
       <a href="{{ '/' | relative_url }}">Home</a> | 
@@ -66,6 +200,26 @@
     <p>2026 Rojgar Vacancy (rojgarvecancy.in) - All Rights Reserved.</p>
     <p style="margin-top:6px;">Free Online Tool: <a href="https://photoresizer.store" target="_blank">Photo and Signature Resizer (photoresizer.store)</a></p>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      var nav = document.getElementById("srSidenav");
+      var overlay = document.getElementById("srOverlay");
+      if (nav.style.width === "260px") {
+        nav.style.width = "0";
+        overlay.style.display = "none";
+      } else {
+        nav.style.width = "260px";
+        overlay.style.display = "block";
+      }
+    }
+
+    document.querySelector('.sr-search-form').addEventListener('submit', function(e) {
+      var input = document.getElementById('searchInput').value;
+      var prefix = "site:rojgarvacancy.github.io/Rojgar-vacancy- ";
+      document.getElementById('searchPrefix').value = prefix + input;
+    });
+  </script>
 
 </body>
 </html>
