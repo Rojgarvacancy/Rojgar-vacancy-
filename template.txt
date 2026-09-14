@@ -1,0 +1,92 @@
+---
+layout: default
+title: "[यहाँ भर्ती / रिजल्ट / एडमिट कार्ड का पूरा नाम लिखें]"
+date: [YYYY-MM-DD]
+categories: ["[Latest Jobs / Result / Admit Card / Answer Key / Syllabus / Admission]"]
+---
+
+<div class="job-post-wrap">
+  <h2 style="color: #ab1e24; text-align: center; margin-bottom: 5px;">[भर्ती बोर्ड / आयोग का नाम]</h2>
+  <h3 style="color: #000066; text-align: center; margin-bottom: 15px;">[पद का नाम] | विज्ञापन संख्या: [Advt No.]</h3>
+
+  <!-- Short Info -->
+  <p style="background: #f9f9f9; padding: 10px; border-left: 4px solid #ab1e24; margin-bottom: 15px;">
+    <strong>Short Details:</strong> [भर्ती या रिजल्ट के बारे में 2 लाइन की संक्षिप्त जानकारी]। All interested candidates can check eligibility, exam details, and official notification links below.
+  </p>
+
+  <!-- Important Dates & Fee -->
+  <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px;">
+    <tr>
+      <th style="background: #000066; color: #fff; padding: 8px; width: 50%; text-align: left;">Important Dates</th>
+      <th style="background: #000066; color: #fff; padding: 8px; width: 50%; text-align: left;">Application Fee</th>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">
+        • Application Begin: <strong>[DD/MM/YYYY]</strong><br>
+        • Last Date for Apply: <strong>[DD/MM/YYYY]</strong><br>
+        • Last Date Fee Pay: <strong>[DD/MM/YYYY]</strong><br>
+        • Exam Date / Result Date: <strong>[DD/MM/YYYY / As per Schedule]</strong>
+      </td>
+      <td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">
+        • General / OBC / EWS: <strong>₹[...]/-</strong><br>
+        • SC / ST / PH: <strong>₹[...]/-</strong><br>
+        • Pay Fee Online Via: Debit Card, Credit Card, Net Banking or UPI.
+      </td>
+    </tr>
+  </table>
+
+  <!-- Age Limit -->
+  <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px;">
+    <tr>
+      <th colspan="2" style="background: #ab1e24; color: #fff; padding: 8px; text-align: left;">Age Limit (as on [तारीख])</th>
+    </tr>
+    <tr>
+      <td colspan="2" style="border: 1px solid #ddd; padding: 8px;">
+        • Minimum Age: <strong>[...] Years</strong><br>
+        • Maximum Age: <strong>[...] Years</strong><br>
+        • Age Relaxation Extra as per Recruitment Rules.
+      </td>
+    </tr>
+  </table>
+
+  <!-- Vacancy Details & Eligibility -->
+  <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px;">
+    <tr>
+      <th style="background: #000066; color: #fff; padding: 8px; text-align: left;">Post Name</th>
+      <th style="background: #000066; color: #fff; padding: 8px; text-align: center;">Total Post</th>
+      <th style="background: #000066; color: #fff; padding: 8px; text-align: left;">Eligibility</th>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;"><strong>[पद का नाम]</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;"><strong>[...]</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">[योग्यता की जानकारी - जैसे 10th / 12th / Degree Passed]</td>
+    </tr>
+  </table>
+
+  <!-- Important Links Table -->
+  <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px;">
+    <tr>
+      <th colspan="2" style="background: #ab1e24; color: #fff; padding: 8px; text-align: center;">Some Useful Important Links</th>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold; width: 50%;">Apply Online / Result Link</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;"><a href="[यहाँ डायरेक्ट लिंक डालें]" target="_blank" style="color: #0000cc; font-weight: bold;">Click Here</a></td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Download Notification</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;"><a href="[यहाँ नोटिफिकेशन लिंक डालें]" target="_blank" style="color: #0000cc; font-weight: bold;">Click Here</a></td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Resize Photo / Signature Free Tool</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;"><a href="https://photoresizer.store" target="_blank" style="color: #ab1e24; font-weight: bold;">Click Here</a></td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Official Website</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;"><a href="[यहाँ बोर्ड की वेबसाइट लिंक डालें]" target="_blank" style="color: #0000cc; font-weight: bold;">Click Here</a></td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Help & Support (Email)</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;"><a href="mailto:rojgarvecancy.in@gmail.com" style="color: #ab1e24; font-weight: bold;">rojgarvecancy.in@gmail.com</a></td>
+    </tr>
+  </table>
+</div>
