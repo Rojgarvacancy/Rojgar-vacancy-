@@ -1,0 +1,15 @@
+---
+layout: default
+title: "Admissions & Counseling - Rojgar Vacancy"
+---
+
+<div class="category-list-box">
+  <div class="category-list-header">All Admission Forms & Notifications</div>
+  <ul class="category-list-items">
+    {% for post in site.categories['Admission'] %}
+      <li><a href="{{ post.url | relative_url }}">👉 {{ post.title }}</a></li>
+    {% else %}
+      <li style="padding: 15px; color: #666;">No admission updates found yet.</li>
+    {% endfor %}
+  </ul>
+</div>
