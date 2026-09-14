@@ -129,13 +129,46 @@
       z-index: 1500;
     }
 
-    /* Container & Layout */
+    /* Container & Category Page Styling */
     .sr-container { max-width: 1000px; margin: 0 auto; padding: 10px 8px; }
     .post-content-wrap { padding: 10px 4px; text-align: left; }
     .post-content-wrap h1 { font-size: 22px; color: #ab1e24; border-bottom: 2px solid #ab1e24; padding-bottom: 6px; margin-bottom: 12px; }
-    .post-content-wrap table { width: 100% !important; border-collapse: collapse; margin-top: 15px; }
-    .post-content-wrap th, .post-content-wrap td { border: 1px solid #ccc; padding: 8px; text-align: left; font-size: 13px; }
-    .post-content-wrap th { background-color: #1565c0; color: #ffffff; font-weight: bold; }
+    
+    /* Category Listing Styling */
+    .category-list-box {
+      border: 1px solid #ab1e24;
+      border-radius: 4px;
+      overflow: hidden;
+      margin: 15px 0;
+      background: #fff;
+    }
+    .category-list-header {
+      background: #ab1e24;
+      color: #fff;
+      padding: 10px 14px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .category-list-items {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .category-list-items li {
+      border-bottom: 1px solid #eee;
+    }
+    .category-list-items li a {
+      display: block;
+      padding: 12px 14px;
+      color: #0000cc;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .category-list-items li a:hover {
+      background: #fdf3f3;
+      color: #ab1e24;
+      text-decoration: underline;
+    }
 
     /* Footer */
     .sr-footer {
@@ -164,19 +197,19 @@
     </div>
     <div class="sr-sidenav-links">
       <a href="{{ '/' | relative_url }}">🏠 Home</a>
-      <a href="{{ '/#latest-jobs' | relative_url }}" onclick="jumpToSection('latest-jobs')">💼 Latest Jobs</a>
-      <a href="{{ '/#results' | relative_url }}" onclick="jumpToSection('results')">📊 Results</a>
-      <a href="{{ '/#admit-card' | relative_url }}" onclick="jumpToSection('admit-card')">🎫 Admit Card</a>
-      <a href="{{ '/#answer-key' | relative_url }}" onclick="jumpToSection('answer-key')">🔑 Answer Key</a>
-      <a href="{{ '/#syllabus' | relative_url }}" onclick="jumpToSection('syllabus')">📚 Syllabus</a>
-      <a href="{{ '/#admission' | relative_url }}" onclick="jumpToSection('admission')">🎓 Admission</a>
+      <a href="{{ '/latest-jobs/' | relative_url }}">💼 Latest Jobs</a>
+      <a href="{{ '/results/' | relative_url }}">📊 Results</a>
+      <a href="{{ '/admit-card/' | relative_url }}">🎫 Admit Card</a>
+      <a href="{{ '/answer-key/' | relative_url }}">🔑 Answer Key</a>
+      <a href="{{ '/syllabus/' | relative_url }}">📚 Syllabus</a>
+      <a href="{{ '/admission/' | relative_url }}">🎓 Admission</a>
       <a href="https://photoresizer.store" target="_blank" style="color: #ffea00;">✂️ Photo Resizer Tool</a>
       <a href="{{ '/about/' | relative_url }}">ℹ️ About Us</a>
       <a href="{{ '/contact/' | relative_url }}">📞 Contact Us</a>
     </div>
   </div>
 
-  <!-- Sticky Top Wrapper: Red Bar + Blue Strip -->
+  <!-- Sticky Top Header: Red + Blue Strip -->
   <div class="sr-fixed-top">
     <header class="sr-header-red">
       <h1>ROJGAR VACANCY</h1>
@@ -224,20 +257,6 @@
       } else {
         nav.style.width = "260px";
         overlay.style.display = "block";
-      }
-    }
-
-    function jumpToSection(sectionId) {
-      toggleMenu();
-      var el = document.getElementById(sectionId);
-      if (el) {
-        var headerOffset = 100;
-        var elementPosition = el.getBoundingClientRect().top;
-        var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth"
-        });
       }
     }
 
