@@ -59,7 +59,7 @@ layout: default
     background: #ffffff !important;
   }
   .table-head { background: #ab1e24; color: #ffffff; text-align: center; font-weight: bold; font-size: 13px; padding: 5px 2px; }
-  .table-list { list-style: none; padding: 0; margin: 0; }
+  .table-list { list-style: none; padding: 0; margin: 0; min-height: 40px; }
   .table-list li {
     padding: 6px 4px 6px 14px;
     border-bottom: 1px dotted #e0e0e0;
@@ -120,10 +120,6 @@ layout: default
       {% for post in site.categories.result limit:15 %}
         <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
       {% endfor %}
-      <li><a href="#">Bihar BSEB DElEd 3rd Merit List 2026</a></li>
-      <li><a href="#">NTA UGC NET June Result / Score Card 2026</a></li>
-      <li><a href="#">UPPSC ATP Pre Result 2026 – Out</a></li>
-      <li><a href="#">Railway RRB Group D Answer Key 2026 – Out</a></li>
     </ul>
     <div class="btn-view-more-row"><a class="btn-view-more-blue" href="#results">View More</a></div>
   </div>
@@ -134,11 +130,6 @@ layout: default
       {% for post in site.categories.jobs limit:15 %}
         <li><a href="{{ post.url | relative_url }}">{{ post.title }}{% if post.last_date %} | Last Date : {{ post.last_date }}{% endif %}</a></li>
       {% endfor %}
-      <li><a href="#">UP Dairy Development DEO Recruitment 2026</a></li>
-      <li><a href="#">UPSC EPFO Assistant APFC Online Form 2026</a></li>
-      <li><a href="#">UPSSSC Senior Instructor Online Form 2026</a></li>
-      <li><a href="#">SSC CPO SI CAPF Online Form 2026</a></li>
-      <li><a href="#">Bank of India BOI SO Online Form 2026</a></li>
     </ul>
     <div class="btn-view-more-row"><a class="btn-view-more-blue" href="#latest-jobs">View More</a></div>
   </div>
@@ -152,10 +143,6 @@ layout: default
       {% for post in site.categories.admitcard limit:15 %}
         <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
       {% endfor %}
-      <li><a href="#">SSC GD Constable Admit Card 2026</a></li>
-      <li><a href="#">UP Police Constable Exam City / Admit Card</a></li>
-      <li><a href="#">CTET Exam Admit Card 2026</a></li>
-      <li><a href="#">NTA JEE Main Phase 2 Admit Card 2026</a></li>
     </ul>
     <div class="btn-view-more-row"><a class="btn-view-more-blue" href="#admit-card">View More</a></div>
   </div>
@@ -166,10 +153,6 @@ layout: default
       {% for post in site.categories.answerkey limit:15 %}
         <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
       {% endfor %}
-      <li><a href="#">UPSSSC PET Answer Key 2026</a></li>
-      <li><a href="#">SSC CGL Tier 1 Answer Key 2026</a></li>
-      <li><a href="#">UGC NET Official Answer Key 2026</a></li>
-      <li><a href="#">Railway RPF SI Answer Key 2026</a></li>
     </ul>
     <div class="btn-view-more-row"><a class="btn-view-more-blue" href="#answer-key">View More</a></div>
   </div>
@@ -183,10 +166,6 @@ layout: default
       {% for post in site.categories.syllabus limit:15 %}
         <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
       {% endfor %}
-      <li><a href="#">UPSSSC Junior Assistant Syllabus 2026</a></li>
-      <li><a href="#">SSC MTS Exam Pattern &amp; Syllabus</a></li>
-      <li><a href="#">UP Police SI Detailed Syllabus 2026</a></li>
-      <li><a href="#">UP TGT PGT Subject Wise Syllabus</a></li>
     </ul>
     <div class="btn-view-more-row"><a class="btn-view-more-blue" href="#syllabus">View More</a></div>
   </div>
@@ -197,10 +176,6 @@ layout: default
       {% for post in site.categories.admission limit:15 %}
         <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
       {% endfor %}
-      <li><a href="#">UP DElEd (BTC) Online Admission 2026</a></li>
-      <li><a href="#">NTA CUET UG Online Form 2026</a></li>
-      <li><a href="#">UP BEd 2 Year Combined Entrance Form</a></li>
-      <li><a href="#">IIT JAM 2026 Admission Online Form</a></li>
     </ul>
     <div class="btn-view-more-row"><a class="btn-view-more-blue" href="#admission">View More</a></div>
   </div>
