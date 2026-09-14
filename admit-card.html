@@ -1,0 +1,19 @@
+---
+layout: default
+title: "Admit Cards & Hall Tickets - Rojgar Vacancy"
+---
+
+<div class="category-list-box">
+  <div class="category-list-header">All Admit Cards & Exam City Slips</div>
+  <ul class="category-list-items">
+    {% for post in site.categories['Admit Card'] %}
+      <li><a href="{{ post.url | relative_url }}">👉 {{ post.title }}</a></li>
+    {% else %}
+      {% for post in site.categories['admit-card'] %}
+        <li><a href="{{ post.url | relative_url }}">👉 {{ post.title }}</a></li>
+      {% else %}
+        <li style="padding: 15px; color: #666;">No admit card updates found yet.</li>
+      {% endfor %}
+    {% endfor %}
+  </ul>
+</div>
