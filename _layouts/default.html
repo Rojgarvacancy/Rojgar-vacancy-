@@ -9,7 +9,27 @@
     body { font-family: Arial, Helvetica, sans-serif; background-color: #ffffff; color: #000000; line-height: 1.35; }
     a { text-decoration: none; }
 
-    /* Top Navy Strip: Hamburger + Search Bar */
+    /* Top Red Header */
+    .sr-header-red {
+      background: #cc0000;
+      color: #ffffff;
+      text-align: center;
+      padding: 16px 8px;
+    }
+    .sr-header-red h1 {
+      font-size: 28px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      margin: 0;
+      text-transform: uppercase;
+    }
+    .sr-header-red p {
+      font-size: 14px;
+      margin-top: 4px;
+      font-weight: bold;
+    }
+
+    /* Blue Strip: Menu + Live Search */
     .sr-navy-bar {
       background: #000066;
       padding: 8px 10px;
@@ -33,28 +53,17 @@
       justify-content: center;
       padding: 2px 6px;
     }
-    .sr-search-form {
+    .sr-search-wrap {
       flex: 1;
       display: flex;
-      margin: 0;
     }
     .sr-search-input {
       width: 100%;
       padding: 7px 12px;
       border: none;
-      border-radius: 4px 0 0 4px;
+      border-radius: 4px;
       font-size: 13px;
       outline: none;
-    }
-    .sr-search-btn {
-      background: #ffcc00;
-      color: #000066;
-      border: none;
-      padding: 0 14px;
-      font-weight: bold;
-      font-size: 13px;
-      border-radius: 0 4px 4px 0;
-      cursor: pointer;
     }
 
     /* Left Side Drawer Menu */
@@ -67,7 +76,7 @@
       left: 0;
       background-color: #00004d;
       overflow-x: hidden;
-      transition: 0.3s ease;
+      transition: width 0.3s ease;
       box-shadow: 3px 0 12px rgba(0,0,0,0.5);
     }
     .sr-sidenav-header {
@@ -79,11 +88,10 @@
       align-items: center;
       font-weight: bold;
       font-size: 16px;
-      letter-spacing: 0.5px;
     }
     .sr-close-btn {
       color: #ffffff;
-      font-size: 26px;
+      font-size: 28px;
       background: none;
       border: none;
       cursor: pointer;
@@ -115,14 +123,8 @@
       z-index: 1500;
     }
 
-    /* Main Content Container */
-    .sr-container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 10px 8px;
-    }
-
-    /* Page / Post Wrapping */
+    /* Container & Layout */
+    .sr-container { max-width: 1000px; margin: 0 auto; padding: 10px 8px; }
     .post-content-wrap { padding: 10px 4px; text-align: left; }
     .post-content-wrap h1 { font-size: 22px; color: #ab1e24; border-bottom: 2px solid #ab1e24; padding-bottom: 6px; margin-bottom: 12px; }
     .post-content-wrap table { width: 100% !important; border-collapse: collapse; margin-top: 15px; }
@@ -145,17 +147,17 @@
 </head>
 <body>
 
-  <!-- Background overlay for sidebar -->
+  <!-- Overlay -->
   <div class="sr-overlay" id="srOverlay" onclick="toggleMenu()"></div>
 
-  <!-- Left Side Slide Drawer -->
+  <!-- Left Side Drawer -->
   <div id="srSidenav" class="sr-sidenav">
     <div class="sr-sidenav-header">
       <span>Rojgar Vacancy</span>
       <button class="sr-close-btn" onclick="toggleMenu()" aria-label="Close Menu">&times;</button>
     </div>
     <div class="sr-sidenav-links">
-      <a href="{{ '/' | relative_url }}" onclick="toggleMenu()">🏠 Home</a>
+      <a href="{{ '/' | relative_url }}">🏠 Home</a>
       <a href="{{ '/#latest-jobs' | relative_url }}" onclick="toggleMenu()">💼 Latest Jobs</a>
       <a href="{{ '/#results' | relative_url }}" onclick="toggleMenu()">📊 Results</a>
       <a href="{{ '/#admit-card' | relative_url }}" onclick="toggleMenu()">🎫 Admit Card</a>
@@ -168,14 +170,18 @@
     </div>
   </div>
 
-  <!-- Sticky Blue Bar: Hamburger + Search -->
+  <!-- Red Header (Restored) -->
+  <header class="sr-header-red">
+    <h1>ROJGAR VACANCY</h1>
+    <p>rojgarvecancy.in</p>
+  </header>
+
+  <!-- Sticky Blue Bar: Hamburger + Live Search -->
   <div class="sr-navy-bar">
     <button class="sr-menu-btn" onclick="toggleMenu()" aria-label="Open Menu">☰</button>
-    <form class="sr-search-form" action="https://www.google.com/search" method="get" target="_blank">
-      <input type="hidden" name="q" id="searchPrefix" value="site:rojgarvacancy.github.io/Rojgar-vacancy- ">
-      <input class="sr-search-input" type="text" id="searchInput" placeholder="Search jobs, results, admit card..." required>
-      <button class="sr-search-btn" type="submit">Search</button>
-    </form>
+    <div class="sr-search-wrap">
+      <input class="sr-search-input" type="text" id="liveSearchInput" onkeyup="filterSiteContent()" placeholder="Search jobs, results, admit cards...">
+    </div>
   </div>
 
   <!-- Page Body Content -->
@@ -190,7 +196,7 @@
     {% endif %}
   </div>
 
-  <!-- Bottom Blue Footer -->
+  <!-- Blue Footer -->
   <footer class="sr-footer">
     <div class="footer-links">
       <a href="{{ '/' | relative_url }}">Home</a> | 
@@ -214,11 +220,30 @@
       }
     }
 
-    document.querySelector('.sr-search-form').addEventListener('submit', function(e) {
-      var input = document.getElementById('searchInput').value;
-      var prefix = "site:rojgarvacancy.github.io/Rojgar-vacancy- ";
-      document.getElementById('searchPrefix').value = prefix + input;
-    });
+    // Instant On-Page Search Filter
+    function filterSiteContent() {
+      var filter = document.getElementById("liveSearchInput").value.toLowerCase().trim();
+      var listItems = document.querySelectorAll(".table-list li");
+      var cards = document.querySelectorAll(".colorful-grid .color-card");
+
+      listItems.forEach(function(item) {
+        var text = item.textContent || item.innerText;
+        if (text.toLowerCase().indexOf(filter) > -1) {
+          item.style.display = "";
+        } else {
+          item.style.display = "none";
+        }
+      });
+
+      cards.forEach(function(card) {
+        var cardText = card.textContent || card.innerText;
+        if (cardText.toLowerCase().indexOf(filter) > -1) {
+          card.style.display = "flex";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    }
   </script>
 
 </body>
