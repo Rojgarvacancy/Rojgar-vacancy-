@@ -1,0 +1,15 @@
+---
+layout: default
+title: "Answer Keys & Solutions - Rojgar Vacancy"
+---
+
+<div class="category-list-box">
+  <div class="category-list-header">All Official Answer Keys</div>
+  <ul class="category-list-items">
+    {% for post in site.categories['Answer Key'] %}
+      <li><a href="{{ post.url | relative_url }}">👉 {{ post.title }}</a></li>
+    {% else %}
+      <li style="padding: 15px; color: #666;">No answer keys found yet.</li>
+    {% endfor %}
+  </ul>
+</div>
