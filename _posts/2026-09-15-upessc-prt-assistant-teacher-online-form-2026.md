@@ -1,3 +1,10 @@
+---
+layout: default
+title: "UPESSC PRT Assistant Teacher Online Form 2026"
+date: 2026-09-14
+categories: ["Latest Jobs"]
+---
+
 <div style="color: #222222; font-family: Arial, Helvetica, sans-serif; line-height: 1.6; margin: 0px auto; max-width: 900px;">
 
   <!--Top Red Header-->
