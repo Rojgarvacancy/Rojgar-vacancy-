@@ -142,7 +142,7 @@ categories: ["Latest Jobs"]
       <tr style="background: rgb(255, 235, 238);">
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; width: 50%;"><strong>Apply Online</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
-          <span style="background: rgb(117, 117, 117); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; display: inline-block;">Link Activate On 16 September 2026</span>
+          <a href="https://apply.upessc.org/" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;" target="_blank">Click Here</a>
         </td>
       </tr>
       <tr>
