@@ -157,24 +157,16 @@ categories: ["Result"]
         </td>
       </tr>
 
-      <!-- 1st & 2nd Merit List / Portal Login -->
+      <!-- बिहार बोर्ड ऑफिशियल पोर्टल / लॉगिन लिंक -->
       <tr>
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Check 1st & 2nd Merit List / Portal Login</strong></td>
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
-          <a href="https://bsebdeled.com/login" style="background: rgb(0, 137, 123); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;" target="_blank">Click Here</a>
-        </td>
-      </tr>
-
-      <!-- बिहार बोर्ड ऑफिशियल वेबसाइट -->
-      <tr style="background: rgb(255, 235, 238);">
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>BSEB Official Website</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
-          <a href="https://secondary.biharboardonline.com/" style="background: rgb(239, 108, 0); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;" target="_blank">Click Here</a>
+          <a href="https://bsebdeled.com/login" style="background: rgb(239, 108, 0); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;" target="_blank">Click Here</a>
         </td>
       </tr>
 
       <!-- सपोर्ट डेस्क -->
-      <tr>
+      <tr style="background: rgb(255, 235, 238);">
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Support Desk (Email)</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
           <a href="mailto:rojgarvecancy.in@gmail.com" style="background: rgb(69, 90, 100); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">rojgarvecancy.in@gmail.com</a>
