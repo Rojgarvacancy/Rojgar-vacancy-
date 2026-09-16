@@ -117,8 +117,13 @@ layout: default
   <div class="table-box" id="results">
     <div class="table-head">Result</div>
     <ul class="table-list">
-      {% for post in site.categories.result limit:15 %}
-        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+      {% assign count = 0 %}
+      {% for post in site.posts %}
+        {% assign cat_str = post.categories | join: ',' | downcase %}
+        {% if cat_str contains 'result' and count < 15 %}
+          <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+          {% assign count = count | plus: 1 %}
+        {% endif %}
       {% endfor %}
     </ul>
     <div class="btn-view-more-row"><a class="btn-view-more-blue" href="#results">View More</a></div>
@@ -127,8 +132,15 @@ layout: default
   <div class="table-box" id="latest-jobs">
     <div class="table-head">Latest Jobs</div>
     <ul class="table-list">
-      {% for post in site.categories.jobs limit:15 %}
-        <li><a href="{{ post.url | relative_url }}">{{ post.title }}{% if post.last_date %} | Last Date : {{ post.last_date }}{% endif %}</a></li>
+      {% assign count = 0 %}
+      {% for post in site.posts %}
+        {% assign cat_str = post.categories | join: ',' | downcase %}
+        {% if cat_str contains 'job' or cat_str contains 'latest jobs' %}
+          {% if count < 15 %}
+            <li><a href="{{ post.url | relative_url }}">{{ post.title }}{% if post.last_date %} | Last Date : {{ post.last_date }}{% endif %}</a></li>
+            {% assign count = count | plus: 1 %}
+          {% endif %}
+        {% endif %}
       {% endfor %}
     </ul>
     <div class="btn-view-more-row"><a class="btn-view-more-blue" href="#latest-jobs">View More</a></div>
@@ -140,8 +152,13 @@ layout: default
   <div class="table-box" id="admit-card">
     <div class="table-head">Admit Card</div>
     <ul class="table-list">
-      {% for post in site.categories.admitcard limit:15 %}
-        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+      {% assign count = 0 %}
+      {% for post in site.posts %}
+        {% assign cat_str = post.categories | join: ',' | downcase %}
+        {% if cat_str contains 'admit' and count < 15 %}
+          <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+          {% assign count = count | plus: 1 %}
+        {% endif %}
       {% endfor %}
     </ul>
     <div class="btn-view-more-row"><a class="btn-view-more-blue" href="#admit-card">View More</a></div>
@@ -150,8 +167,13 @@ layout: default
   <div class="table-box" id="answer-key">
     <div class="table-head">Answer Key</div>
     <ul class="table-list">
-      {% for post in site.categories.answerkey limit:15 %}
-        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+      {% assign count = 0 %}
+      {% for post in site.posts %}
+        {% assign cat_str = post.categories | join: ',' | downcase %}
+        {% if cat_str contains 'answer' and count < 15 %}
+          <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+          {% assign count = count | plus: 1 %}
+        {% endif %}
       {% endfor %}
     </ul>
     <div class="btn-view-more-row"><a class="btn-view-more-blue" href="#answer-key">View More</a></div>
@@ -163,8 +185,13 @@ layout: default
   <div class="table-box" id="syllabus">
     <div class="table-head">Syllabus</div>
     <ul class="table-list">
-      {% for post in site.categories.syllabus limit:15 %}
-        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+      {% assign count = 0 %}
+      {% for post in site.posts %}
+        {% assign cat_str = post.categories | join: ',' | downcase %}
+        {% if cat_str contains 'syllabus' and count < 15 %}
+          <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+          {% assign count = count | plus: 1 %}
+        {% endif %}
       {% endfor %}
     </ul>
     <div class="btn-view-more-row"><a class="btn-view-more-blue" href="#syllabus">View More</a></div>
@@ -173,8 +200,13 @@ layout: default
   <div class="table-box" id="admission">
     <div class="table-head">Admission</div>
     <ul class="table-list">
-      {% for post in site.categories.admission limit:15 %}
-        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+      {% assign count = 0 %}
+      {% for post in site.posts %}
+        {% assign cat_str = post.categories | join: ',' | downcase %}
+        {% if cat_str contains 'admission' and count < 15 %}
+          <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+          {% assign count = count | plus: 1 %}
+        {% endif %}
       {% endfor %}
     </ul>
     <div class="btn-view-more-row"><a class="btn-view-more-blue" href="#admission">View More</a></div>
