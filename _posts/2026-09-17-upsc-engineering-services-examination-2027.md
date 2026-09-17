@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "UPSC Engineering Service Examination 2027 ESEP Apply Online"
-date: 2026-09-18
+date: 2026-09-17
 categories: ["Latest Jobs"]
 ---
 
