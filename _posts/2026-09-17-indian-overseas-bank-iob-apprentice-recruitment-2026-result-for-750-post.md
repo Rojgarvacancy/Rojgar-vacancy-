@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Indian Overseas Bank IOB Apprentice Recruitment 2026 Result for 750 Post"
-date: 2026-09-18
+date: 2026-09-17
 categories: ["Result"]
 ---
 
