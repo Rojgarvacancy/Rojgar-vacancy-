@@ -283,19 +283,29 @@
       });
     }
 
-    // Embed WhatsApp row inside the table properly with matching border and background
+    // WhatsApp row ko Support Desk (Email) ke theek upar lagane ka code
     document.addEventListener("DOMContentLoaded", function() {
       var tables = document.querySelectorAll(".post-content-wrap table");
       tables.forEach(function(tbl) {
         var text = tbl.innerText || tbl.textContent;
-        if (text.includes("Important Links") || text.includes("Official Website") || text.includes("Support Desk")) {
-          if (!text.includes("Join WhatsApp Channel")) {
+        if ((text.includes("Important Links") || text.includes("Official Website") || text.includes("Support Desk")) && !text.includes("Join WhatsApp Channel")) {
+          var rows = tbl.querySelectorAll("tr");
+          var targetRow = null;
+
+          rows.forEach(function(r) {
+            if ((r.innerText || r.textContent).includes("Support Desk")) {
+              targetRow = r;
+            }
+          });
+
+          var newRow = document.createElement("tr");
+          newRow.style.backgroundColor = "#fff";
+          newRow.innerHTML = '<td style="padding: 10px 12px; font-weight: bold; font-size: 14px; border-top: 1px solid #ddd; border-right: 1px solid #ddd; text-align: left; vertical-align: middle;">Join WhatsApp Channel</td><td style="padding: 10px 12px; text-align: center; border-top: 1px solid #ddd; vertical-align: middle;"><a href="https://whatsapp.com/channel/0029Vb97OOiK5cD6SAWpDm15" target="_blank" style="display: inline-block; background-color: #2e7d32; color: #ffffff !important; font-weight: bold; font-size: 13px; padding: 7px 18px; border-radius: 4px; text-decoration: none;">Click Here</a></td>';
+
+          if (targetRow && targetRow.parentNode) {
+            targetRow.parentNode.insertBefore(newRow, targetRow);
+          } else {
             var tbody = tbl.querySelector("tbody") || tbl;
-            var newRow = document.createElement("tr");
-            newRow.style.borderTop = "1px solid #f0f0f0";
-
-            newRow.innerHTML = '<td style="padding: 12px; font-weight: bold; font-size: 14px; background-color: #fff; border: 1px solid #eee;">Join WhatsApp Channel</td><td style="padding: 12px; text-align: center; background-color: #fff; border: 1px solid #eee;"><a href="https://whatsapp.com/channel/0029Vb97OOiK5cD6SAWpDm15" target="_blank" style="display:inline-block; background-color: #25D366; color: #ffffff !important; font-weight: bold; font-size: 13px; padding: 7px 18px; border-radius: 4px; text-decoration: none;">Click Here</a></td>';
-
             tbody.appendChild(newRow);
           }
         }
