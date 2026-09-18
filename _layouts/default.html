@@ -238,26 +238,6 @@
       <div class="post-content-wrap">
         <h1>{{ page.title }}</h1>
         {{ content }}
-
-        <!-- WhatsApp Channel Table (Automatically appears below every post) -->
-        <div style="margin: 20px 0; border: 1px solid #ab1e24; border-radius: 4px; overflow: hidden; background: #ffffff;">
-          <div style="background: #ab1e24; color: #ffffff; padding: 9px 12px; font-weight: bold; font-size: 15px; text-align: left;">
-            Join Our WhatsApp Channel
-          </div>
-          <table style="width: 100%; border-collapse: collapse;">
-            <tr style="background-color: #fdf2f2; border-bottom: 1px solid #eee;">
-              <td style="padding: 12px; font-weight: bold; font-size: 14px; color: #333; text-align: left; width: 60%;">
-                Join Rojgar Vacancy WhatsApp Channel
-              </td>
-              <td style="padding: 12px; text-align: center; width: 40%;">
-                <a href="https://whatsapp.com/channel/0029Vb97OOiK5cD6SAWpDm15" target="_blank" style="display: inline-block; background-color: #25D366; color: #ffffff; font-weight: bold; font-size: 13px; padding: 7px 18px; border-radius: 4px; text-decoration: none;">
-                  Click Here
-                </a>
-              </td>
-            </tr>
-          </table>
-        </div>
-
       </div>
     {% else %}
       {{ content }}
@@ -302,6 +282,22 @@
         }
       });
     }
+
+    // Automatically append WhatsApp Channel row into the Important Links table
+    document.addEventListener("DOMContentLoaded", function() {
+      var tables = document.querySelectorAll(".post-content-wrap table");
+      tables.forEach(function(tbl) {
+        var text = tbl.innerText || tbl.textContent;
+        // Agar table me "Important Links" ya "Official Website" jaisa text hai
+        if (text.includes("Important Links") || text.includes("Official Website") || text.includes("Support Desk")) {
+          // Check karein ki WhatsApp link pehle se maujood to nahi hai
+          if (!text.includes("Join WhatsApp Channel")) {
+            var newRow = tbl.insertRow(-1);
+            newRow.innerHTML = '<td style="padding: 10px; font-weight: bold;">Join WhatsApp Channel</td><td style="padding: 10px; text-align: center;"><a href="https://whatsapp.com/channel/0029Vb97OOiK5cD6SAWpDm15" target="_blank" style="display:inline-block; background-color:#25D366; color:#ffffff; font-weight:bold; padding:6px 16px; border-radius:4px; text-decoration:none;">Click Here</a></td>';
+          }
+        }
+      });
+    });
   </script>
 
 </body>
