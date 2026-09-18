@@ -2,7 +2,7 @@
 layout: default
 title: "NTA AIAPGET Result 2026 Out, Score Card & Final Answer Key"
 date: 2026-09-18 22:10:00 +0530
-categories: ["Result"]
+categories: ["Result", "Answer Key"]
 ---
 
 <div style="color: #222222; font-family: Arial, Helvetica, sans-serif; line-height: 1.6; margin: 0px auto; max-width: 900px;">
