@@ -4,3 +4,7 @@ baseurl: ""
 url: "https://rojgarvecancy.in"
 markdown: kramdown
 permalink: /:categories/:title/
+
+plugins:
+  - jekyll-sitemap
+  
