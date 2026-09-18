@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "NTA Annual Exam Calendar 2027 Released"
-date: 2026-09-18 13:35:00 +0530
+date: 2026-09-18 13:25:00 +0530
 categories: ["Result"]
 redirect_to: "https://www.nta.ac.in/Download/Notice/Notice_20260916195948.pdf"
 ---
