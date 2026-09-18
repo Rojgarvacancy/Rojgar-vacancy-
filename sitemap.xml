@@ -1,39 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://rojgarvacancy.in/</loc>
+    <loc>https://rojgarvecancy.in/</loc>
+    <lastmod>2026-09-19</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://rojgarvacancy.in/latest-jobs.html</loc>
+    <loc>https://rojgarvecancy.in/latest-jobs/</loc>
+    <lastmod>2026-09-19</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://rojgarvacancy.in/results.html</loc>
+    <loc>https://rojgarvecancy.in/results/</loc>
+    <lastmod>2026-09-19</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://rojgarvacancy.in/admit-card.html</loc>
+    <loc>https://rojgarvecancy.in/admit-card/</loc>
+    <lastmod>2026-09-19</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://rojgarvacancy.in/answer-key.html</loc>
+    <loc>https://rojgarvecancy.in/answer-key/</loc>
+    <lastmod>2026-09-19</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://rojgarvacancy.in/admission.html</loc>
-    <priority>0.80</priority>
+    <loc>https://rojgarvecancy.in/syllabus/</loc>
+    <lastmod>2026-09-19</lastmod>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://rojgarvacancy.in/syllabus.html</loc>
-    <priority>0.80</priority>
+    <loc>https://rojgarvecancy.in/admission/</loc>
+    <lastmod>2026-09-19</lastmod>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://rojgarvacancy.in/about.html</loc>
+    <loc>https://rojgarvecancy.in/about/</loc>
+    <lastmod>2026-09-19</lastmod>
     <priority>0.50</priority>
   </url>
   <url>
-    <loc>https://rojgarvacancy.in/contact.html</loc>
+    <loc>https://rojgarvecancy.in/contact/</loc>
+    <lastmod>2026-09-19</lastmod>
     <priority>0.50</priority>
   </url>
 </urlset>
