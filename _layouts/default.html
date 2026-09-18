@@ -283,7 +283,7 @@
       });
     }
 
-    // WhatsApp row ko Support Desk (Email) ke theek upar lagane ka code
+    // WhatsApp row ko Support Desk ke theek upar exact match ke sath lagana
     document.addEventListener("DOMContentLoaded", function() {
       var tables = document.querySelectorAll(".post-content-wrap table");
       tables.forEach(function(tbl) {
@@ -299,8 +299,8 @@
           });
 
           var newRow = document.createElement("tr");
-          newRow.style.backgroundColor = "#fff";
-          newRow.innerHTML = '<td style="padding: 10px 12px; font-weight: bold; font-size: 14px; border-top: 1px solid #ddd; border-right: 1px solid #ddd; text-align: left; vertical-align: middle;">Join WhatsApp Channel</td><td style="padding: 10px 12px; text-align: center; border-top: 1px solid #ddd; vertical-align: middle;"><a href="https://whatsapp.com/channel/0029Vb97OOiK5cD6SAWpDm15" target="_blank" style="display: inline-block; background-color: #2e7d32; color: #ffffff !important; font-weight: bold; font-size: 13px; padding: 7px 18px; border-radius: 4px; text-decoration: none;">Click Here</a></td>';
+          newRow.style.backgroundColor = "#fdf2f2";
+          newRow.innerHTML = '<td style="padding: 10px 12px; font-weight: bold; font-size: 14px; border-top: 1px solid #ddd; border-right: 1px solid #ddd; text-align: left; vertical-align: middle;">Join WhatsApp Channel</td><td style="padding: 10px 12px; text-align: center; border-top: 1px solid #ddd; vertical-align: middle;"><a href="https://whatsapp.com/channel/0029Vb97OOiK5cD6SAWpDm15" target="_blank" style="display: inline-block; background-color: #2e7d32; color: #ffffff !important; font-weight: bold; font-size: 14px; padding: 8px 22px; border-radius: 4px; text-decoration: none; min-width: 80px;">Click Here</a></td>';
 
           if (targetRow && targetRow.parentNode) {
             targetRow.parentNode.insertBefore(newRow, targetRow);
