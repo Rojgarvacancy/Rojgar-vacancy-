@@ -2,7 +2,7 @@
 layout: default
 title: "UPESSC PRT Assistant Teacher Online Form 2026"
 date: 2026-09-14
-categories: ["Latest Jobs"]
+categories: ["Latest Jobs", "Syllabus"]
 ---
 
 <div style="color: #222222; font-family: Arial, Helvetica, sans-serif; line-height: 1.6; margin: 0px auto; max-width: 900px;">
@@ -142,28 +142,34 @@ categories: ["Latest Jobs"]
       <tr style="background: rgb(255, 235, 238);">
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; width: 50%;"><strong>Apply Online</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
-          <a href="https://apply.upessc.org/" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;" target="_blank">Click Here</a>
+          <a href="https://apply.upessc.org/" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;" target="_blank" rel="noopener noreferrer">Click Here</a>
         </td>
       </tr>
       <tr>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Download Official Notification</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
-          <a href="https://www.upessc.up.gov.in/Notice/a429-726e-4862-f3dc-8a6f.pdf" style="background: rgb(21, 101, 192); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;" target="_blank">Click Here</a>
+          <a href="https://www.upessc.up.gov.in/Notice/a429-726e-4862-f3dc-8a6f.pdf" style="background: rgb(21, 101, 192); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;" target="_blank" rel="noopener noreferrer">Click Here</a>
         </td>
       </tr>
       <tr style="background: rgb(255, 235, 238);">
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Download Syllabus</strong></td>
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
+          <a href="https://www.upessc.up.gov.in/syllabus/837218cf-1d9a-4252-a08c-404719d1b9d9.pdf" style="background: rgb(21, 101, 192); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;" target="_blank" rel="noopener noreferrer">Click Here</a>
+        </td>
+      </tr>
+      <tr>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Photo & Signature Resizer Tool</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
           <a href="https://photoresizer.store" style="background: rgb(106, 27, 154); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;" target="_blank">Click Here</a>
         </td>
       </tr>
-      <tr>
+      <tr style="background: rgb(255, 235, 238);">
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>UPESSC Official Website</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
-          <a href="https://upessc.up.gov.in/" style="background: rgb(239, 108, 0); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;" target="_blank">Click Here</a>
+          <a href="https://upessc.up.gov.in/" style="background: rgb(239, 108, 0); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;" target="_blank" rel="noopener noreferrer">Click Here</a>
         </td>
       </tr>
-      <tr style="background: rgb(255, 235, 238);">
+      <tr>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Support Desk (Email)</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
           <a href="mailto:rojgarvecancy.in@gmail.com" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">rojgarvecancy.in@gmail.com</a>
