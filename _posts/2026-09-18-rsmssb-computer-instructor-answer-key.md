@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Rajasthan RSMSSB Computer Instructor Answer Key 2026 Out (BCI & SCI)"
-date: 2026-09-19 14:00:00 +0530
+date: 2026-09-18 14:00:00 +0530
 categories: ["Answer Key"]
 ---
 
