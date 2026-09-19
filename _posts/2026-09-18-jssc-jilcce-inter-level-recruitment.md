@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "JSSC JILCCE Inter Level Recruitment 2026 Re-Open Online Form (326 Posts)"
-date: 2026-09-19 10:35:00 +0530
+date: 2026-09-18 10:35:00 +0530
 categories: ["Latest Jobs"]
 ---
 
