@@ -14,7 +14,14 @@
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-    body { font-family: Arial, Helvetica, sans-serif; background-color: #ffffff; color: #000000; line-height: 1.35; top: 0px !important; }
+    body { 
+      font-family: Arial, Helvetica, sans-serif; 
+      background-color: #ffffff; 
+      color: #000000; 
+      line-height: 1.35; 
+      top: 0px !important; 
+      position: static !important; 
+    }
     a { text-decoration: none; }
 
     /* Sticky Container for Red Header, Blue Strip & Translate Bar */
@@ -95,27 +102,56 @@
       color: #2e7d32;
     }
 
-    /* Clean Google Translate Elements */
+    /* --- GOOGLE TRANSLATE COMPLETE HIDE & CLEAN STYLING --- */
+    /* 1. Top Banner Frame ko screen se poori tarah gayab karna */
+    .goog-te-banner-frame,
+    .goog-te-banner-frame.skiptranslate,
+    iframe.goog-te-banner-frame,
+    body > .skiptranslate,
+    #goog-gt-tt,
+    .goog-te-balloon-frame {
+      display: none !important;
+      visibility: hidden !important;
+      height: 0px !important;
+      width: 0px !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+    }
+
+    /* 2. Top frame hatane ke baad body ka gap hatana */
+    body {
+      top: 0px !important;
+      position: static !important;
+    }
+
+    /* 3. Dropdown Box ko professional aur clean banana */
     .goog-te-gadget-simple {
       background-color: #ffffff !important;
       border: 1px solid #81c784 !important;
-      padding: 2px 6px !important;
-      border-radius: 3px !important;
+      padding: 2px 8px !important;
+      border-radius: 4px !important;
       font-size: 12px !important;
       line-height: 1.2 !important;
       display: inline-block !important;
       cursor: pointer !important;
     }
-    .goog-te-gadget-icon {
+
+    /* 4. Google Logo & Branding icons ko chhipana */
+    .goog-te-gadget-icon,
+    .goog-logo-link,
+    .goog-te-gadget span {
       display: none !important;
     }
+
     .goog-te-menu-value span {
       color: #1b5e20 !important;
       font-weight: 700 !important;
       font-size: 12px !important;
     }
-    .goog-te-banner-frame.skiptranslate {
-      display: none !important;
+
+    .goog-text-highlight {
+      background: transparent !important;
+      box-shadow: none !important;
     }
 
     /* Left Side Drawer Menu */
@@ -307,7 +343,8 @@
       new google.translate.TranslateElement({
         pageLanguage: 'en',
         includedLanguages: 'hi,en,pa,gu,bn,mr,ta,te',
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
       }, 'google_translate_element');
     }
   </script>
