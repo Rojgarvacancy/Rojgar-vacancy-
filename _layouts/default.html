@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="hi" class="notranslate" translate="no">
+<html lang="hi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google" content="notranslate">
   <meta name="google-site-verification" content="FRajgVKcnE3zBNViaMe74jGmf8bnyPa3fOSgtSbQxQ8" />
   <title>{{ page.title | default: site.title }} - {{ site.title }}</title>
 
@@ -87,65 +86,57 @@
       outline: none;
     }
 
-    /* Google Translate Compact Bar */
+    /* Google Translate Clean Strip */
     .sr-translate-strip {
       background: #f1f8e9;
       border-bottom: 1px solid #c5e1a5;
-      padding: 4px 10px;
+      padding: 5px 10px;
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 6px;
-      font-size: 12px;
+      gap: 8px;
+      font-size: 13px;
     }
     .sr-translate-label {
       font-weight: bold;
       color: #2e7d32;
     }
 
-    /* Google Translate Top Frame aur Brand Hide */
-    .goog-te-banner-frame,
-    .goog-te-banner-frame.skiptranslate,
-    iframe.goog-te-banner-frame,
-    body > .skiptranslate,
-    #goog-gt-tt,
-    .goog-te-balloon-frame {
-      display: none !important;
-      visibility: hidden !important;
-      height: 0px !important;
-      width: 0px !important;
-      opacity: 0 !important;
-      pointer-events: none !important;
-    }
-
-    body {
-      top: 0px !important;
-      position: static !important;
-    }
-
-    .goog-te-gadget-simple {
-      background-color: #ffffff !important;
-      border: 1px solid #81c784 !important;
-      padding: 2px 8px !important;
-      border-radius: 4px !important;
-      font-size: 12px !important;
-      line-height: 1.2 !important;
+    /* Dropdown Stylings */
+    #google_translate_element {
       display: inline-block !important;
+      min-height: 24px;
+    }
+    .goog-te-combo {
+      padding: 3px 8px !important;
+      border: 1px solid #4caf50 !important;
+      border-radius: 4px !important;
+      font-size: 13px !important;
+      font-weight: 600 !important;
+      color: #1b5e20 !important;
+      background: #ffffff !important;
+      outline: none !important;
       cursor: pointer !important;
     }
 
-    .goog-te-gadget-icon,
+    /* Google Branding & Banners Hide */
     .goog-logo-link,
-    .goog-te-gadget span {
+    .goog-te-gadget > span,
+    .goog-te-gadget-icon,
+    #goog-gt-tt,
+    .goog-te-balloon-frame {
       display: none !important;
     }
-
-    .goog-te-menu-value span {
-      color: #1b5e20 !important;
-      font-weight: 700 !important;
-      font-size: 12px !important;
+    .goog-te-gadget {
+      color: transparent !important;
+      font-size: 0px !important;
     }
-
+    iframe.goog-te-banner-frame,
+    .goog-te-banner-frame {
+      display: none !important;
+      visibility: hidden !important;
+      height: 0 !important;
+    }
     .goog-text-highlight {
       background: transparent !important;
       box-shadow: none !important;
@@ -212,42 +203,6 @@
     .sr-container { max-width: 1000px; margin: 0 auto; padding: 10px 8px; }
     .post-content-wrap { padding: 10px 4px; text-align: left; }
     .post-content-wrap h1 { font-size: 22px; color: #ab1e24; border-bottom: 2px solid #ab1e24; padding-bottom: 6px; margin-bottom: 12px; }
-    
-    /* Category Listing Styling */
-    .category-list-box {
-      border: 1px solid #ab1e24;
-      border-radius: 4px;
-      overflow: hidden;
-      margin: 15px 0;
-      background: #fff;
-    }
-    .category-list-header {
-      background: #ab1e24;
-      color: #fff;
-      padding: 10px 14px;
-      font-weight: bold;
-      font-size: 16px;
-    }
-    .category-list-items {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .category-list-items li {
-      border-bottom: 1px solid #eee;
-    }
-    .category-list-items li a {
-      display: block;
-      padding: 12px 14px;
-      color: #0000cc;
-      font-size: 14px;
-      font-weight: 600;
-    }
-    .category-list-items li a:hover {
-      background: #fdf3f3;
-      color: #ab1e24;
-      text-decoration: underline;
-    }
 
     /* Footer */
     .sr-footer {
@@ -304,7 +259,7 @@
     </div>
 
     <!-- Google Translate Bar -->
-    <div class="sr-translate-strip notranslate" translate="no">
+    <div class="sr-translate-strip">
       <span class="sr-translate-label">🌐 भाषा चुनें (Language):</span>
       <div id="google_translate_element"></div>
     </div>
@@ -334,39 +289,17 @@
     <p style="margin-top:6px;">Free Online Tool: <a href="https://photoresizer.store" target="_blank">Photo and Signature Resizer (photoresizer.store)</a></p>
   </footer>
 
-  <!-- Manual Google Translate Script (Strictly No Auto-Translate) -->
+  <!-- Google Translate Load Script -->
   <script type="text/javascript">
-    (function() {
-      // Purani auto-translate cookies ko clean karna agar user ne khud select nahi kiya
-      if (!sessionStorage.getItem('user_manual_lang')) {
-        document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-        document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=" + location.hostname + "; path=/;";
-        document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=." + location.hostname + "; path=/;";
-      }
-    })();
-
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({
-        pageLanguage: 'hi',
+        pageLanguage: 'en',
         includedLanguages: 'hi,en,pa,gu,bn,mr,ta,te',
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-        autoDisplay: false,
-        multilanguagePage: true
+        autoDisplay: false
       }, 'google_translate_element');
-
-      // Sirf manual click par track karna
-      var checkCombo = setInterval(function() {
-        var combo = document.querySelector('.goog-te-combo');
-        if (combo) {
-          clearInterval(checkCombo);
-          combo.addEventListener('change', function() {
-            sessionStorage.setItem('user_manual_lang', this.value);
-          });
-        }
-      }, 500);
     }
   </script>
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
   <script>
     function toggleMenu() {
