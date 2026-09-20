@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "UPPSC Various Post Recruitment Result 2026 – Out"
-date: 2026-09-20 08:00:00 +0530
+date: 2026-09-19 08:00:00 +0530
 categories: ["Result"]
 ---
 
