@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="hi" class="notranslate" translate="no">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google" content="notranslate">
   <meta name="google-site-verification" content="FRajgVKcnE3zBNViaMe74jGmf8bnyPa3fOSgtSbQxQ8" />
   <title>{{ page.title | default: site.title }} - {{ site.title }}</title>
 
@@ -102,8 +103,7 @@
       color: #2e7d32;
     }
 
-    /* --- GOOGLE TRANSLATE COMPLETE HIDE & CLEAN STYLING --- */
-    /* 1. Top Banner Frame ko screen se poori tarah gayab karna */
+    /* Google Translate Top Frame aur Brand Hide */
     .goog-te-banner-frame,
     .goog-te-banner-frame.skiptranslate,
     iframe.goog-te-banner-frame,
@@ -118,13 +118,11 @@
       pointer-events: none !important;
     }
 
-    /* 2. Top frame hatane ke baad body ka gap hatana */
     body {
       top: 0px !important;
       position: static !important;
     }
 
-    /* 3. Dropdown Box ko professional aur clean banana */
     .goog-te-gadget-simple {
       background-color: #ffffff !important;
       border: 1px solid #81c784 !important;
@@ -136,7 +134,6 @@
       cursor: pointer !important;
     }
 
-    /* 4. Google Logo & Branding icons ko chhipana */
     .goog-te-gadget-icon,
     .goog-logo-link,
     .goog-te-gadget span {
@@ -292,7 +289,7 @@
     </div>
   </div>
 
-  <!-- Sticky Top Header: Red Header + Blue Search Bar + Google Translate Strip -->
+  <!-- Sticky Top Header -->
   <div class="sr-fixed-top">
     <header class="sr-header-red">
       <h1>ROJGAR VACANCY</h1>
@@ -307,7 +304,7 @@
     </div>
 
     <!-- Google Translate Bar -->
-    <div class="sr-translate-strip">
+    <div class="sr-translate-strip notranslate" translate="no">
       <span class="sr-translate-label">🌐 भाषा चुनें (Language):</span>
       <div id="google_translate_element"></div>
     </div>
@@ -337,15 +334,36 @@
     <p style="margin-top:6px;">Free Online Tool: <a href="https://photoresizer.store" target="_blank">Photo and Signature Resizer (photoresizer.store)</a></p>
   </footer>
 
-  <!-- Google Translate Initialization Script -->
+  <!-- Manual Google Translate Script (Strictly No Auto-Translate) -->
   <script type="text/javascript">
+    (function() {
+      // Purani auto-translate cookies ko clean karna agar user ne khud select nahi kiya
+      if (!sessionStorage.getItem('user_manual_lang')) {
+        document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=" + location.hostname + "; path=/;";
+        document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=." + location.hostname + "; path=/;";
+      }
+    })();
+
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({
-        pageLanguage: 'en',
+        pageLanguage: 'hi',
         includedLanguages: 'hi,en,pa,gu,bn,mr,ta,te',
         layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-        autoDisplay: false
+        autoDisplay: false,
+        multilanguagePage: true
       }, 'google_translate_element');
+
+      // Sirf manual click par track karna
+      var checkCombo = setInterval(function() {
+        var combo = document.querySelector('.goog-te-combo');
+        if (combo) {
+          clearInterval(checkCombo);
+          combo.addEventListener('change', function() {
+            sessionStorage.setItem('user_manual_lang', this.value);
+          });
+        }
+      }, 500);
     }
   </script>
   <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
@@ -377,7 +395,7 @@
       });
     }
 
-    // WhatsApp row ko Support Desk ke theek upar exact match ke sath lagana
+    // WhatsApp row ko Support Desk ke theek upar lagana
     document.addEventListener("DOMContentLoaded", function() {
       var tables = document.querySelectorAll(".post-content-wrap table");
       tables.forEach(function(tbl) {
