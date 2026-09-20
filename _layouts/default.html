@@ -14,10 +14,10 @@
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-    body { font-family: Arial, Helvetica, sans-serif; background-color: #ffffff; color: #000000; line-height: 1.35; }
+    body { font-family: Arial, Helvetica, sans-serif; background-color: #ffffff; color: #000000; line-height: 1.35; top: 0px !important; }
     a { text-decoration: none; }
 
-    /* Sticky Container for both Red Header and Blue Strip */
+    /* Sticky Container for Red Header, Blue Strip & Translate Bar */
     .sr-fixed-top {
       position: sticky;
       top: 0;
@@ -77,6 +77,45 @@
       border-radius: 4px;
       font-size: 13px;
       outline: none;
+    }
+
+    /* Google Translate Compact Bar */
+    .sr-translate-strip {
+      background: #f1f8e9;
+      border-bottom: 1px solid #c5e1a5;
+      padding: 4px 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+    }
+    .sr-translate-label {
+      font-weight: bold;
+      color: #2e7d32;
+    }
+
+    /* Clean Google Translate Elements */
+    .goog-te-gadget-simple {
+      background-color: #ffffff !important;
+      border: 1px solid #81c784 !important;
+      padding: 2px 6px !important;
+      border-radius: 3px !important;
+      font-size: 12px !important;
+      line-height: 1.2 !important;
+      display: inline-block !important;
+      cursor: pointer !important;
+    }
+    .goog-te-gadget-icon {
+      display: none !important;
+    }
+    .goog-te-menu-value span {
+      color: #1b5e20 !important;
+      font-weight: 700 !important;
+      font-size: 12px !important;
+    }
+    .goog-te-banner-frame.skiptranslate {
+      display: none !important;
     }
 
     /* Left Side Drawer Menu */
@@ -217,7 +256,7 @@
     </div>
   </div>
 
-  <!-- Sticky Top Header: Red + Blue Strip -->
+  <!-- Sticky Top Header: Red Header + Blue Search Bar + Google Translate Strip -->
   <div class="sr-fixed-top">
     <header class="sr-header-red">
       <h1>ROJGAR VACANCY</h1>
@@ -229,6 +268,12 @@
       <div class="sr-search-wrap">
         <input class="sr-search-input" type="text" id="liveSearchInput" onkeyup="filterSiteContent()" placeholder="Search jobs, results, admit cards...">
       </div>
+    </div>
+
+    <!-- Google Translate Bar -->
+    <div class="sr-translate-strip">
+      <span class="sr-translate-label">🌐 भाषा चुनें (Language):</span>
+      <div id="google_translate_element"></div>
     </div>
   </div>
 
@@ -255,6 +300,18 @@
     <p>2026 Rojgar Vacancy (rojgarvecancy.in) - All Rights Reserved.</p>
     <p style="margin-top:6px;">Free Online Tool: <a href="https://photoresizer.store" target="_blank">Photo and Signature Resizer (photoresizer.store)</a></p>
   </footer>
+
+  <!-- Google Translate Initialization Script -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'hi,en,pa,gu,bn,mr,ta,te',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
   <script>
     function toggleMenu() {
