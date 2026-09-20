@@ -32,7 +32,7 @@ categories: ["Latest Jobs"]
 
   <!--Short Info-->
   <div style="background: rgb(255, 248, 225); border: 1px solid rgb(255, 204, 128); margin-bottom: 15px; padding: 12px 15px;">
-    <strong>Short Information :</strong> Department of Local Self Government (LSG Rajasthan) invites online applications for the recruitment of <strong>Safai Karamchari</strong> across various municipal corporations, councils, and boards in Rajasthan. Candidates who meet the eligibility criteria can read the recruitment details and submit their online application forms through the official portal.
+    <strong>Short Information :</strong> Department of Local Self Government (LSG Rajasthan) invites online applications for the recruitment of <strong>Safai Karamchari (Total 24,752 Posts)</strong> across various municipal corporations, councils, and boards in Rajasthan. Candidates who meet the eligibility criteria can read the recruitment details and submit their online application forms through the official portal before the last date.
   </div>
 
   <!--Important Dates & Application Fee-->
@@ -46,10 +46,10 @@ categories: ["Latest Jobs"]
     <tbody>
       <tr>
         <td style="border: 1px solid rgb(144, 202, 249); padding: 8px; vertical-align: top;">
-          • Application Begin : <strong>Notified Soon / Ongoing</strong><br>
-          • Last Date for Apply Online : <strong>As per Schedule</strong><br>
-          • Correction Window : <strong>As per Notice</strong><br>
-          • Practical / Lottery Exam Date : <strong>Notify Later</strong>
+          • Application Begin : <strong>15/08/2026</strong><br>
+          • Last Date for Apply Online : <strong style="color: #c62828;">28/09/2026</strong><br>
+          • Last Date Fee Payment : <strong>28/09/2026</strong><br>
+          • Practical / Lottery Exam Date : <strong>Notify Soon</strong>
         </td>
         <td style="border: 1px solid rgb(144, 202, 249); padding: 8px; vertical-align: top;">
           • General / Unreserved : <strong>₹ 600/-</strong><br>
@@ -74,10 +74,11 @@ categories: ["Latest Jobs"]
         <td style="border: 1px solid rgb(144, 202, 249); padding: 8px; vertical-align: top;">
           • Minimum Age : <strong>18 Years</strong><br>
           • Maximum Age : <strong>40 Years</strong><br>
-          • Age relaxation applicable as per Rajasthan Government rules.
+          • Age relaxation applicable as per Rajasthan Government rules (including relaxation for PH / Divyang and reserved categories).
         </td>
         <td style="border: 1px solid rgb(144, 202, 249); padding: 8px; vertical-align: top;">
-          • <strong>Post Name :</strong> Safai Karamchari (24,752 Posts)<br>
+          • <strong>Post Name :</strong> Safai Karamchari (Total 24,752 Posts)<br>
+          • <strong>Area Wise :</strong> Non-TSP: 24,277 | TSP: 475<br>
           • <strong>Eligibility :</strong> Must be a Bonafide Resident (Mool Niwas) of Rajasthan.<br>
           • Minimum <strong>1 Year Experience</strong> in cleaning work at any Central/State Govt department, municipal body, or recognized institution.
         </td>
@@ -96,12 +97,12 @@ categories: ["Latest Jobs"]
   <!--How to Apply Online-->
   <h3 style="background: rgb(21, 101, 192); color: white; font-size: 16px; margin: 0px; padding: 8px 12px;">How to Apply for Rajasthan Safai Karamchari Recruitment 2026</h3>
   <div style="background: #ffffff; border: 1px solid rgb(144, 202, 249); margin-bottom: 15px; padding: 10px 15px; font-size: 14px;">
-    • Visit the official Rajasthan Single Sign On (SSO) portal or the departmental update link below.<br>
+    • Visit the official Rajasthan Single Sign On (SSO) portal or the departmental link below.<br>
     • Complete your <strong>One Time Registration (OTR)</strong> profile if not already done.<br>
     • Select the <strong>Recruitment Portal</strong> section and find the Safai Karamchari application form.<br>
     • Enter all personal details, residential proof, and experience certificate details accurately.<br>
     • Upload required documents (photograph, signature, and experience certificate).<br>
-    • Pay the examination fee online and keep a printout of the submitted form for future reference.
+    • Pay the examination fee online on or before 28 September 2026 and keep a printout of the submitted form for future reference.
   </div>
 
   <!--Important Links-->
