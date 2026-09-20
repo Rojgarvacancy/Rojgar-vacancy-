@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Air Force Medical Assistant Admit Card Exam City 2026 Out"
-date: 2026-09-20 09:00:00 +0530
+date: 2026-09-20 06:00:00 +0530
 categories: ["Admit Card"]
 ---
 
