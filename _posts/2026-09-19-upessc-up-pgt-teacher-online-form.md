@@ -167,7 +167,7 @@ categories: ["Latest Jobs"]
       <tr>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Download Notification PDF</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
-          <a href="https://doc.sarkariresults.org.in/UP_PGT_2026_Notification_SarkariResult_Com.pdf" target="_blank" rel="noopener noreferrer" style="background: rgb(21, 101, 192); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Click Here</a>
+          <a href="https://rojgarvecancy.in/Teacher.pdf" target="_blank" rel="noopener noreferrer" style="background: rgb(21, 101, 192); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Click Here</a>
         </td>
       </tr>
       <tr style="background: rgb(255, 235, 238);">
@@ -177,12 +177,18 @@ categories: ["Latest Jobs"]
         </td>
       </tr>
       <tr>
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Join WhatsApp Channel</strong></td>
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
+          <a href="https://whatsapp.com/channel/0029Vb97OOiK5cD6SAWpDm15" target="_blank" rel="noopener noreferrer" style="background: rgb(37, 211, 102); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Join Now</a>
+        </td>
+      </tr>
+      <tr style="background: rgb(255, 235, 238);">
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>UPESSC Official Website</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
           <a href="https://www.upessc.up.gov.in" target="_blank" rel="noopener noreferrer" style="background: rgb(239, 108, 0); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Click Here</a>
         </td>
       </tr>
-      <tr style="background: rgb(255, 235, 238);">
+      <tr>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Support Desk (Email)</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
           <a href="mailto:rojgarvecancy.in@gmail.com" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">rojgarvecancy.in@gmail.com</a>
