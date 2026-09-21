@@ -338,11 +338,21 @@
       });
     }
 
-    // WhatsApp row ko Support Desk ke theek upar lagana
+    // Auto Standardize Post Tables & WhatsApp Row
     document.addEventListener("DOMContentLoaded", function() {
+      // 1. Heading ko ek saman "Important Links" banana
+      document.querySelectorAll(".post-content-wrap h3").forEach(function(h3) {
+        if (h3.textContent.includes("Some Useful Important Links")) {
+          h3.textContent = "Important Links";
+        }
+      });
+
+      // 2. Table rows me WhatsApp missing ho to add karna aur existing buttons fix karna
       var tables = document.querySelectorAll(".post-content-wrap table");
       tables.forEach(function(tbl) {
         var text = tbl.innerText || tbl.textContent;
+
+        // Missing WhatsApp row add karna Support Desk ke upar
         if ((text.includes("Important Links") || text.includes("Official Website") || text.includes("Support Desk")) && !text.includes("Join WhatsApp Channel")) {
           var rows = tbl.querySelectorAll("tr");
           var targetRow = null;
@@ -355,7 +365,7 @@
 
           var newRow = document.createElement("tr");
           newRow.style.backgroundColor = "#fdf2f2";
-          newRow.innerHTML = '<td style="padding: 10px 12px; font-weight: bold; font-size: 14px; border-top: 1px solid #ddd; border-right: 1px solid #ddd; text-align: left; vertical-align: middle;">Join WhatsApp Channel</td><td style="padding: 10px 12px; text-align: center; border-top: 1px solid #ddd; vertical-align: middle;"><a href="https://whatsapp.com/channel/0029Vb97OOiK5cD6SAWpDm15" target="_blank" style="display: inline-block; background-color: #2e7d32; color: #ffffff !important; font-weight: bold; font-size: 14px; padding: 8px 22px; border-radius: 4px; text-decoration: none; min-width: 80px;">Click Here</a></td>';
+          newRow.innerHTML = '<td style="padding: 10px 12px; font-weight: bold; font-size: 14px; border-top: 1px solid #ddd; border-right: 1px solid #ddd; text-align: left; vertical-align: middle;">Join WhatsApp Channel</td><td style="padding: 10px 12px; text-align: center; border-top: 1px solid #ddd; vertical-align: middle;"><a href="https://whatsapp.com/channel/0029Vb97OOiK5cD6SAWpDm15" target="_blank" rel="noopener noreferrer" style="display: inline-block; background-color: #25D366; color: #ffffff !important; font-weight: bold; font-size: 14px; padding: 6px 16px; border-radius: 4px; text-decoration: none; min-width: 80px;">Join Now</a></td>';
 
           if (targetRow && targetRow.parentNode) {
             targetRow.parentNode.insertBefore(newRow, targetRow);
@@ -364,6 +374,23 @@
             tbody.appendChild(newRow);
           }
         }
+
+        // 3. Har row ke buttons ko standardize karna (WhatsApp: Join Now, Email: Send Email)
+        tbl.querySelectorAll("tr").forEach(function(row) {
+          var rowText = row.innerText || row.textContent || "";
+          var linkBtn = row.querySelector("a");
+          if (!linkBtn) return;
+
+          if (rowText.includes("WhatsApp")) {
+            linkBtn.textContent = "Join Now";
+            linkBtn.style.backgroundColor = "#25D366";
+            linkBtn.style.color = "#ffffff";
+          }
+
+          if (rowText.includes("Support Desk") || rowText.includes("Email")) {
+            linkBtn.textContent = "Send Email";
+          }
+        });
       });
     });
   </script>
