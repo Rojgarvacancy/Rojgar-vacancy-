@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "UPPSC Various Post Recruitment Result 2024 Declared, Download Merit List PDF"
+title: "UPPSC Various Post Recruitment Result 2024 Declared 2026,PDF"
 date: 2026-09-21 11:00:00 +0530
 categories: ["Result"]
 ---
