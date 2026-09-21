@@ -102,7 +102,7 @@ categories: ["Result"]
       <tr style="background: rgb(255, 235, 238);">
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; width: 50%;"><strong>Download Result (PDF)</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
-          <a href="https://drive.google.com/uc?export=download&id=1IBV9I6UCGjypNs-q1yTFpNetK_JVflbd" target="_blank" rel="noopener noreferrer" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Click Here</a>
+          <a href="https://rojgarvecancy.in/file.pdf" target="_blank" rel="noopener noreferrer" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Click Here</a>
         </td>
       </tr>
       <tr>
@@ -118,6 +118,12 @@ categories: ["Result"]
         </td>
       </tr>
       <tr>
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Join WhatsApp Channel</strong></td>
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
+          <a href="https://whatsapp.com/channel/0029Vb97OOiK5cD6SAWpDm15" target="_blank" rel="noopener noreferrer" style="background: rgb(37, 211, 102); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Join Now</a>
+        </td>
+      </tr>
+      <tr style="background: rgb(255, 235, 238);">
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Support Desk (Email)</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
           <a href="mailto:rojgarvecancy.in@gmail.com" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">rojgarvecancy.in@gmail.com</a>
