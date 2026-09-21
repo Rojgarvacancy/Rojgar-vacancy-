@@ -102,7 +102,7 @@ categories: ["Result"]
       <tr style="background: rgb(255, 235, 238);">
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; width: 50%;"><strong>Download Result (PDF)</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
-          <a href="https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmNKfqXmoSUnj3RSz4YcAsN" target="_blank" rel="noopener noreferrer" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Click Here</a>
+          <a href="https://drive.google.com/uc?export=download&id=1IBV9I6UCGjypNs-q1yTFpNetK_JVflbd" target="_blank" rel="noopener noreferrer" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Click Here</a>
         </td>
       </tr>
       <tr>
