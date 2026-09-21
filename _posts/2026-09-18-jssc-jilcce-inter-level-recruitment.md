@@ -89,7 +89,7 @@ categories: ["Latest Jobs"]
       <tr>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Download Date Extended Notice PDF</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
-          <a href="https://doc.sarkariresults.org.in/JSSC_Notice%20for%20JILCCE-2026.pdf" target="_blank" rel="noopener noreferrer" style="background: rgb(198, 40, 40); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Click Here</a>
+          <a href="https://rojgarvecancy.in/JSSC_Notice.pdf" target="_blank" rel="noopener noreferrer" style="background: rgb(198, 40, 40); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Click Here</a>
         </td>
       </tr>
       <tr style="background: rgb(255, 235, 238);">
@@ -99,18 +99,24 @@ categories: ["Latest Jobs"]
         </td>
       </tr>
       <tr>
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Join WhatsApp Channel</strong></td>
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
+          <a href="https://whatsapp.com/channel/0029Vb97OOiK5cD6SAWpDm15" target="_blank" rel="noopener noreferrer" style="background: rgb(37, 211, 102); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Join Now</a>
+        </td>
+      </tr>
+      <tr style="background: rgb(255, 235, 238);">
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Photo & Signature Resizer Tool</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
           <a href="https://photoresizer.store" target="_blank" style="background: rgb(106, 27, 154); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Click Here</a>
         </td>
       </tr>
-      <tr style="background: rgb(255, 235, 238);">
+      <tr>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>JSSC Official Website</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
           <a href="https://jssc.jharkhand.gov.in/" target="_blank" rel="noopener noreferrer" style="background: rgb(239, 108, 0); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Click Here</a>
         </td>
       </tr>
-      <tr>
+      <tr style="background: rgb(255, 235, 238);">
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Support Desk (Email)</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
           <a href="mailto:rojgarvecancy.in@gmail.com" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">rojgarvecancy.in@gmail.com</a>
