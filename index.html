@@ -109,13 +109,36 @@ layout: default
 <script>
   (function() {
     var rawPosts = [
-      {% for post in site.posts %}
       {
-        title: {{ post.title | jsonify }},
-        url: {{ post.url | relative_url | jsonify }},
-        lastDate: {{ post.last_date | default: '2099-12-31' | jsonify }}
-      }{% unless forloop.last %},{% endunless %}
-      {% endfor %}
+        title: "UP Scholarship 2026-2027 Apply Online",
+        url: "/admission/uttar-pradesh-up-scholarship-online-form-2026-2027/",
+        lastDate: "2026-10-31"
+      },
+      {
+        title: "Railway RRB NTPC 10+2 Apply Online",
+        url: "/latest%20jobs/railway-rrb-ntpc-10+2-under-graduate-recruitment-2026/",
+        lastDate: "2026-10-27"
+      },
+      {
+        title: "UP Anganwadi Worker Hathras Form 2026",
+        url: "/latest%20jobs/up-anganwadi-worker-Hathras-From-2026/",
+        lastDate: "2026-10-13"
+      },
+      {
+        title: "UP Police Constable PET Admit Card 2026",
+        url: "/admit%20card/up-police-constable-pet-admit-card-2026/",
+        lastDate: "2026-10-08"
+      },
+      {
+        title: "MP Police Constable 2026 Apply Online",
+        url: "/latest%20jobs/mpesb-mp-police-constable-recruitment-2026/",
+        lastDate: "2026-10-06"
+      },
+      {
+        title: "NBE NEET PG Result 2026 Score Card",
+        url: "/results/nbe-neet-pg-result-2026/",
+        lastDate: "2026-10-31"
+      }
     ];
 
     // Colors matching the original layout boxes
