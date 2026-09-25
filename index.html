@@ -101,9 +101,9 @@ layout: default
 
 <a class="sr-tools-link" href="https://photoresizer.store" target="_blank">Rojgar Vacancy Tools (Photo and Signature Resizer)</a>
 
-<!-- DYNAMIC 5-BOX AUTO-EXPIRING COLOR GRID -->
+<!-- DYNAMIC 6-BOX AUTO-EXPIRING COLOR GRID -->
 <div class="colorful-grid" id="featured-color-grid">
-  <!-- JavaScript dynamically populates 5 non-expired posts here -->
+  <!-- JavaScript dynamically populates 6 active posts here -->
 </div>
 
 <script>
@@ -141,24 +141,25 @@ layout: default
       }
     ];
 
-    // Colors matching the original layout boxes
+    // 6 boxes ke alag-alag rangeen colors
     var palette = [
-      "#7b8b00", // Olive / Greenish Mustard
+      "#7b8b00", // Olive / Mustard Green
       "#ff5722", // Vibrant Orange
       "#d0006f", // Magenta / Deep Pink
-      "#0088cc", // Sky Blue
-      "#00a82d"  // Forest Green
+      "#0088cc", // Dodger Blue
+      "#00a82d", // Forest Green
+      "#c62828"  // Dark Red
     ];
 
     var today = new Date().toISOString().split('T')[0];
 
-    // Filter out posts whose last date has expired
+    // Expired posts filter ho jayengi
     var activeList = rawPosts.filter(function(item) {
       return item.lastDate >= today;
     });
 
-    // Take up to 5 valid posts
-    var targetPosts = activeList.slice(0, 5);
+    // Ab poore 6 valid posts screen par show honge
+    var targetPosts = activeList.slice(0, 6);
     var grid = document.getElementById("featured-color-grid");
 
     if (grid && targetPosts.length > 0) {
