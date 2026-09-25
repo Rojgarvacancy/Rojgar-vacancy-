@@ -35,7 +35,7 @@
     }
     a { text-decoration: none; }
 
-    /* Sticky Container for Red Header, Blue Strip & Translate Bar */
+    /* Sticky Container for Red Header & Blue Strip */
     .sr-fixed-top {
       position: sticky;
       top: 0;
@@ -95,62 +95,6 @@
       border-radius: 4px;
       font-size: 13px;
       outline: none;
-    }
-
-    /* Google Translate Clean Strip */
-    .sr-translate-strip {
-      background: #f1f8e9;
-      border-bottom: 1px solid #c5e1a5;
-      padding: 5px 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 8px;
-      font-size: 13px;
-    }
-    .sr-translate-label {
-      font-weight: bold;
-      color: #2e7d32;
-    }
-
-    /* Dropdown Stylings */
-    #google_translate_element {
-      display: inline-block !important;
-      min-height: 24px;
-    }
-    .goog-te-combo {
-      padding: 3px 8px !important;
-      border: 1px solid #4caf50 !important;
-      border-radius: 4px !important;
-      font-size: 13px !important;
-      font-weight: 600 !important;
-      color: #1b5e20 !important;
-      background: #ffffff !important;
-      outline: none !important;
-      cursor: pointer !important;
-    }
-
-    /* Google Branding & Banners Hide */
-    .goog-logo-link,
-    .goog-te-gadget > span,
-    .goog-te-gadget-icon,
-    #goog-gt-tt,
-    .goog-te-balloon-frame {
-      display: none !important;
-    }
-    .goog-te-gadget {
-      color: transparent !important;
-      font-size: 0px !important;
-    }
-    iframe.goog-te-banner-frame,
-    .goog-te-banner-frame {
-      display: none !important;
-      visibility: hidden !important;
-      height: 0 !important;
-    }
-    .goog-text-highlight {
-      background: transparent !important;
-      box-shadow: none !important;
     }
 
     /* Left Side Drawer Menu */
@@ -268,12 +212,6 @@
         <input class="sr-search-input" type="text" id="liveSearchInput" onkeyup="filterSiteContent()" placeholder="Search jobs, results, admit cards...">
       </div>
     </div>
-
-    <!-- Google Translate Bar -->
-    <div class="sr-translate-strip">
-      <span class="sr-translate-label">🌐 भाषा चुनें (Language):</span>
-      <div id="google_translate_element"></div>
-    </div>
   </div>
 
   <!-- Page Content -->
@@ -299,18 +237,6 @@
     <p>2026 Rojgar Vacancy (rojgarvecancy.in) - All Rights Reserved.</p>
     <p style="margin-top:6px;">Free Online Tool: <a href="https://photoresizer.store" target="_blank">Photo and Signature Resizer (photoresizer.store)</a></p>
   </footer>
-
-  <!-- Google Translate Load Script -->
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({
-        pageLanguage: 'en',
-        includedLanguages: 'hi,en,pa,gu,bn,mr,ta,te',
-        autoDisplay: false
-      }, 'google_translate_element');
-    }
-  </script>
-  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
   <script>
     function toggleMenu() {
@@ -353,7 +279,6 @@
       tables.forEach(function(tbl) {
         var text = tbl.innerText || tbl.textContent;
 
-        // Missing WhatsApp row add karna Support Desk ke upar
         if ((text.includes("Important Links") || text.includes("Official Website") || text.includes("Support Desk")) && !text.includes("Join WhatsApp Channel")) {
           var rows = tbl.querySelectorAll("tr");
           var targetRow = null;
