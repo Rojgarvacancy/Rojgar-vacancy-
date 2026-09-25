@@ -37,11 +37,9 @@ layout: default
 
   .sr-tools-link { display: block; color: #0000cc; font-size: 15px; font-weight: bold; text-decoration: underline; margin-bottom: 10px; text-align: center; }
 
-  .colorful-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 5px; margin-bottom: 12px; }
-  .color-card { padding: 8px 4px; color: #ffffff !important; font-weight: bold; font-size: 11px; line-height: 1.25; text-align: center; border-radius: 2px; display: flex; align-items: center; justify-content: center; min-height: 44px; text-decoration: none; }
-  .box-c1 { background: #e02b20; } .box-c2 { background: #ff5722; } .box-c3 { background: #d0006f; }
-  .box-c4 { background: #7b8b00; } .box-c5 { background: #0088cc; } .box-c6 { background: #8b0000; }
-
+  .colorful-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; margin-bottom: 12px; }
+  .color-card { padding: 10px 6px; color: #ffffff !important; font-weight: bold; font-size: 12px; line-height: 1.3; text-align: center; border-radius: 3px; display: flex; align-items: center; justify-content: center; min-height: 48px; text-decoration: none; box-shadow: 0 1px 3px rgba(0,0,0,0.12); }
+  
   .table-row {
     display: flex !important;
     flex-direction: row !important;
@@ -103,14 +101,54 @@ layout: default
 
 <a class="sr-tools-link" href="https://photoresizer.store" target="_blank">Rojgar Vacancy Tools (Photo and Signature Resizer)</a>
 
-<div class="colorful-grid">
-  <a class="color-card box-c1" href="#results">UPSSSC Lekhpal Mains Result 2026</a>
-  <a class="color-card box-c2" href="https://scholarship.up.gov.in" target="_blank">UP Scholarship 2026 Apply Online</a>
-  <a class="color-card box-c3" href="https://indiapostgdsonline.gov.in" target="_blank">India Post GDS Apply Online</a>
-  <a class="color-card box-c4" href="https://ibps.in" target="_blank">IBPS RRB 15th Apply Online</a>
-  <a class="color-card box-c5" href="https://ssc.gov.in" target="_blank">SSC Junior Engineer JE 2026</a>
-  <a class="color-card box-c6" href="https://photoresizer.store" target="_blank">Photo &amp; Signature Resizer Tool</a>
+<!-- DYNAMIC 5-BOX AUTO-EXPIRING COLOR GRID -->
+<div class="colorful-grid" id="featured-color-grid">
+  <!-- JavaScript dynamically populates 5 non-expired posts here -->
 </div>
+
+<script>
+  (function() {
+    var rawPosts = [
+      {% for post in site.posts %}
+      {
+        title: {{ post.title | jsonify }},
+        url: {{ post.url | relative_url | jsonify }},
+        lastDate: {{ post.last_date | default: '2099-12-31' | jsonify }}
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ];
+
+    // Colors matching the original layout boxes
+    var palette = [
+      "#7b8b00", // Olive / Greenish Mustard
+      "#ff5722", // Vibrant Orange
+      "#d0006f", // Magenta / Deep Pink
+      "#0088cc", // Sky Blue
+      "#00a82d"  // Forest Green
+    ];
+
+    var today = new Date().toISOString().split('T')[0];
+
+    // Filter out posts whose last date has expired
+    var activeList = rawPosts.filter(function(item) {
+      return item.lastDate >= today;
+    });
+
+    // Take up to 5 valid posts
+    var targetPosts = activeList.slice(0, 5);
+    var grid = document.getElementById("featured-color-grid");
+
+    if (grid && targetPosts.length > 0) {
+      var output = "";
+      for (var i = 0; i < targetPosts.length; i++) {
+        var p = targetPosts[i];
+        var bg = palette[i % palette.length];
+        output += '<a class="color-card" href="' + p.url + '" style="background-color: ' + bg + ';">' + p.title + '</a>';
+      }
+      grid.innerHTML = output;
+    }
+  })();
+</script>
 
 <!-- ROW 1: Result | Latest Jobs -->
 <div class="table-row">
