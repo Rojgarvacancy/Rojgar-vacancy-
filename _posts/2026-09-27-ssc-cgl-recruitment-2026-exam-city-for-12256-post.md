@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "SSC CGL Recruitment 2026 Exam City Slip Out Download Admit Card"
-date: 2026-09-27 23:40:00 +0530
+date: 2026-09-27 22:40:00 +0530
 categories: ["Admit Card"]
 trending: true
 ---
