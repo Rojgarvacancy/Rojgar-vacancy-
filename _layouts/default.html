@@ -424,6 +424,31 @@
     });
 
     // ========================================================
+    // AUTO LINK & PDF FIXER (Swaps Old Domain to rojgarvacancy.in)
+    // ========================================================
+    document.addEventListener("DOMContentLoaded", function() {
+      var oldDomainMistake = "rojgarvecancy.in";
+      var newTargetDomain = "rojgarvacancy.in";
+
+      document.querySelectorAll("a").forEach(function(anchor) {
+        var href = anchor.getAttribute("href");
+        if (href) {
+          if (href.includes(oldDomainMistake)) {
+            anchor.setAttribute("href", href.split(oldDomainMistake).join(newTargetDomain));
+          } else if (href.includes(".github.io")) {
+            // Converts any internal github.io domain link directly to the new domain
+            try {
+              var parsedUrl = new URL(href, window.location.origin);
+              if (parsedUrl.hostname.endsWith(".github.io")) {
+                anchor.setAttribute("href", "https://" + newTargetDomain + parsedUrl.pathname + parsedUrl.search + parsedUrl.hash);
+              }
+            } catch(e) {}
+          }
+        }
+      });
+    });
+
+    // ========================================================
     // DUAL CANNON CELEBRATION & BOTTOM FLOATING TOAST LOGIC
     // ========================================================
     function launchRealCelebration() {
