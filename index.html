@@ -179,61 +179,24 @@ layout: default
   <a class="sr-tools-link" href="https://photoresizer.store" target="_blank" rel="noopener noreferrer">Rojgar Vacancy Tools</a>
 </div>
 
-<!-- EXACT 6 BOXES WITH REAL AUTO-RESOLVED POST LINKS -->
+<!-- DYNAMIC 6-BOX AUTO-EXPIRING COLOR GRID (AUTOMATIC CHANGE ON DATE EXPIRE) -->
+{% assign today_date = 'now' | date: '%Y-%m-%d' %}
+{% assign bg_colors = "#7b8b00,#ff5722,#d0006f,#0088cc,#00a82d,#c62828" | split: "," %}
+
 <div class="colorful-grid">
-  <!-- Box 1: UP Scholarship -->
-  {% assign link1 = "#" %}
+  {% assign shown_count = 0 %}
   {% for post in site.posts %}
-    {% if post.title contains "UP Scholarship" %}{% assign link1 = post.url %}{% break %}{% endif %}
+    {% if shown_count < 6 %}
+      {% capture post_expiry %}{{ post.last_date | default: '9999-12-31' }}{% endcapture %}
+      {% if post_expiry >= today_date %}
+        {% assign color_index = shown_count | modulo: 6 %}
+        <a class="color-card" href="{{ post.url | relative_url }}" style="background-color: {{ bg_colors[color_index] }};">
+          {{ post.title }}
+        </a>
+        {% assign shown_count = shown_count | plus: 1 %}
+      {% endif %}
+    {% endif %}
   {% endfor %}
-  <a class="color-card" href="{{ link1 | relative_url }}" style="background-color: #7b8b00;">
-    UP Scholarship 2026-2027 Apply Online
-  </a>
-
-  <!-- Box 2: Railway RRB NTPC -->
-  {% assign link2 = "#" %}
-  {% for post in site.posts %}
-    {% if post.title contains "RRB NTPC" %}{% assign link2 = post.url %}{% break %}{% endif %}
-  {% endfor %}
-  <a class="color-card" href="{{ link2 | relative_url }}" style="background-color: #ff5722;">
-    Railway RRB NTPC 10+2 Apply Online
-  </a>
-
-  <!-- Box 3: UP Anganwadi Worker -->
-  {% assign link3 = "#" %}
-  {% for post in site.posts %}
-    {% if post.title contains "Anganwadi" %}{% assign link3 = post.url %}{% break %}{% endif %}
-  {% endfor %}
-  <a class="color-card" href="{{ link3 | relative_url }}" style="background-color: #d0006f;">
-    UP Anganwadi Worker Hathras Form 2026
-  </a>
-
-  <!-- Box 4: UP Police Constable PET -->
-  {% assign link4 = "#" %}
-  {% for post in site.posts %}
-    {% if post.title contains "Police" and post.title contains "Admit" %}{% assign link4 = post.url %}{% break %}{% endif %}
-  {% endfor %}
-  <a class="color-card" href="{{ link4 | relative_url }}" style="background-color: #0088cc;">
-    UP Police Constable PET Admit Card 2026
-  </a>
-
-  <!-- Box 5: MP Police Constable -->
-  {% assign link5 = "#" %}
-  {% for post in site.posts %}
-    {% if post.title contains "MP Police" %}{% assign link5 = post.url %}{% break %}{% endif %}
-  {% endfor %}
-  <a class="color-card" href="{{ link5 | relative_url }}" style="background-color: #00a82d;">
-    MP Police Constable 2026 Apply Online
-  </a>
-
-  <!-- Box 6: NBE NEET PG Result -->
-  {% assign link6 = "#" %}
-  {% for post in site.posts %}
-    {% if post.title contains "NEET PG" %}{% assign link6 = post.url %}{% break %}{% endif %}
-  {% endfor %}
-  <a class="color-card" href="{{ link6 | relative_url }}" style="background-color: #c62828;">
-    NBE NEET PG Result 2026 Score Card
-  </a>
 </div>
 
 <!-- ROW 1: Result | Latest Jobs -->
