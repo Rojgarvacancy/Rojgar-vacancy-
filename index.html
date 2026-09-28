@@ -179,75 +179,25 @@ layout: default
   <a class="sr-tools-link" href="https://photoresizer.store" target="_blank" rel="noopener noreferrer">Rojgar Vacancy Tools</a>
 </div>
 
-<!-- DYNAMIC 6-BOX AUTO-EXPIRING COLOR GRID -->
-<div class="colorful-grid" id="featured-color-grid">
-  <!-- JavaScript dynamically populates 6 active posts here -->
+<!-- DYNAMIC 6-BOX AUTO-EXPIRING COLOR GRID (NO 404 ERRORS) -->
+{% assign today_date = 'now' | date: '%Y-%m-%d' %}
+{% assign bg_colors = "#7b8b00,#ff5722,#d0006f,#0088cc,#00a82d,#c62828" | split: "," %}
+
+<div class="colorful-grid">
+  {% assign shown_count = 0 %}
+  {% for post in site.posts %}
+    {% if shown_count < 6 %}
+      {% capture post_expiry %}{{ post.last_date | default: '9999-12-31' }}{% endcapture %}
+      {% if post_expiry >= today_date %}
+        {% assign color_index = shown_count | modulo: 6 %}
+        <a class="color-card" href="{{ post.url | relative_url }}" style="background-color: {{ bg_colors[color_index] }};">
+          {{ post.title }}
+        </a>
+        {% assign shown_count = shown_count | plus: 1 %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
 </div>
-
-<script>
-  (function() {
-    var rawPosts = [
-      {
-        title: "UP Scholarship 2026-2027 Apply Online",
-        url: "/admission/uttar-pradesh-up-scholarship-online-form-2026-2027/",
-        lastDate: "2026-10-31"
-      },
-      {
-        title: "Railway RRB NTPC 10+2 Apply Online",
-        url: "/latest-jobs/railway-rrb-ntpc-10+2-under-graduate-recruitment-2026/",
-        lastDate: "2026-10-27"
-      },
-      {
-        title: "UP Anganwadi Worker Hathras Form 2026",
-        url: "/latest-jobs/up-anganwadi-worker-Hathras-From-2026/",
-        lastDate: "2026-10-13"
-      },
-      {
-        title: "UP Police Constable PET Admit Card 2026",
-        url: "/admit-card/up-police-constable-pet-admit-card-2026/",
-        lastDate: "2026-10-08"
-      },
-      {
-        title: "MP Police Constable 2026 Apply Online",
-        url: "/latest-jobs/mpesb-mp-police-constable-recruitment-2026/",
-        lastDate: "2026-10-06"
-      },
-      {
-        title: "NBE NEET PG Result 2026 Score Card",
-        url: "/results/nbe-neet-pg-result-2026/",
-        lastDate: "2026-10-31"
-      }
-    ];
-
-    var palette = [
-      "#7b8b00", // Olive / Mustard Green
-      "#ff5722", // Vibrant Orange
-      "#d0006f", // Magenta / Deep Pink
-      "#0088cc", // Dodger Blue
-      "#00a82d", // Forest Green
-      "#c62828"  // Dark Red
-    ];
-
-    var today = new Date().toISOString().split('T')[0];
-
-    var activeList = rawPosts.filter(function(item) {
-      return item.lastDate >= today;
-    });
-
-    var targetPosts = activeList.slice(0, 6);
-    var grid = document.getElementById("featured-color-grid");
-
-    if (grid && targetPosts.length > 0) {
-      var output = "";
-      for (var i = 0; i < targetPosts.length; i++) {
-        var p = targetPosts[i];
-        var bg = palette[i % palette.length];
-        output += '<a class="color-card" href="' + p.url + '" style="background-color: ' + bg + ';">' + p.title + '</a>';
-      }
-      grid.innerHTML = output;
-    }
-  })();
-</script>
 
 <!-- ROW 1: Result | Latest Jobs -->
 <div class="table-row">
