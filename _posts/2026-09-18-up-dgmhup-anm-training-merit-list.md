@@ -146,7 +146,7 @@ last_date: 2026-10-31
         </td>
       </tr>
       <tr>
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Support Desk (Contact / Email)</strong></td>
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Support Desk (Email)</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
           <a href="mailto:rojgarvecancy.in@gmail.com" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Send Email</a>
         </td>
