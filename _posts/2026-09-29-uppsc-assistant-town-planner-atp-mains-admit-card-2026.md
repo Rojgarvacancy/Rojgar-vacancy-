@@ -16,7 +16,7 @@ last_date: 2026-10-06
 
   <!-- Yellow Short Information Box -->
   <div style="background: rgb(255, 248, 225); border: 1px solid #ffcc80; margin-bottom: 15px; padding: 12px 15px; font-size: 14px;">
-    <strong>Short Information :</strong> Uttar Pradesh Public Service Commission (UPPSC) has released the Mains Examination Admit Card and District Information Slip for the post of <strong>Assistant Town Planner (ATP) Examination 2025</strong>. Candidates who qualified in the preliminary examination can download their mains hall ticket and exam notice using the direct links given below.
+    <strong>Short Information :</strong> Uttar Pradesh Public Service Commission (UPPSC) has released the Mains Examination District Information Slip and announced the Mains Admit Card release date for the post of <strong>Assistant Town Planner (ATP) Examination 2025</strong>. Candidates who qualified in the preliminary examination can check their mains exam city slip and read the official exam notice using the direct links given below.
   </div>
 
   <!-- Important Dates & Application Fee Table -->
@@ -37,7 +37,7 @@ last_date: 2026-10-06
           • UPPSC Exam Date (Pre) : <strong>07/07/2026</strong><br>
           • Pre Result Available : <strong>09/09/2026</strong><br>
           • Mains Exam City Available : <strong>28/09/2026</strong><br>
-          • Mains Admit Card Available : <strong style="color: rgb(46, 125, 50);">29/09/2026</strong><br>
+          • Mains Admit Card Available : <strong style="background-color: #fff9c4; color: rgb(198, 40, 40); padding: 2px 6px; border-radius: 3px; border: 1px solid #ffe082;">03/10/2026</strong><br>
           • Mains Exam Date : <strong style="color: rgb(198, 40, 40);">06/10/2026</strong>
         </td>
         <td style="border: 1px solid #90caf9; padding: 10px; vertical-align: top;">
@@ -97,14 +97,14 @@ last_date: 2026-10-06
 
   <!-- Important Links Table -->
   <div style="background: rgb(198, 40, 40); border-radius: 4px 4px 0 0; color: #ffffff; font-size: 16px; font-weight: bold; padding: 10px 14px; text-align: left;">
-    Some Useful Important Links
+    Important Links
   </div>
   <table style="border-collapse: collapse; font-size: 14px; margin-bottom: 20px; width: 100%;">
     <tbody>
       <tr style="background: #ffebee;">
         <td style="border: 1px solid #ef9a9a; padding: 10px; width: 60%; font-weight: bold;">Download Mains Admit Card</td>
         <td style="border: 1px solid #ef9a9a; padding: 10px; text-align: center; width: 40%;">
-          <a href="https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=ac" target="_blank" rel="noopener noreferrer" style="background: rgb(46, 125, 50); border-radius: 4px; color: #ffffff; font-weight: bold; padding: 6px 16px; display: inline-block; text-decoration: none;">Click Here</a>
+          <a id="admitCardBtn" href="https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=ac" target="_blank" rel="noopener noreferrer" style="background: rgb(46, 125, 50); border-radius: 4px; color: #ffffff; font-weight: bold; padding: 6px 16px; display: inline-block; text-decoration: none;">Link Activate on 03/10/2026</a>
         </td>
       </tr>
       <tr>
@@ -165,3 +165,14 @@ last_date: 2026-10-06
   </p>
 
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var releaseDate = new Date("2026-10-03T00:00:00+05:30");
+    var currentDate = new Date();
+    var btn = document.getElementById("admitCardBtn");
+    if (currentDate >= releaseDate && btn) {
+      btn.innerText = "Click Here";
+    }
+  });
+</script>
