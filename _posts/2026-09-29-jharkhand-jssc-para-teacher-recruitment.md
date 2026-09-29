@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Jharkhand JSSC Para Teacher Recruitment 2026 : Apply Online for 6101 Assistant Acharya Posts"
-date: 2026-09-29 23:30:00 +0530
+date: 2026-09-29 21:30:00 +0530
 categories: ["Latest Jobs", "Teaching"]
 trending: true
 last_date: 2026-10-18
