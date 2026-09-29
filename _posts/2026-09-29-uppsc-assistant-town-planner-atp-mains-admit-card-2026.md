@@ -16,7 +16,7 @@ last_date: 2026-10-06
 
   <!-- Yellow Short Information Box -->
   <div style="background: rgb(255, 248, 225); border: 1px solid #ffcc80; margin-bottom: 15px; padding: 12px 15px; font-size: 14px;">
-    <strong>Short Information :</strong> Uttar Pradesh Public Service Commission (UPPSC) has released the Mains Examination Admit Card and Official Notice for the recruitment of <strong>Assistant Town Planner (ATP) 2025</strong>[span_0](start_span)[span_0](end_span). Candidates who qualified in the preliminary exam can download their mains examination hall ticket and read the official exam instructions using the direct links given below[span_1](start_span)[span_1](end_span).
+    <strong>Short Information :</strong> Uttar Pradesh Public Service Commission (UPPSC) has released the Mains Examination Admit Card and District Information Slip for the post of <strong>Assistant Town Planner (ATP) Examination 2025</strong>. Candidates who qualified in the preliminary examination can download their mains hall ticket and exam notice using the direct links given below.
   </div>
 
   <!-- Important Dates & Application Fee Table -->
@@ -30,69 +30,74 @@ last_date: 2026-10-06
     <tbody>
       <tr>
         <td style="border: 1px solid #90caf9; padding: 10px; vertical-align: top;">
-          • Application Begin : <strong>03/11/2025</strong>[span_2](start_span)[span_2](end_span)<br>
-          • Last Date for Apply Online : <strong>03/12/2025</strong>[span_3](start_span)[span_3](end_span)<br>
-          • Pay Exam Fee Last Date : <strong>03/12/2025</strong>[span_4](start_span)[span_4](end_span)<br>
-          • Pre Exam Date : <strong>07/07/2026</strong>[span_5](start_span)[span_5](end_span)<br>
-          • Pre Result Available : <strong>09/09/2026</strong>[span_6](start_span)[span_6](end_span)<br>
-          • Mains Exam City Available : <strong>28/09/2026</strong>[span_7](start_span)[span_7](end_span)<br>
+          • Application Begin : <strong>03/11/2025</strong><br>
+          • Last Date for Apply Online : <strong>03/12/2025</strong><br>
+          • Pay Exam Fee Last Date : <strong>03/12/2025</strong><br>
+          • Last Date Correction Date : <strong>10/12/2025</strong><br>
+          • UPPSC Exam Date (Pre) : <strong>07/07/2026</strong><br>
+          • Pre Result Available : <strong>09/09/2026</strong><br>
+          • Mains Exam City Available : <strong>28/09/2026</strong><br>
           • Mains Admit Card Available : <strong style="color: rgb(46, 125, 50);">29/09/2026</strong><br>
-          • Mains Exam Date : <strong style="color: rgb(198, 40, 40);">06/10/2026</strong>[span_8](start_span)[span_8](end_span)
+          • Mains Exam Date : <strong style="color: rgb(198, 40, 40);">06/10/2026</strong>
         </td>
         <td style="border: 1px solid #90caf9; padding: 10px; vertical-align: top;">
-          • General / OBC / EWS : <strong>₹ 125/-</strong>[span_9](start_span)[span_9](end_span)<br>
-          • SC / ST : <strong>₹ 65/-</strong>[span_10](start_span)[span_10](end_span)<br>
-          • PH Candidates : <strong>₹ 25/-</strong>[span_11](start_span)[span_11](end_span)<br><br>
-          <em>Payment Mode : Pay the Exam Fee Through SBI MOPS Debit Card, Credit Card, Net Banking or SBI E-Challan Offline Mode[span_12](start_span)[span_12](end_span).</em>
+          • General / OBC / EWS : <strong>125/-</strong><br>
+          • SC / ST : <strong>65/-</strong><br>
+          • PH Candidates : <strong>25/-</strong><br><br>
+          <em>Payment Mode : Pay the Exam Fee Through SBI Mops Debit Card, Credit Card, Net Banking or SBI E Challan Mode Online.</em>
         </td>
       </tr>
     </tbody>
   </table>
 
   <!-- Age Limit Details -->
-  <h3 style="background: rgb(21, 101, 192); color: #ffffff; font-size: 15px; margin: 0; padding: 8px 12px;">UPPSC Assistant Town Planner Notification 2026 : Age Limit as on 01/07/2025[span_13](start_span)[span_13](end_span)</h3>
+  <h3 style="background: rgb(21, 101, 192); color: #ffffff; font-size: 15px; margin: 0; padding: 8px 12px;">UPPSC Assistant Town Planner Notification 2026 : Age Limit as on 01/07/2025</h3>
   <div style="background: #ffffff; border: 1px solid #90caf9; margin-bottom: 15px; padding: 10px 14px; font-size: 14px;">
-    • Minimum Age : <strong>21 Years</strong>[span_14](start_span)[span_14](end_span)<br>
-    • Maximum Age : <strong>40 Years</strong>[span_15](start_span)[span_15](end_span)<br>
-    • <em>Age Relaxation Extra as per UPPSC Assistant Town Planner Examination 2025 Rule A-10/E-1/2025[span_16](start_span)[span_16](end_span).</em>
+    • Minimum Age : <strong>21 Years</strong><br>
+    • Maximum Age : <strong>40 Years</strong><br>
+    • <em>Age Relaxation Extra as per UPPSC Assistant Town Planner Examination 2025 Rule A-10/E-1/2025.</em>
   </div>
 
-  <!-- Vacancy & Eligibility Details Table -->
-  <h3 style="background: rgb(21, 101, 192); color: #ffffff; font-size: 15px; margin: 0; padding: 8px 12px;">Vacancy Details : Total 08 Posts[span_17](start_span)[span_17](end_span)[span_18](start_span)[span_18](end_span)</h3>
+  <!-- Vacancy Details Table -->
+  <h3 style="background: rgb(21, 101, 192); color: #ffffff; font-size: 15px; margin: 0; padding: 8px 12px;">UPPSC Asst Town Planner Recruitment 2025 : Vacancy Details Total : 08 Post</h3>
   <table style="border-collapse: collapse; font-size: 14px; margin-bottom: 15px; width: 100%;">
     <thead>
       <tr style="background: #e3f2fd; color: #000000;">
         <th style="border: 1px solid #90caf9; padding: 8px; text-align: left; width: 35%;">Post Name</th>
         <th style="border: 1px solid #90caf9; padding: 8px; text-align: center; width: 15%;">Total Post</th>
-        <th style="border: 1px solid #90caf9; padding: 8px; text-align: left; width: 50%;">Eligibility Criteria</th>
+        <th style="border: 1px solid #90caf9; padding: 8px; text-align: left; width: 50%;">UPPSC Asst Town Planner Eligibility</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td style="border: 1px solid #90caf9; padding: 8px;"><strong>Assistant Town Planner (ATP)</strong>[span_19](start_span)[span_19](end_span)</td>
-        <td style="border: 1px solid #90caf9; padding: 8px; text-align: center; font-weight: bold; color: rgb(46, 125, 50);">08[span_20](start_span)[span_20](end_span)[span_21](start_span)[span_21](end_span)</td>
+        <td style="border: 1px solid #90caf9; padding: 8px;"><strong>Assistant Town Planner (ATP)</strong></td>
+        <td style="border: 1px solid #90caf9; padding: 8px; text-align: center; font-weight: bold; color: rgb(46, 125, 50);">08</td>
         <td style="border: 1px solid #90caf9; padding: 8px;">
-          • Bachelor Degree OR PG Diploma in Town and Country Planning (T &amp; C Planning) from any recognized institution[span_22](start_span)[span_22](end_span).<br>
-          • <strong>OR</strong> Associate Membership of Institute of Town Planners (India) / American Institute of Town Planners / Institute of Town Planners (London)[span_23](start_span)[span_23](end_span).<br>
-          • <strong>OR</strong> Qualifications equivalent for membership of Institute of Town Planners (India / London / America)[span_24](start_span)[span_24](end_span).
+          • Bachelor Degree OR PG Diploma in T &amp; C Planning from any recognized institution. <strong>OR</strong><br>
+          • Associate Membership of any of the following institutions:<br>
+          &nbsp;&nbsp;(A) Institute of planners (India)<br>
+          &nbsp;&nbsp;(B) American institute of town planners<br>
+          &nbsp;&nbsp;(C) Institute of Town Planners (London)<br>
+          • <strong>OR</strong> Qualifications equivalent for membership of institute of Town planners (India) or London or America.<br>
+          • For More Eligibility Details Read the Notification.
         </td>
       </tr>
     </tbody>
   </table>
 
-  <!-- Steps to Download Admit Card -->
+  <!-- How to Download Admit Card Steps -->
   <h3 style="background: rgb(21, 101, 192); color: #ffffff; font-size: 15px; margin: 0; padding: 8px 12px;">How to Download UPPSC ATP Mains Admit Card 2026</h3>
   <div style="background: #ffffff; border: 1px solid #90caf9; margin-bottom: 15px; padding: 10px 14px; font-size: 13.5px;">
-    • UPPSC Mains Admit Card download karne ke liye niche diye gaye <strong>Download Admit Card</strong> link par click karein.<br>
-    • Apna OTR Number ya Registration Number aur Date of Birth enter karein.<br>
-    • Diye gaye Captcha verification code ko enter karke <strong>Download Admit Card</strong> par click karein.<br>
-    • Admit card download ho jane ke baad usme apna Roll Number, Exam Center, Shift Timing aur Reporting time check karein.<br>
-    • Examination hall me entry ke liye admit card ka color/black &amp; white print out aur ek valid photo ID proof sath le jana anivarya hai.
+    • UPPSC Mains Admit Card download karne ke liye niche diye gaye <strong>Download Mains Admit Card</strong> link par click karein.<br>
+    • Candidate apna OTR Number / Registration Number, Date of Birth aur Gender select karein.<br>
+    • Captcha code enter karke <strong>Download Admit Card</strong> button par click karein.<br>
+    • Admit card download hone ke baad apna Roll Number, Examination Center, Shift Time aur Instructions ache se check karein.<br>
+    • Exam center par admit card ka print out, do passport size photograph aur ek valid Original Photo ID proof sath le jana anivarya hai.
   </div>
 
   <!-- Important Links Table -->
   <div style="background: rgb(198, 40, 40); border-radius: 4px 4px 0 0; color: #ffffff; font-size: 16px; font-weight: bold; padding: 10px 14px; text-align: left;">
-    Important Links
+    Some Useful Important Links
   </div>
   <table style="border-collapse: collapse; font-size: 14px; margin-bottom: 20px; width: 100%;">
     <tbody>
@@ -121,36 +126,31 @@ last_date: 2026-10-06
         </td>
       </tr>
       <tr style="background: #ffebee;">
-        <td style="border: 1px solid #ef9a9a; padding: 10px; font-weight: bold;">Download Notification (English)</td>
+        <td style="border: 1px solid #ef9a9a; padding: 10px; font-weight: bold;">Download Notification</td>
         <td style="border: 1px solid #ef9a9a; padding: 10px; text-align: center;">
-          <a href="https://uppsc.up.nic.in/OuterPages/View_Enclosure.aspx?ID=747&flag=E&FID=911" target="_blank" rel="noopener noreferrer" style="background: rgb(198, 40, 40); border-radius: 4px; color: #ffffff; font-weight: bold; padding: 6px 16px; display: inline-block; text-decoration: none;">Click Here</a>
+          <a href="https://uppsc.up.nic.in/OuterPages/View_Enclosure.aspx?ID=747&flag=E&FID=911" target="_blank" rel="noopener noreferrer" style="background: rgb(198, 40, 40); border-radius: 4px; color: #ffffff; font-weight: bold; padding: 6px 12px; display: inline-block; text-decoration: none; margin-right: 5px;">English</a>
+          <a href="https://uppsc.up.nic.in/OuterPages/View_Enclosure.aspx?ID=747&flag=H&FID=910" target="_blank" rel="noopener noreferrer" style="background: rgb(198, 40, 40); border-radius: 4px; color: #ffffff; font-weight: bold; padding: 6px 12px; display: inline-block; text-decoration: none;">Hindi</a>
         </td>
       </tr>
       <tr>
-        <td style="border: 1px solid #ef9a9a; padding: 10px; font-weight: bold;">Download Notification (Hindi)</td>
-        <td style="border: 1px solid #ef9a9a; padding: 10px; text-align: center;">
-          <a href="https://uppsc.up.nic.in/OuterPages/View_Enclosure.aspx?ID=747&flag=H&FID=910" target="_blank" rel="noopener noreferrer" style="background: rgb(198, 40, 40); border-radius: 4px; color: #ffffff; font-weight: bold; padding: 6px 16px; display: inline-block; text-decoration: none;">Click Here</a>
-        </td>
-      </tr>
-      <tr style="background: #ffebee;">
-        <td style="border: 1px solid #ef9a9a; padding: 10px; font-weight: bold;">Join WhatsApp Channel</td>
-        <td style="border: 1px solid #ef9a9a; padding: 10px; text-align: center;">
-          <a href="https://whatsapp.com/channel/0029Vb97OOiK5cD6SAWpDm15" target="_blank" rel="noopener noreferrer" style="background: rgb(46, 125, 50); border-radius: 4px; color: #ffffff; font-weight: bold; padding: 6px 16px; display: inline-block; text-decoration: none;">Join Now</a>
-        </td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid #ef9a9a; padding: 10px; font-weight: bold;">Rojgar Vacancy Tools (Photo/Sign Resizer)</td>
-        <td style="border: 1px solid #ef9a9a; padding: 10px; text-align: center;">
-          <a href="https://photoresizer.store" target="_blank" rel="noopener noreferrer" style="background: #6a1b9a; border-radius: 4px; color: #ffffff; font-weight: bold; padding: 6px 16px; display: inline-block; text-decoration: none;">Click Here</a>
-        </td>
-      </tr>
-      <tr style="background: #ffebee;">
         <td style="border: 1px solid #ef9a9a; padding: 10px; font-weight: bold;">UPPSC Official Website</td>
         <td style="border: 1px solid #ef9a9a; padding: 10px; text-align: center;">
           <a href="https://uppsc.up.nic.in/" target="_blank" rel="noopener noreferrer" style="background: #ef6c00; border-radius: 4px; color: #ffffff; font-weight: bold; padding: 6px 16px; display: inline-block; text-decoration: none;">Click Here</a>
         </td>
       </tr>
+      <tr style="background: #ffebee;">
+        <td style="border: 1px solid #ef9a9a; padding: 10px; font-weight: bold;">Rojgar Vacancy Tools (Photo/Sign Resizer)</td>
+        <td style="border: 1px solid #ef9a9a; padding: 10px; text-align: center;">
+          <a href="https://photoresizer.store" target="_blank" rel="noopener noreferrer" style="background: #6a1b9a; border-radius: 4px; color: #ffffff; font-weight: bold; padding: 6px 16px; display: inline-block; text-decoration: none;">Click Here</a>
+        </td>
+      </tr>
       <tr>
+        <td style="border: 1px solid #ef9a9a; padding: 10px; font-weight: bold;">Join WhatsApp Channel</td>
+        <td style="border: 1px solid #ef9a9a; padding: 10px; text-align: center;">
+          <a href="https://whatsapp.com/channel/0029Vb97OOiK5cD6SAWpDm15" target="_blank" rel="noopener noreferrer" style="background: rgb(46, 125, 50); border-radius: 4px; color: #ffffff; font-weight: bold; padding: 6px 16px; display: inline-block; text-decoration: none;">Join Now</a>
+        </td>
+      </tr>
+      <tr style="background: #ffebee;">
         <td style="border: 1px solid #ef9a9a; padding: 10px; font-weight: bold;">Support Desk (Email)</td>
         <td style="border: 1px solid #ef9a9a; padding: 10px; text-align: center;">
           <a href="mailto:rojgarvecancy.in@gmail.com" style="background: rgb(46, 125, 50); border-radius: 4px; color: #ffffff; font-weight: bold; padding: 6px 16px; display: inline-block; text-decoration: none;">Send Email</a>
