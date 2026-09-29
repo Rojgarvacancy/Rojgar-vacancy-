@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Rajasthan RSSB LDC Junior Assistant Result 2026 Declared Download Non-TSP TSP Score Card Cutoff Marks"
-date: 2026-09-29 09:15:00 +0530
+date: 2026-09-29 10:15:00 +0530
 categories: ["Result"]
 trending: true
 last_date: 2026-10-31
@@ -144,9 +144,9 @@ last_date: 2026-10-31
         </td>
       </tr>
       <tr style="background: rgb(255, 235, 238);">
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Support Desk (Contact / Helpline)</strong></td>
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Support Desk (Contact / Email)</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
-          <a href="tel:7088785630" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Call: 70887 85630</a>
+          <a href="mailto:rojgarvacency.in@gmail.com" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Send Email</a>
         </td>
       </tr>
     </tbody>
