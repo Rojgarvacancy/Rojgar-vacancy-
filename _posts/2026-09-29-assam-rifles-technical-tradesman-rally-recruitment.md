@@ -38,8 +38,8 @@ last_date: 2026-10-28
         </td>
         <td style="border: 1px solid #90caf9; padding: 10px; vertical-align: top;">
           • General / OBC / EWS : <strong>₹ 100/-</strong><br>
-          • SC / ST / ESM / Female : <strong>₹ 0/- (Exempted)</strong> / As per rules<br><br>
-          <em>Payment Mode : Pay the Examination Fee through Online (SBI Collect / Net Banking / Debit Card) or Offline Fee Mode.</em>
+          • SC / ST / PH : <strong>₹ 100/-</strong><br><br>
+          <em>Payment Mode : Pay the Exam Fee Through Online / Offline Fee Mode Only.</em>
         </td>
       </tr>
     </tbody>
@@ -50,7 +50,7 @@ last_date: 2026-10-28
   <div style="background: #ffffff; border: 1px solid #90caf9; margin-bottom: 15px; padding: 10px 14px; font-size: 14px;">
     • Minimum Age : <strong>18 - 21 Years</strong> (Post Wise)<br>
     • Maximum Age : <strong>23 - 25 Years</strong> (Post Wise)<br>
-    • <em>Age Relaxation Extra as per Assam Rifles Technical & Tradesman Rally 2026 Examination Rules.</em>
+    • <em>Age Relaxation Extra as per Assam Rifles Technical & Tradesman Rally Examination Rules.</em>
   </div>
 
   <!-- Category-wise Vacancy Details Table -->
@@ -183,7 +183,7 @@ last_date: 2026-10-28
     • Niche diye gaye <strong>Apply Online</strong> link par click karke Assam Rifles online application portal open karein.<br>
     • Apna Trade aur Category select karein aur form me mangi gayi basic personal & qualification details bharein.<br>
     • Apne required documents (Photo, Signature, Marksheet, Caste Certificate) ko prescribed size me upload karein.<br>
-    • Application fee ka online ya offline mode se payment karein (agar applicable ho).<br>
+    • Application fee ka online ya offline mode se payment karein.<br>
     • Form final submit karne se pehle preview check karein aur future reference ke liye printout nikal kar surakshit rakhein.
   </div>
 
