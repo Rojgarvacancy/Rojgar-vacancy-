@@ -3,6 +3,8 @@ layout: default
 title: "UPPSC Various Post Recruitment Result 2026 – Out"
 date: 2026-09-19 08:00:00 +0530
 categories: ["Result"]
+trending: true
+last_date: 2026-10-31
 ---
 
 <style>
@@ -96,17 +98,17 @@ categories: ["Result"]
   </div>
 
   <!--Important Links-->
-  <h3 style="background: rgb(198, 40, 40); color: white; font-size: 16px; margin: 0px; padding: 8px 12px;">Some Useful Important Links</h3>
+  <h3 style="background: rgb(198, 40, 40); color: white; font-size: 16px; margin: 0px; padding: 8px 12px;">Important Links</h3>
   <table style="border-collapse: collapse; font-size: 14px; margin-bottom: 20px; width: 100%;">
     <tbody>
       <tr style="background: rgb(255, 235, 238);">
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; width: 50%;"><strong>Download Result (PDF)</strong></td>
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
-          <a href="https://rojgarvecancy.in/file.pdf" target="_blank" rel="noopener noreferrer" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Click Here</a>
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; width: 55%;"><strong>Download Result (PDF)</strong></td>
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center; width: 45%;">
+          <a href="{{ '/pdf/file.pdf' | relative_url }}" target="_blank" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Click Here</a>
         </td>
       </tr>
       <tr>
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Photo & Signature Resizer Tool</strong></td>
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Photo &amp; Signature Resizer Tool</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
           <a href="https://photoresizer.store" target="_blank" style="background: rgb(106, 27, 154); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Click Here</a>
         </td>
@@ -124,17 +126,17 @@ categories: ["Result"]
         </td>
       </tr>
       <tr style="background: rgb(255, 235, 238);">
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Support Desk (Email)</strong></td>
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Support Desk (Contact / Email)</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
-          <a href="mailto:rojgarvecancy.in@gmail.com" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">rojgarvecancy.in@gmail.com</a>
+          <a href="mailto:rojgarvecancy.in@gmail.com" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Send Email</a>
         </td>
       </tr>
     </tbody>
   </table>
 
   <!--Clean Disclaimer Note-->
-  <div style="background: rgb(245, 245, 245); border-left: 4px solid rgb(198, 40, 40); color: #555555; font-size: 13px; padding: 10px 15px;">
-    <strong>Note:</strong> Candidates are advised to check the official UPPSC portal to verify their marks, cutoff criteria, and future appointment or document verification instructions.
-  </div>
+  <p style="background-color: #f5f5f5; border-left: 4px solid #c62828; padding: 10px 14px; margin: 15px 0 25px 0; color: #222222; font-size: 13px;">
+    <strong>Disclaimer :</strong> Candidates are advised to check the official UPPSC portal to verify their marks, cutoff criteria, and future appointment or document verification instructions.
+  </p>
 
 </div>
