@@ -1,8 +1,10 @@
 ---
 layout: default
 title: "UPESSC PRT Assistant Teacher Online Form 2026"
-date: 2026-09-14
+date: 2026-09-14 10:00:00 +0530
 categories: ["Latest Jobs", "Syllabus"]
+trending: true
+last_date: 2026-10-15
 ---
 
 <div style="color: #222222; font-family: Arial, Helvetica, sans-serif; line-height: 1.6; margin: 0px auto; max-width: 900px;">
@@ -140,8 +142,8 @@ categories: ["Latest Jobs", "Syllabus"]
   <table style="border-collapse: collapse; font-size: 14px; margin-bottom: 20px; width: 100%;">
     <tbody>
       <tr style="background: rgb(255, 235, 238);">
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; width: 50%;"><strong>Apply Online</strong></td>
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; width: 55%;"><strong>Apply Online</strong></td>
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center; width: 45%;">
           <a href="https://apply.upessc.org/" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;" target="_blank" rel="noopener noreferrer">Click Here</a>
         </td>
       </tr>
@@ -158,7 +160,7 @@ categories: ["Latest Jobs", "Syllabus"]
         </td>
       </tr>
       <tr>
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Photo & Signature Resizer Tool</strong></td>
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Photo &amp; Signature Resizer Tool</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
           <a href="https://photoresizer.store" style="background: rgb(106, 27, 154); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;" target="_blank">Click Here</a>
         </td>
@@ -170,17 +172,23 @@ categories: ["Latest Jobs", "Syllabus"]
         </td>
       </tr>
       <tr>
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Join WhatsApp Channel</strong></td>
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
+          <a href="https://whatsapp.com/channel/0029Vb97OOiK5cD6SAWpDm15" target="_blank" rel="noopener noreferrer" style="background: rgb(37, 211, 102); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Join Now</a>
+        </td>
+      </tr>
+      <tr style="background: rgb(255, 235, 238);">
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Support Desk (Email)</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
-          <a href="mailto:rojgarvecancy.in@gmail.com" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">rojgarvecancy.in@gmail.com</a>
+          <a href="mailto:rojgarvecancy.in@gmail.com" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Send Email</a>
         </td>
       </tr>
     </tbody>
   </table>
 
   <!--Clean Disclaimer Note-->
-  <div style="background: rgb(245, 245, 245); border-left: 4px solid rgb(198, 40, 40); color: #555555; font-size: 13px; padding: 10px 15px;">
-    <strong>Note:</strong> Candidates are advised to check the official website and read the notification carefully for complete and updated information before applying.
-  </div>
+  <p style="background-color: #f5f5f5; border-left: 4px solid #c62828; padding: 10px 14px; margin: 15px 0 25px 0; color: #222222; font-size: 13px;">
+    <strong>Disclaimer :</strong> Candidates are advised to check the official website and read the notification carefully for complete and updated information before applying.
+  </p>
 
 </div>
