@@ -110,7 +110,7 @@ last_date: 2026-10-06
       <tr>
         <td style="border: 1px solid #ef9a9a; padding: 10px; font-weight: bold;">Download Admit Card Notice</td>
         <td style="border: 1px solid #ef9a9a; padding: 10px; text-align: center;">
-          <a href="https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagloISrijFpWKLnXqg7fe2pF" target="_blank" rel="noopener noreferrer" style="background: rgb(198, 40, 40); border-radius: 4px; color: #ffffff; font-weight: bold; padding: 6px 16px; display: inline-block; text-decoration: none;">Click Here</a>
+          <a href="{{ '/pdf/uppsc-atp-admit-card-notice-2026.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" style="background: rgb(198, 40, 40); border-radius: 4px; color: #ffffff; font-weight: bold; padding: 6px 16px; display: inline-block; text-decoration: none;">Click Here</a>
         </td>
       </tr>
       <tr style="background: #ffebee;">
@@ -122,14 +122,14 @@ last_date: 2026-10-06
       <tr>
         <td style="border: 1px solid #ef9a9a; padding: 10px; font-weight: bold;">Download Pre Result</td>
         <td style="border: 1px solid #ef9a9a; padding: 10px; text-align: center;">
-          <a href="https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBaglFjifabMvCvfvuznPEhL/S" target="_blank" rel="noopener noreferrer" style="background: rgb(198, 40, 40); border-radius: 4px; color: #ffffff; font-weight: bold; padding: 6px 16px; display: inline-block; text-decoration: none;">Click Here</a>
+          <a href="{{ '/pdf/Open_PDF_DB.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" style="background: rgb(198, 40, 40); border-radius: 4px; color: #ffffff; font-weight: bold; padding: 6px 16px; display: inline-block; text-decoration: none;">Click Here</a>
         </td>
       </tr>
       <tr style="background: #ffebee;">
         <td style="border: 1px solid #ef9a9a; padding: 10px; font-weight: bold;">Download Notification</td>
         <td style="border: 1px solid #ef9a9a; padding: 10px; text-align: center;">
-          <a href="https://uppsc.up.nic.in/OuterPages/View_Enclosure.aspx?ID=747&flag=E&FID=911" target="_blank" rel="noopener noreferrer" style="background: rgb(198, 40, 40); border-radius: 4px; color: #ffffff; font-weight: bold; padding: 6px 12px; display: inline-block; text-decoration: none; margin-right: 5px;">English</a>
-          <a href="https://uppsc.up.nic.in/OuterPages/View_Enclosure.aspx?ID=747&flag=H&FID=910" target="_blank" rel="noopener noreferrer" style="background: rgb(198, 40, 40); border-radius: 4px; color: #ffffff; font-weight: bold; padding: 6px 12px; display: inline-block; text-decoration: none;">Hindi</a>
+          <a href="{{ '/pdf/View_Enclosure.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" style="background: rgb(198, 40, 40); border-radius: 4px; color: #ffffff; font-weight: bold; padding: 6px 12px; display: inline-block; text-decoration: none; margin-right: 5px;">English</a>
+          <a href="{{ '/pdf/Enclosure.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" style="background: rgb(198, 40, 40); border-radius: 4px; color: #ffffff; font-weight: bold; padding: 6px 12px; display: inline-block; text-decoration: none;">Hindi</a>
         </td>
       </tr>
       <tr>
