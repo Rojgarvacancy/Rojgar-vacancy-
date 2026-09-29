@@ -110,7 +110,7 @@ last_date: 2026-10-06
       <tr>
         <td style="border: 1px solid #ef9a9a; padding: 10px; font-weight: bold;">Download Admit Card Notice</td>
         <td style="border: 1px solid #ef9a9a; padding: 10px; text-align: center;">
-          <a href="{{ '/pdf/uppsc-atp-admit-card-notice-2026.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" style="background: rgb(198, 40, 40); border-radius: 4px; color: #ffffff; font-weight: bold; padding: 6px 16px; display: inline-block; text-decoration: none;">Click Here</a>
+          <a href="{{ '/pdf/DB.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" style="background: rgb(198, 40, 40); border-radius: 4px; color: #ffffff; font-weight: bold; padding: 6px 16px; display: inline-block; text-decoration: none;">Click Here</a>
         </td>
       </tr>
       <tr style="background: #ffebee;">
