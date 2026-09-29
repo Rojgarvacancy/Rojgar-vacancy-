@@ -391,10 +391,6 @@
             linkBtn.style.backgroundColor = "#25D366";
             linkBtn.style.color = "#ffffff";
           }
-
-          if (rowText.includes("Support Desk") || rowText.includes("Email")) {
-            linkBtn.textContent = "Send Email";
-          }
         });
       });
     });
@@ -407,7 +403,7 @@
       document.querySelectorAll("a").forEach(function(anchor) {
         var href = anchor.getAttribute("href");
         if (href) {
-          if (href.includes(oldDomainMistake)) {
+          if (href.includes(oldDomainMistake) && !href.startsWith("mailto:")) {
             anchor.setAttribute("href", href.split(oldDomainMistake).join(newTargetDomain));
           } else if (href.includes(".github.io")) {
             try {
@@ -417,6 +413,46 @@
               }
             } catch(e) {}
           }
+        }
+      });
+    });
+
+    // Global Auto Cleaner: Replaces Phone Numbers with Clean Email Support
+    document.addEventListener("DOMContentLoaded", function() {
+      var correctEmail = "rojgarvecancy.in@gmail.com";
+      var mailtoLink = "mailto:" + correctEmail;
+
+      document.querySelectorAll("a").forEach(function(a) {
+        var href = a.getAttribute("href") || "";
+        var text = a.textContent || "";
+
+        if (href.includes("tel:") || href.includes("7088785630") || text.includes("7088785630")) {
+          a.setAttribute("href", mailtoLink);
+          a.textContent = "Send Email";
+          a.style.background = "rgb(46, 125, 50)";
+          a.style.color = "#ffffff";
+        }
+
+        if (href.includes("mailto:") && (href.includes("rojgarvacancyinfo") || href.includes("rojgar vacancy") || href.includes("rojgarvacancy.in@"))) {
+          a.setAttribute("href", mailtoLink);
+        }
+      });
+
+      document.querySelectorAll("tr").forEach(function(row) {
+        var rowHtml = row.innerHTML;
+        if (rowHtml.includes("7088785630") || rowHtml.includes("tel:") || rowHtml.includes("rojgar vacancy.in") || rowHtml.includes("rojgarvacancyinfo@gmail.com")) {
+          var link = row.querySelector("a");
+          if (link) {
+            link.setAttribute("href", mailtoLink);
+            link.textContent = "Send Email";
+            link.style.background = "rgb(46, 125, 50)";
+            link.style.color = "#ffffff";
+          }
+          row.innerHTML = row.innerHTML
+            .replace(/Call:\s*70887\s*85630/gi, "Send Email")
+            .replace(/7088785630/gi, "")
+            .replace(/rojgar vacancy\.in/gi, correctEmail)
+            .replace(/rojgarvacancyinfo@gmail.com/gi, correctEmail);
         }
       });
     });
