@@ -1,8 +1,10 @@
 ---
 layout: default
-title: "Rajasthan Safai Karamchari Recruitment 2026 – Apply Online for 24752 Posts"
-date: 2026-09-20 06:00:00 +0530
+title: "Rajasthan Safai Karamchari Recruitment 2026 – Apply Online for 24752 Posts (Date Extended)"
+date: 2026-09-30 18:00:00 +0530
 categories: ["Latest Jobs"]
+trending: true
+last_date: 2026-10-13
 ---
 
 <style>
@@ -32,7 +34,7 @@ categories: ["Latest Jobs"]
 
   <!--Short Info-->
   <div style="background: rgb(255, 248, 225); border: 1px solid rgb(255, 204, 128); margin-bottom: 15px; padding: 12px 15px;">
-    <strong>Short Information :</strong> Department of Local Self Government (LSG Rajasthan) invites online applications for the recruitment of <strong>Safai Karamchari (Total 24,752 Posts)</strong> across various municipal corporations, councils, and boards in Rajasthan. Candidates who meet the eligibility criteria can read the recruitment details and submit their online application forms through the official portal before the last date.
+    <strong>Short Information :</strong> Department of Local Self Government (LSG Rajasthan) invites online applications for the recruitment of <strong>Safai Karamchari (Total 24,752 Posts)</strong> across various municipal corporations, councils, and boards in Rajasthan. The online application last date has been extended up to <strong>13/10/2026</strong>. Candidates who meet the eligibility criteria can read the recruitment details and submit their online application forms through the official portal before the extended last date.
   </div>
 
   <!--Important Dates & Application Fee-->
@@ -47,8 +49,8 @@ categories: ["Latest Jobs"]
       <tr>
         <td style="border: 1px solid rgb(144, 202, 249); padding: 8px; vertical-align: top;">
           • Application Begin : <strong>15/08/2026</strong><br>
-          • Last Date for Apply Online : <strong style="color: #c62828;">28/09/2026</strong><br>
-          • Last Date Fee Payment : <strong>28/09/2026</strong><br>
+          • Last Date for Apply Online : <strong style="color: #c62828;">13/10/2026 (Extended)</strong><br>
+          • Last Date Fee Payment : <strong>13/10/2026</strong><br>
           • Practical / Lottery Exam Date : <strong>Notify Soon</strong>
         </td>
         <td style="border: 1px solid rgb(144, 202, 249); padding: 8px; vertical-align: top;">
@@ -102,7 +104,7 @@ categories: ["Latest Jobs"]
     • Select the <strong>Recruitment Portal</strong> section and find the Safai Karamchari application form.<br>
     • Enter all personal details, residential proof, and experience certificate details accurately.<br>
     • Upload required documents (photograph, signature, and experience certificate).<br>
-    • Pay the examination fee online on or before 28 September 2026 and keep a printout of the submitted form for future reference.
+    • Pay the examination fee online on or before <strong>13 October 2026</strong> and keep a printout of the submitted form for future reference.
   </div>
 
   <!--Important Links-->
@@ -110,7 +112,19 @@ categories: ["Latest Jobs"]
   <table style="border-collapse: collapse; font-size: 14px; margin-bottom: 20px; width: 100%;">
     <tbody>
       <tr style="background: rgb(255, 235, 238);">
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; width: 50%;"><strong>Apply Online / Official Portal Link</strong></td>
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; width: 55%;"><strong>Download Date Extended Notice</strong></td>
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
+          <a href="{{ '/pdf/Date_Extended.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" style="background: rgb(198, 40, 40); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Click Here</a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Download Detailed Notification</strong></td>
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
+          <a href="{{ '/pdf/Safai_Karamchari_01_2026.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" style="background: rgb(21, 101, 192); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Click Here</a>
+        </td>
+      </tr>
+      <tr style="background: rgb(255, 235, 238);">
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Apply Online / Official Portal Link</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
           <a href="https://lsg.rajasthan.gov.in/latest-update/1171" target="_blank" rel="noopener noreferrer" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Click Here</a>
         </td>
@@ -122,18 +136,24 @@ categories: ["Latest Jobs"]
         </td>
       </tr>
       <tr style="background: rgb(255, 235, 238);">
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Photo & Signature Resizer Tool</strong></td>
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
-          <a href="https://photoresizer.store" target="_blank" style="background: rgb(106, 27, 154); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Click Here</a>
-        </td>
-      </tr>
-      <tr>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>LSG Rajasthan Official Website</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
           <a href="https://lsg.rajasthan.gov.in/lsg/#/home/dptHome" target="_blank" rel="noopener noreferrer" style="background: rgb(239, 108, 0); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Click Here</a>
         </td>
       </tr>
+      <tr>
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Photo & Signature Resizer Tool</strong></td>
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
+          <a href="https://photoresizer.store" target="_blank" rel="noopener noreferrer" style="background: rgb(106, 27, 154); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Click Here</a>
+        </td>
+      </tr>
       <tr style="background: rgb(255, 235, 238);">
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Join WhatsApp Channel</strong></td>
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
+          <a href="https://whatsapp.com/channel/0029Vb97OOiK5cD6SAWpDm15" target="_blank" rel="noopener noreferrer" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Join Now</a>
+        </td>
+      </tr>
+      <tr>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Support Desk (Email)</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
           <a href="mailto:rojgarvecancy.in@gmail.com" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">rojgarvecancy.in@gmail.com</a>
