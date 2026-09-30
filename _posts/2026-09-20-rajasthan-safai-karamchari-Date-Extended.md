@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Rajasthan Safai Karamchari Recruitment 2026 – Apply Online for 24752 Posts (Date Extended)"
-date: 2026-09-30 18:00:00 +0530
+title: "Rajasthan Safai Karamchari Recruitment 2026 – Apply Online for 24752 Posts"
+date: 2026-09-20 06:00:00 +0530
 categories: ["Latest Jobs"]
 trending: true
 last_date: 2026-10-13
@@ -34,7 +34,7 @@ last_date: 2026-10-13
 
   <!--Short Info-->
   <div style="background: rgb(255, 248, 225); border: 1px solid rgb(255, 204, 128); margin-bottom: 15px; padding: 12px 15px;">
-    <strong>Short Information :</strong> Department of Local Self Government (LSG Rajasthan) invites online applications for the recruitment of <strong>Safai Karamchari (Total 24,752 Posts)</strong> across various municipal corporations, councils, and boards in Rajasthan. The online application last date has been extended up to <strong>13/10/2026</strong>. Candidates who meet the eligibility criteria can read the recruitment details and submit their online application forms through the official portal before the extended last date.
+    <strong>Short Information :</strong> Department of Local Self Government (LSG Rajasthan) invites online applications for the recruitment of <strong>Safai Karamchari (Total 24,752 Posts)</strong> across various municipal corporations, councils, and boards in Rajasthan. Candidates who meet the eligibility criteria can read the recruitment details and submit their online application forms through the official portal before the extended last date <strong>13/10/2026</strong>.
   </div>
 
   <!--Important Dates & Application Fee-->
@@ -107,56 +107,56 @@ last_date: 2026-10-13
     • Pay the examination fee online on or before <strong>13 October 2026</strong> and keep a printout of the submitted form for future reference.
   </div>
 
-  <!--Important Links-->
+  <!--Important Links Table-->
   <h3 style="background: rgb(198, 40, 40); color: white; font-size: 16px; margin: 0px; padding: 8px 12px;">Some Useful Important Links</h3>
   <table style="border-collapse: collapse; font-size: 14px; margin-bottom: 20px; width: 100%;">
     <tbody>
-      <tr style="background: rgb(255, 235, 238);">
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; width: 55%;"><strong>Download Date Extended Notice</strong></td>
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
-          <a href="{{ '/pdf/Date_Extended.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" style="background: rgb(198, 40, 40); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Click Here</a>
+      <tr style="background: #ffebee;">
+        <td style="border: 1px solid #ef9a9a; padding: 10px; width: 55%; font-weight: bold;">Apply Online / Official Portal Link</td>
+        <td style="border: 1px solid #ef9a9a; padding: 10px; text-align: center; width: 45%;">
+          <a href="https://lsg.rajasthan.gov.in/latest-update/1171" target="_blank" rel="noopener noreferrer" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 16px; text-decoration: none; display: inline-block;">Click Here</a>
         </td>
       </tr>
       <tr>
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Download Detailed Notification</strong></td>
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
-          <a href="{{ '/pdf/Safai_Karamchari_01_2026.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" style="background: rgb(21, 101, 192); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Click Here</a>
+        <td style="border: 1px solid #ef9a9a; padding: 10px; font-weight: bold;">Apply Online (SSO Rajasthan Portal)</td>
+        <td style="border: 1px solid #ef9a9a; padding: 10px; text-align: center;">
+          <a href="https://sso.rajasthan.gov.in/" target="_blank" rel="noopener noreferrer" style="background: rgb(21, 101, 192); border-radius: 4px; color: white; font-weight: bold; padding: 6px 16px; display: inline-block; text-decoration: none;">Click Here</a>
         </td>
       </tr>
-      <tr style="background: rgb(255, 235, 238);">
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Apply Online / Official Portal Link</strong></td>
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
-          <a href="https://lsg.rajasthan.gov.in/latest-update/1171" target="_blank" rel="noopener noreferrer" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Click Here</a>
-        </td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Apply Online (SSO Rajasthan Portal)</strong></td>
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
-          <a href="https://sso.rajasthan.gov.in/" target="_blank" rel="noopener noreferrer" style="background: rgb(21, 101, 192); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Click Here</a>
-        </td>
-      </tr>
-      <tr style="background: rgb(255, 235, 238);">
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>LSG Rajasthan Official Website</strong></td>
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
-          <a href="https://lsg.rajasthan.gov.in/lsg/#/home/dptHome" target="_blank" rel="noopener noreferrer" style="background: rgb(239, 108, 0); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Click Here</a>
+      <tr style="background: #ffebee;">
+        <td style="border: 1px solid #ef9a9a; padding: 10px; font-weight: bold;">Download Detailed Notification</td>
+        <td style="border: 1px solid #ef9a9a; padding: 10px; text-align: center;">
+          <a href="{{ '/pdf/Safai_Karamchari_01_2026.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" style="background: rgb(198, 40, 40); border-radius: 4px; color: white; font-weight: bold; padding: 6px 16px; display: inline-block; text-decoration: none;">Click Here</a>
         </td>
       </tr>
       <tr>
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Photo & Signature Resizer Tool</strong></td>
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
-          <a href="https://photoresizer.store" target="_blank" rel="noopener noreferrer" style="background: rgb(106, 27, 154); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Click Here</a>
+        <td style="border: 1px solid #ef9a9a; padding: 10px; font-weight: bold;">Download Date Extended Notice</td>
+        <td style="border: 1px solid #ef9a9a; padding: 10px; text-align: center;">
+          <a href="{{ '/pdf/Date_Extended.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" style="background: rgb(21, 101, 192); border-radius: 4px; color: white; font-weight: bold; padding: 6px 16px; display: inline-block; text-decoration: none;">Click Here</a>
         </td>
       </tr>
-      <tr style="background: rgb(255, 235, 238);">
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Join WhatsApp Channel</strong></td>
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
-          <a href="https://whatsapp.com/channel/0029Vb97OOiK5cD6SAWpDm15" target="_blank" rel="noopener noreferrer" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Join Now</a>
+      <tr style="background: #ffebee;">
+        <td style="border: 1px solid #ef9a9a; padding: 10px; font-weight: bold;">LSG Rajasthan Official Website</td>
+        <td style="border: 1px solid #ef9a9a; padding: 10px; text-align: center;">
+          <a href="https://lsg.rajasthan.gov.in/lsg/#/home/dptHome" target="_blank" rel="noopener noreferrer" style="background: rgb(239, 108, 0); border-radius: 4px; color: white; font-weight: bold; padding: 6px 16px; display: inline-block; text-decoration: none;">Click Here</a>
         </td>
       </tr>
       <tr>
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Support Desk (Email)</strong></td>
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
-          <a href="mailto:rojgarvecancy.in@gmail.com" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">rojgarvecancy.in@gmail.com</a>
+        <td style="border: 1px solid #ef9a9a; padding: 10px; font-weight: bold;">Rojgar Vacancy Tools (Photo/Sign Resizer)</td>
+        <td style="border: 1px solid #ef9a9a; padding: 10px; text-align: center;">
+          <a href="https://photoresizer.store" target="_blank" rel="noopener noreferrer" style="background: #6a1b9a; border-radius: 4px; color: white; font-weight: bold; padding: 6px 16px; text-decoration: none; display: inline-block;">Click Here</a>
+        </td>
+      </tr>
+      <tr style="background: #ffebee;">
+        <td style="border: 1px solid #ef9a9a; padding: 10px; font-weight: bold;">Join WhatsApp Channel</td>
+        <td style="border: 1px solid #ef9a9a; padding: 10px; text-align: center;">
+          <a href="https://whatsapp.com/channel/0029Vb97OOiK5cD6SAWpDm15" target="_blank" rel="noopener noreferrer" style="background: #25d366; border-radius: 4px; color: white; font-weight: bold; padding: 6px 16px; text-decoration: none; display: inline-block;">Join Now</a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ef9a9a; padding: 10px; font-weight: bold;">Support Desk (Email)</td>
+        <td style="border: 1px solid #ef9a9a; padding: 10px; text-align: center;">
+          <a href="mailto:rojgarvecancy.in@gmail.com" style="background: #2e7d32; border-radius: 4px; color: white; font-weight: bold; padding: 6px 16px; text-decoration: none; display: inline-block;">Send Email</a>
         </td>
       </tr>
     </tbody>
