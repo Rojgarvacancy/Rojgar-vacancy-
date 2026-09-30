@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Rajasthan Safai Karamchari Recruitment 2026 – Apply Online for 24752 Posts"
-date: 2026-09-20 06:00:00 +0530
+date: 2026-09-30 06:00:00 +0530
 categories: ["Latest Jobs"]
 trending: true
 last_date: 2026-10-13
