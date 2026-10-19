@@ -154,7 +154,7 @@ last_date: 2026-10-28
       <tr>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Download Date Extend Notice</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
-          <a href="https://rojgarvacany.in/pdf/M.pdf" style="background: rgb(198, 40, 40); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;" target="_blank" rel="noopener noreferrer">Click Here</a>
+          <a href="https://www.upessc.up.gov.in/Notice/40d4-f371-4c8d-139c-599c.pdf" style="background: rgb(198, 40, 40); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;" target="_blank" rel="noopener noreferrer">Click Here</a>
         </td>
       </tr>
       <tr style="background: rgb(255, 235, 238);">
