@@ -4,7 +4,7 @@ title: "UPESSC PRT Assistant Teacher Online Form 2026"
 date: 2026-09-14 10:00:00 +0530
 categories: ["Latest Jobs", "Syllabus"]
 trending: true
-last_date: 2026-10-15
+last_date: 2026-10-28
 ---
 
 <div style="color: #222222; font-family: Arial, Helvetica, sans-serif; line-height: 1.6; margin: 0px auto; max-width: 900px;">
@@ -28,16 +28,16 @@ last_date: 2026-10-15
         <td style="border: 1px solid rgb(144, 202, 249); padding: 8px;">16 September 2026</td>
       </tr>
       <tr>
-        <td style="border: 1px solid rgb(144, 202, 249); padding: 8px;"><strong>Online Apply Last Date</strong></td>
-        <td style="border: 1px solid rgb(144, 202, 249); padding: 8px;">15 October 2026</td>
+        <td style="border: 1px solid rgb(144, 202, 249); padding: 8px;"><strong>Online Apply Last Date (Extended)</strong></td>
+        <td style="border: 1px solid rgb(144, 202, 249); padding: 8px; color: #c62828; font-weight: bold;">28 October 2026</td>
       </tr>
       <tr style="background: rgb(227, 242, 253);">
         <td style="border: 1px solid rgb(144, 202, 249); padding: 8px;"><strong>Last Date for Fee Payment</strong></td>
-        <td style="border: 1px solid rgb(144, 202, 249); padding: 8px;">15 October 2026</td>
+        <td style="border: 1px solid rgb(144, 202, 249); padding: 8px; color: #c62828; font-weight: bold;">28 October 2026</td>
       </tr>
       <tr>
         <td style="border: 1px solid rgb(144, 202, 249); padding: 8px;"><strong>Correction Last Date</strong></td>
-        <td style="border: 1px solid rgb(144, 202, 249); padding: 8px;">19 October 2026</td>
+        <td style="border: 1px solid rgb(144, 202, 249); padding: 8px;">31 October 2026</td>
       </tr>
       <tr style="background: rgb(227, 242, 253);">
         <td style="border: 1px solid rgb(144, 202, 249); padding: 8px;"><strong>Exam Date</strong></td>
@@ -86,10 +86,14 @@ last_date: 2026-10-15
         <td style="border: 1px solid rgb(144, 202, 249); padding: 8px;">21 Years</td>
       </tr>
       <tr>
-        <td style="border: 1px solid rgb(144, 202, 249); padding: 8px;"><strong>Maximum Age</strong></td>
+        <td style="border: 1px solid rgb(144, 202, 249); padding: 8px;"><strong>Maximum Age (Assistant Teacher Primary Urban)</strong></td>
         <td style="border: 1px solid rgb(144, 202, 249); padding: 8px;">40 Years</td>
       </tr>
       <tr style="background: rgb(227, 242, 253);">
+        <td style="border: 1px solid rgb(144, 202, 249); padding: 8px;"><strong>Maximum Age (Assistant Teacher Attached Primary)</strong></td>
+        <td style="border: 1px solid rgb(144, 202, 249); padding: 8px;">62 Years</td>
+      </tr>
+      <tr>
         <td style="border: 1px solid rgb(144, 202, 249); padding: 8px;"><strong>Age Relaxation</strong></td>
         <td style="border: 1px solid rgb(144, 202, 249); padding: 8px;">As per UPESSC Recruitment Regulations</td>
       </tr>
@@ -132,8 +136,8 @@ last_date: 2026-10-15
   <div style="border: 1px solid rgb(144, 202, 249); font-size: 14px; margin-bottom: 15px; padding: 12px;">
     <ul style="margin: 0px; padding-left: 20px;">
       <li>Written Examination</li>
-      <li>Interview (Viva-Voce)</li>
       <li>Document Verification</li>
+      <li>Medical Examination</li>
     </ul>
   </div>
 
@@ -148,36 +152,42 @@ last_date: 2026-10-15
         </td>
       </tr>
       <tr>
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Download Date Extend Notice</strong></td>
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
+          <a href="https://rojgarvacany.in/pdf/M.pdf" style="background: rgb(198, 40, 40); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;" target="_blank" rel="noopener noreferrer">Click Here</a>
+        </td>
+      </tr>
+      <tr style="background: rgb(255, 235, 238);">
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Download Official Notification</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
           <a href="https://www.upessc.up.gov.in/Notice/a429-726e-4862-f3dc-8a6f.pdf" style="background: rgb(21, 101, 192); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;" target="_blank" rel="noopener noreferrer">Click Here</a>
         </td>
       </tr>
-      <tr style="background: rgb(255, 235, 238);">
+      <tr>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Download Syllabus</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
           <a href="https://www.upessc.up.gov.in/syllabus/837218cf-1d9a-4252-a08c-404719d1b9d9.pdf" style="background: rgb(21, 101, 192); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;" target="_blank" rel="noopener noreferrer">Click Here</a>
         </td>
       </tr>
-      <tr>
+      <tr style="background: rgb(255, 235, 238);">
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Photo &amp; Signature Resizer Tool</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
           <a href="https://photoresizer.store" style="background: rgb(106, 27, 154); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;" target="_blank">Click Here</a>
         </td>
       </tr>
-      <tr style="background: rgb(255, 235, 238);">
+      <tr>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>UPESSC Official Website</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
           <a href="https://upessc.up.gov.in/" style="background: rgb(239, 108, 0); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;" target="_blank" rel="noopener noreferrer">Click Here</a>
         </td>
       </tr>
-      <tr>
+      <tr style="background: rgb(255, 235, 238);">
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Join WhatsApp Channel</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
           <a href="https://whatsapp.com/channel/0029Vb97OOiK5cD6SAWpDm15" target="_blank" rel="noopener noreferrer" style="background: rgb(37, 211, 102); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Join Now</a>
         </td>
       </tr>
-      <tr style="background: rgb(255, 235, 238);">
+      <tr>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Support Desk (Email)</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
           <a href="mailto:rojgarvecancy.in@gmail.com" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Send Email</a>
