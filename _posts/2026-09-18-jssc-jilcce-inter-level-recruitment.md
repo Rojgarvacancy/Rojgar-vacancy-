@@ -3,6 +3,8 @@ layout: default
 title: "JSSC JILCCE Inter Level Recruitment 2026 Re-Open Online Form (326 Posts)"
 date: 2026-09-18 10:35:00 +0530
 categories: ["Latest Jobs"]
+trending: true
+last_date: 2026-09-29
 ---
 
 <div style="color: #222222; font-family: Arial, Helvetica, sans-serif; line-height: 1.6; margin: 0px auto; max-width: 900px;">
@@ -28,11 +30,11 @@ categories: ["Latest Jobs"]
     <tbody>
       <tr>
         <td style="border: 1px solid rgb(144, 202, 249); padding: 8px; vertical-align: top;">
-          • Application Begin : <strong>11/07/2026</strong><br>
+          • Application Begin : <strong>05/08/2026</strong><br>
+          • Re-Open Start Date : <strong>19/09/2026</strong><br>
           • Extended Last Date : <span style="color: red; font-weight: bold;">29/09/2026</span><br>
-          • Pay Fee Last Date : <strong>02/10/2026</strong><br>
-          • Photo / Sign Upload Last Date : <strong>04/10/2026</strong><br>
-          • Correction Window : <strong>06-08 October 2026</strong><br>
+          • Pay Fee Last Date : <strong>30/09/2026</strong><br>
+          • Correction Window : <strong>01 – 03 October 2026</strong><br>
           • Exam Date : As per Schedule
         </td>
         <td style="border: 1px solid rgb(144, 202, 249); padding: 8px; vertical-align: top;">
@@ -45,11 +47,13 @@ categories: ["Latest Jobs"]
   </table>
 
   <!--Age Limit-->
-  <h3 style="background: rgb(21, 101, 192); color: white; font-size: 16px; margin: 0px; padding: 8px 12px;">JSSC JILCCE 2026 : Age Limit as on 01/08/2026</h3>
+  <h3 style="background: rgb(21, 101, 192); color: white; font-size: 16px; margin: 0px; padding: 8px 12px;">JSSC JILCCE 2026 : Age Limit</h3>
   <div style="background: #ffffff; border: 1px solid rgb(144, 202, 249); margin-bottom: 15px; padding: 10px 15px; font-size: 14px;">
     • Minimum Age : <strong>18 Years</strong><br>
-    • Maximum Age : <strong>35 Years</strong> (For UR / EWS)<br>
-    • Maximum Age : <strong>37-40 Years</strong> (OBC / SC / ST / Women as per rules)<br>
+    • Maximum Age (UR / EWS) : <strong>35 Years</strong><br>
+    • Maximum Age (OBC / EBC Male) : <strong>37 Years</strong><br>
+    • Maximum Age (Female - All Categories) : <strong>38 Years</strong><br>
+    • Maximum Age (SC / ST) : <strong>40 Years</strong><br>
     • <em>Age Relaxation Extra as per JSSC JILCCE Recruitment Rules.</em>
   </div>
 
@@ -105,7 +109,7 @@ categories: ["Latest Jobs"]
         </td>
       </tr>
       <tr style="background: rgb(255, 235, 238);">
-        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Photo & Signature Resizer Tool</strong></td>
+        <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Photo &amp; Signature Resizer Tool</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
           <a href="https://photoresizer.store" target="_blank" style="background: rgb(106, 27, 154); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Click Here</a>
         </td>
@@ -119,7 +123,7 @@ categories: ["Latest Jobs"]
       <tr style="background: rgb(255, 235, 238);">
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px;"><strong>Support Desk (Email)</strong></td>
         <td style="border: 1px solid rgb(239, 154, 154); padding: 10px; text-align: center;">
-          <a href="mailto:rojgarvecancy.in@gmail.com" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">rojgarvecancy.in@gmail.com</a>
+          <a href="mailto:rojgarvecancy.in@gmail.com" style="background: rgb(46, 125, 50); border-radius: 4px; color: white; font-weight: bold; padding: 6px 14px; text-decoration: none; display: inline-block;">Send Email</a>
         </td>
       </tr>
     </tbody>
